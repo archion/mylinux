@@ -1,0 +1,10 @@
+#!/bin/bash
+while true;do
+	time=`date +%I:%M`
+	if [ "$time" = $1 ]; then
+		notify-send 'Time is up' "`date`" --icon=dialog-information
+		mplayer -af volume=10:1 /usr/share/sounds/freedesktop/stereo/service-login.oga -loop 5
+		exit
+	fi
+	sleep 25
+done

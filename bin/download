@@ -1,0 +1,2 @@
+#!/bin/bash
+rsync -avz -e "ssh -p 2222" YZD@114.212.205.227:/home/YZD/Projects/FortranProgram/data/ /home/zuodong/Projects/FortranProgram/data

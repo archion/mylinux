@@ -1,0 +1,20 @@
+# Write your default config options here!
+loop=0
+#ontop=yes
+geometry=985:91%
+xy = 450 #调节初始窗口大小
+af=volnorm
+softvol-max=600 # allow to increase the maximal volume
+zoom=yes #支持缩放
+subcp=cp936 #支持中文字幕
+subfont-text-scale=5.5 #字幕的字体大小
+subfont-autoscale=1 #字幕占屏幕的大小
+font=/usr/share/fonts/wenquanyi/wqy-microhei/wqy-microhei.ttc #选择字体
+overlapsub=1 #支持多语言字幕
+sub-fuzziness=2 #设定字幕自动加载的识别
+osdlevel=3 #在屏幕的左上角显示相应时间等
+vf=screenshot
+#vf=expand=:::::4/3:2 #如果是16:9的影片,字幕可以放在下面的黑框中
+heartbeat-cmd="xscreensaver-command -deactivate &" # stop xscreensaver
+idx=yes # allow to seek in a file which is still downloading whilst watching it
+use-filename-title=yes # set the window title using the media filename, when not set with --title.

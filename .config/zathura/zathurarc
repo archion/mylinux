@@ -1,0 +1,6 @@
+set adjust-open width
+set show-scrollbars true
+set window-title-basename true
+#color
+set statusbar-bg "#1a7f77"
+set inputbar-fg "#b4674d"
