@@ -72,8 +72,8 @@ lastfm.scrobbler_url http://post.audioscrobbler.com
 mainwin.geometry.h 373
 mainwin.geometry.maximized 0
 mainwin.geometry.w 500
-mainwin.geometry.x 711
-mainwin.geometry.y 357
+mainwin.geometry.x 932
+mainwin.geometry.y 473
 mp3.id3v1_encoding iso8859-1
 mp3.id3v2_version 3
 mp3.write_id3v1 1
@@ -89,7 +89,7 @@ notify.format_content %a - %b
 output_plugin PulseAudio output plugin
 playback.loop 0
 playback.order 0
-playback.volume 0.0000000
+playback.volume -8.000000
 playlist.column.00 "专辑封面" "" 8 100 0
 playlist.column.01 "正在播放" "" 1 50 0
 playlist.column.02 "音轨号" "%n" -1 100 0
