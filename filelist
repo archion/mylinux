@@ -38,8 +38,4 @@
 .oh-my-zsh/custom/my.zsh
 Resource/archlinux-icon.png
 Resource/zhada360r.jpg
-bin/download
-bin/mp
-bin/notify-time
-bin/plot
-bin/upload
+bin/
