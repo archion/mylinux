@@ -17,7 +17,7 @@
 .config/gtk-3.0/settings.ini
 .config/razor/session.conf
 .config/razor/windowmanagers.conf
-.config/tilda/config_0
+#.config/tilda/config_0
 .config/zathura/zathurarc
 .emerald/themes/my_theme/buttons.above.png
 .emerald/themes/my_theme/buttons.close.png
