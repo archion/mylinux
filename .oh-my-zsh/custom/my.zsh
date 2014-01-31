@@ -1,4 +1,5 @@
 # 增强的历史补全
+ZSH_THEME="bira"
 bindkey '\e[A' history-beginning-search-backward
 bindkey '\e[B' history-beginning-search-forward
 bindkey '^U' backward-kill-line
