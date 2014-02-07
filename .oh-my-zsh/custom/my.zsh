@@ -5,6 +5,7 @@ bindkey '\e[B' history-beginning-search-forward
 bindkey '^U' backward-kill-line
 export EDITOR=vim
 export PATH=$PATH:~/bin:~/.cabal/bin
+export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=lcd'
 unalias gm
 alias ls='ls --time-style="+%Y-%m-%d %H:%M:%S"'
 alias ll='ls -lh'

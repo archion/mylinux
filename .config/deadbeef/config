@@ -90,7 +90,7 @@ notify.format_content %a - %b
 output_plugin PulseAudio output plugin
 playback.loop 0
 playback.order 0
-playback.volume -17.97324
+playback.volume -7.073854
 playlist.column.00 "专辑封面" "" 8 100 0
 playlist.column.01 "正在播放" "" 1 50 0
 playlist.column.02 "音轨号" "%n" -1 100 0
@@ -116,7 +116,7 @@ replaygain_mode 0
 replaygain_scale 1
 resume.paused 0
 resume.playlist 0
-resume.position 71.655845
+resume.position 48.413818
 resume.track 0
 streamer.8_to_16 1
 trkproperties.geometry.h 400
