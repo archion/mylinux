@@ -34,7 +34,7 @@
 .emerald/themes/my_theme/theme.ini
 .emerald/themes/my_theme/theme.screenshot.png
 .local/share/applications/defaults.list
-.mplayer/config
+.mplayer/
 .oh-my-zsh/custom/my.zsh
 Resource/archlinux-icon.png
 Resource/zhada360r.jpg

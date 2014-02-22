@@ -17,10 +17,11 @@ converter.encoder_preset 2
 converter.output_folder /home/zuodong
 converter.output_format 0
 converter.overwrite_action 0
-deadbeef_version 0.6.0
+deadbeef_version 0.6.1
 filechooser.lastdir file:///home/zuodong
 gtkui.eq.visible 0
 gtkui.headers.visible 1
+gtkui.layout tabbed_playlist hideheaders=0 {} 
 gtkui.mmb_delete_playlist 1
 gtkui.name_playlist_from_folder 1
 gtkui.override_bar_colors 0
@@ -72,8 +73,8 @@ lastfm.scrobbler_url http://post.audioscrobbler.com
 mainwin.geometry.h 373
 mainwin.geometry.maximized 0
 mainwin.geometry.w 500
-mainwin.geometry.x 932
-mainwin.geometry.y 473
+mainwin.geometry.x 716
+mainwin.geometry.y 223
 mp3.id3v1_encoding iso8859-1
 mp3.id3v2_version 3
 mp3.write_id3v1 1
@@ -113,9 +114,9 @@ prefwin.geometry.x 245
 prefwin.geometry.y 16
 replaygain_mode 0
 replaygain_scale 1
-resume.paused 1
+resume.paused 0
 resume.playlist 0
-resume.position 182.09008
+resume.position 34.551441
 resume.track 0
 streamer.8_to_16 1
 trkproperties.geometry.h 400
