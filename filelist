@@ -40,3 +40,4 @@ Resource/archlinux-icon.png
 Resource/zhada360r.jpg
 bin/
 .fonts/
+.zshrc
