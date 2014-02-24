@@ -29,7 +29,7 @@ gtkui.override_listview_colors 1
 gtkui.override_tabstrip_colors 0
 gtkui.statusbar.visible 1
 gtkui.tabs.visible 1
-gtkui.tabscroll 0
+gtkui.tabscroll 110
 gtkui.titlebar_playing %a - %t - DeaDBeeF-%V
 gtkui.titlebar_stopped DeaDBeeF-%V
 hotkey.key01 "Ctrl f" 0 0 find
@@ -73,8 +73,8 @@ lastfm.scrobbler_url http://post.audioscrobbler.com
 mainwin.geometry.h 373
 mainwin.geometry.maximized 0
 mainwin.geometry.w 500
-mainwin.geometry.x 716
-mainwin.geometry.y 223
+mainwin.geometry.x 234
+mainwin.geometry.y 322
 mp3.id3v1_encoding iso8859-1
 mp3.id3v2_version 3
 mp3.write_id3v1 1
