@@ -76,6 +76,7 @@ set foldlevelstart=99
 "set textwidth=130
 set colorcolumn=132
 " end
+nmap <leader>d :NERDTreeToggle<CR>
 " my key-map for fortran gnuplot in microsoft windows system
 if !has("unix")
 	nmap <F12> :w<cr>:silent !start cmd /k gfortran -g -Wall -Wtabs % -o %:r & echo ===============compile successed, run?==============& pause & %:r.exe & pause & exit<cr>
