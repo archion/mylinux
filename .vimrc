@@ -15,6 +15,7 @@ Bundle 'altercation/vim-colors-solarized'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'Align'
 Bundle 'vim-pandoc/vim-pandoc'
+Bundle 'scrooloose/nerdtree'
 " end
 " powerline plugin
 if or(has("gui_running"),has("unix"))
@@ -44,6 +45,7 @@ set number
 set nobackup
 set noswapfile
 filetype plugin indent on
+set omnifunc=syntaxcomplete#Complete
 " others
 "set spell
 set ignorecase
@@ -84,4 +86,4 @@ if !has("unix")
 	nmap <C-G> :silent !start cmd /k cd /d %:h & git commit -a<cr>
 endif
 " autocommand
-au BufNewFile,BufRead *.plt,.gnuplot setf gnuplot
+au BufNewFile,BufRead *.plt,*.gnuplot,*.dat setf gnuplot
