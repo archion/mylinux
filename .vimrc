@@ -1,6 +1,7 @@
 syntax on
 " my settings
 " vundle plugin manager, use :BundleInstall to install new plugin
+"filetype on
 filetype off
 if has("unix")
 	set rtp+=~/.vim/bundle/vundle/ 
