@@ -11,6 +11,7 @@
 .xinitrc
 .xprofile
 .config/Trolltech.conf
+.config/pcmanfm/default/pcmanfm.conf
 .config/compiz/compizconfig
 .config/compiz/compizconfig/Default.ini
 .config/deadbeef/config
