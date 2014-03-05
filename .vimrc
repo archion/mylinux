@@ -17,6 +17,7 @@ Bundle 'scrooloose/nerdcommenter'
 Bundle 'Align'
 Bundle 'vim-pandoc/vim-pandoc'
 Bundle 'scrooloose/nerdtree'
+Bundle 'mattn/emmet-vim'
 " end
 " powerline plugin
 if or(has("gui_running"),has("unix"))
