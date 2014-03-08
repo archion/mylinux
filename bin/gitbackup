@@ -1,0 +1,9 @@
+#!/bin/bash
+cd ~/mylinux
+git pull mylinux master
+rsync -av --files-from=`echo ~`/mylinux/filelist ~ ~/mylinux
+git add .
+git commit -a -m "backup"
+git push mylinux master
+rsync -av --files-from=`echo ~`/mylinux/filelist ~/mylinux ~
+cd -
