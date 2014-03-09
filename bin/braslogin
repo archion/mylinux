@@ -1,6 +1,7 @@
 #!/bin/bash
+echo 正在检查网络链接...
 if  ping -c 1 www.baidu.com &> /dev/null; then
-	echo 已经联网
+	echo -e '\033[0;32;1m 已经联网'
 	exit
 fi
 if  ping -c 1 p.nju.edu.cn &> /dev/null; then
@@ -9,11 +10,11 @@ if  ping -c 1 p.nju.edu.cn &> /dev/null; then
 		if curl -s --data "username=$1&password=$2&acctsessionid=`curl -s --data "username=$1&password=$2" http://p.nju.edu.cn/proxy/onlinelist.php | grep -o 'acctsessionid":"[0-9]*"'|grep -o '[0-9]*'`" http://p.nju.edu.cn/proxy/disconnect.php > /dev/null && curl -s --data "action=login&username=$1&password=$2" http://p.nju.edu.cn/portal/portal_io.do |grep -o "登录成功"; then
 			break
 		else
-			echo 登录失败，等待重试...
+			echo -e '\033[0;31;1m登录失败，等待重试...'
 			sleep 10
 		fi
 	done
 else
-	echo 无法链接内网，检查是否链接网线
+	echo -e '\033[0;31;1m无法链接内网，检查是否链接网线'
 	exit
 fi
