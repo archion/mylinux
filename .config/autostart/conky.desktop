@@ -1,0 +1,6 @@
+[Desktop Entry]
+Exec=conky
+Name=conky
+Type=Application
+Version=1.0
+X-Razor-Need-Tray=true

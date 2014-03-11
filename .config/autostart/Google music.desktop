@@ -1,0 +1,6 @@
+[Desktop Entry]
+Exec=google-musicmanager 
+Name=Google music
+Type=Application
+Version=1.0
+X-Razor-Need-Tray=true

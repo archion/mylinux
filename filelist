@@ -18,6 +18,7 @@
 .config/gtk-3.0/settings.ini
 .config/razor/session.conf
 .config/razor/windowmanagers.conf
+.config/autostart/
 #.config/tilda/config_0
 .config/zathura/zathurarc
 .emerald/themes/my_theme/

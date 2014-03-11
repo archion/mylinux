@@ -1,0 +1,6 @@
+[Desktop Entry]
+Exec=/home/zuodong/bin/braslogin dg1322084 yu768512
+Name=bras
+Type=Application
+Version=1.0
+X-Razor-Need-Tray=true

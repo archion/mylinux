@@ -1,0 +1,6 @@
+[Desktop Entry]
+Exec=sh -c /opt/nutstore/bin/nutstore-pydaemon.py
+Name=坚果云
+Type=Application
+Version=1.0
+X-Razor-Need-Tray=true

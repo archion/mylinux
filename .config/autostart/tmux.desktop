@@ -1,0 +1,6 @@
+[Desktop Entry]
+Exec=tmux attach
+Name=tmux
+Type=Application
+Version=1.0
+X-Razor-Need-Tray=true

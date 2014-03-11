@@ -1,0 +1,6 @@
+[Desktop Entry]
+Exec=/home/zuodong/bin/sshr
+Name=sshr
+Type=Application
+Version=1.0
+X-Razor-Need-Tray=true
