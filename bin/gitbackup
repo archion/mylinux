@@ -6,4 +6,3 @@ git add .
 git commit -a -m "backup"
 git push mylinux master
 #rsync -av --files-from=`echo ~`/mylinux/filelist ~/mylinux ~
-cd -
