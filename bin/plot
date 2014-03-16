@@ -2,7 +2,8 @@
 file=`basename "$1"`
 cd `dirname "$1"`
 sed -n "1,/#data/p" "$file" >plot.plt
-sed -i "s/'-'/\"$file\"/g" plot.plt
+sed -i "s/\"-\"/\"$file\"/g" plot.plt
+sed -i "s/\"-\.\"/\"${file%.*}\.\"/g" plot.plt
 sed -i "1,/#data/s/^/#/" "$file"
 gnuplot -p plot.plt
 sed -i "1,/#data/s/^#//" "$file"
