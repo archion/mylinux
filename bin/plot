@@ -1,6 +1,8 @@
 #!/bin/bash
-file=`basename "$1"`
-cd `dirname "$1"`
+#file=`basename "$1"`
+#cd `dirname "$1"`
+file=${1##*/}
+cd ${1/$file/.}
 sed -n "1,/#data/p" "$file" >plot.plt
 sed -i "s/\"-\"/\"$file\"/g" plot.plt
 sed -i "s/\"-\.\"/\"${file%.*}\.\"/g" plot.plt
@@ -8,4 +10,3 @@ sed -i "1,/#data/s/^/#/" "$file"
 gnuplot -p plot.plt
 sed -i "1,/#data/s/^#//" "$file"
 rm plot.plt
-cd - >/dev/null
