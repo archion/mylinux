@@ -30,3 +30,5 @@ Resource/
 bin/
 .fonts/
 .zshrc
+.profile
+.zprofile
