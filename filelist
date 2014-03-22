@@ -33,4 +33,4 @@ bin/
 .zshrc
 .profile
 .zprofile
-.sxiv/
+.sxiv/exec/
