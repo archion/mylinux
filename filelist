@@ -35,3 +35,4 @@ bin/
 .zprofile
 .sxiv/exec/
 .local/share/applications/mplayer.desktop
+.local/share/applications/sxiv-rifle.desktop
