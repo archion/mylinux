@@ -1,5 +1,11 @@
 #!/bin/bash
 cd ~/mylinux
+if (($#>0));then
+	for file in "$@"
+	do
+		echo $file>>filelist
+	done
+fi
 #git pull mylinux master
 rsync -av --files-from=`echo ~`/mylinux/filelist ~ ~/mylinux
 git add .

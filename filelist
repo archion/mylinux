@@ -34,3 +34,4 @@ bin/
 .profile
 .zprofile
 .sxiv/exec/
+.local/share/applications/mplayer.desktop
