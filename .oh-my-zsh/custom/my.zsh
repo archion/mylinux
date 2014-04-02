@@ -1,6 +1,8 @@
 # 增强的历史补全
-bindkey '\e[A' history-beginning-search-backward
-bindkey '\e[B' history-beginning-search-forward
+bindkey '^[[A' history-beginning-search-backward
+bindkey '^[[B' history-beginning-search-forward
+bindkey '^[[5~' beginning-of-history
+bindkey '^[[6~' end-of-history
 bindkey '^U' backward-kill-line
 export EDITOR=vim
 #add in /etc/profile
