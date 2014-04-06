@@ -1,6 +1,6 @@
 # Write your default config options here!
 #loop=0
-#ontop=yes
+ontop=yes
 geometry=-5-60
 zoom=yes #支持缩放
 #xy=450#调节初始窗口大小
