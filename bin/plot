@@ -5,11 +5,15 @@ for f in "$@"
 do
 	file=${f##*/}
 	cd ${f/$file/.}
-	sed -n "1,/#data/p" "$file" >plot.plt
-	sed -i "s/\"-\"/\"$file\"/g" plot.plt
-	sed -i "s/\"-\.\"/\"${file%.*}\.\"/g" plot.plt
+	if ! [ -f "${file/.*}".plt ]; then
+		sed -n "1,/#data/p" "$file" >"${file/.*}".plt
+		sed -i "s/\"-\"/\"$file\"/g" "${file/.*}".plt
+		sed -i "s/\"-\.\"/\"${file%.*}\.\"/g" "${file/.*}".plt
+	fi
 	sed -i "1,/#data/s/^/#/" "$file"
-	gnuplot -p plot.plt
-	sed -i "1,/#data/s/^#//" "$file"
-	rm plot.plt
+	gnuplot "${file/.*}".plt
+	if grep "##data" "$file"; then
+		sed -i "1,/#data/s/^#//" "$file"
+	fi
+	#rm plot.plt
 done

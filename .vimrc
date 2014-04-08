@@ -89,4 +89,4 @@ if !has("unix")
 	nmap <C-G> :silent !start cmd /k cd /d %:h & git commit -a<cr>
 endif
 " autocommand
-au BufNewFile,BufRead *.plt,*.gnuplot,*.dat setf gnuplot
+au BufNewFile,BufRead *.plt,*.gnuplot,*.dat set ft=gnuplot
