@@ -23,6 +23,7 @@ image/gif=sxiv-rifle.desktop;feh.desktop;
 application/x-dvi=zathura.desktop;
 application/x-executable=gvim.desktop;
 application/x-raw-disk-image=gvim.desktop;
+audio/x-ms-wma=deadbeef.desktop;
 
 [Default Applications]
 text/html=chromium.desktop

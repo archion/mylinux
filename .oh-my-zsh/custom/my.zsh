@@ -1,6 +1,6 @@
 # 增强的历史补全
-bindkey '^[[A' history-beginning-search-backward
-bindkey '^[[B' history-beginning-search-forward
+bindkey '\eOA' history-beginning-search-backward
+bindkey '\eOB' history-beginning-search-forward
 bindkey '^[[5~' beginning-of-history
 bindkey '^[[6~' end-of-history
 bindkey '^U' backward-kill-line

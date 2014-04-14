@@ -13,8 +13,8 @@ cli_add_playlist_name Default
 cli_add_to_specific_playlist 1
 close_send_to_tray 1
 converter.dsp_preset -1
-converter.encoder_preset 1
-converter.output_file %n - %t
+converter.encoder_preset 2
+converter.output_file %t
 converter.output_folder /home/zuodong
 converter.output_format 0
 converter.overwrite_action 0
@@ -32,7 +32,7 @@ gtkui.override_listview_colors 1
 gtkui.override_tabstrip_colors 0
 gtkui.statusbar.visible 1
 gtkui.tabs.visible 1
-gtkui.tabscroll 0
+gtkui.tabscroll 110
 gtkui.titlebar_playing %a - %t - DeaDBeeF-%V
 gtkui.titlebar_stopped DeaDBeeF-%V
 hotkey.key01 "Ctrl f" 0 0 find
@@ -93,7 +93,7 @@ notify.format_content %a - %b
 output_plugin PulseAudio output plugin
 playback.loop 0
 playback.order 0
-playback.volume -9.953776
+playback.volume 0.0000000
 playlist.column.00 "专辑封面" "" 8 100 0
 playlist.column.01 "正在播放" "" 1 50 0
 playlist.column.02 "音轨号" "%n" -1 100 0
@@ -117,13 +117,13 @@ prefwin.geometry.x 245
 prefwin.geometry.y 16
 replaygain_mode 0
 replaygain_scale 1
-resume.paused 1
+resume.paused 0
 resume.playlist 0
-resume.position 11.401040
+resume.position 4.3885818
 resume.track 0
 streamer.8_to_16 1
 trkproperties.geometry.h 400
 trkproperties.geometry.w 400
-trkproperties.geometry.x 370
-trkproperties.geometry.y 343
+trkproperties.geometry.x 444
+trkproperties.geometry.y 311
 wv.write_apev2 1
