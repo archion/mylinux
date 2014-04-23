@@ -1,3 +1,4 @@
 [Default Applications]
 application/pdf=zathura.desktop
 text/html=chromium.desktop
+text/plain=gvim.desktop;

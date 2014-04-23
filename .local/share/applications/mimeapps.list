@@ -4,7 +4,7 @@ text/html=chromium.desktop
 application/pdf=zathura.desktop;emacs.desktop;kde4-okularApplication_pdf.desktop;
 image/png=sxiv-rifle.desktop;feh.desktop;gpicview.desktop;
 audio/mpeg=puddletag.desktop;deadbeef.desktop;
-application/octet-stream=libreoffice-writer.desktop;gvim.desktop;
+application/octet-stream=mplayer.desktop;libreoffice-writer.desktop;gvim.desktop;
 audio/flac=cowbell.desktop;puddletag.desktop;deadbeef.desktop;
 image/x-webp=gpicview.desktop;
 inode/symlink=gvim.desktop;
@@ -24,6 +24,7 @@ application/x-dvi=zathura.desktop;
 application/x-executable=gvim.desktop;
 application/x-raw-disk-image=gvim.desktop;
 audio/x-ms-wma=deadbeef.desktop;
+application/vnd.adobe.flash.movie=mplayer.desktop;
 
 [Default Applications]
 text/html=chromium.desktop

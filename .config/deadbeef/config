@@ -32,7 +32,7 @@ gtkui.override_listview_colors 1
 gtkui.override_tabstrip_colors 0
 gtkui.statusbar.visible 1
 gtkui.tabs.visible 1
-gtkui.tabscroll 110
+gtkui.tabscroll 0
 gtkui.titlebar_playing %a - %t - DeaDBeeF-%V
 gtkui.titlebar_stopped DeaDBeeF-%V
 hotkey.key01 "Ctrl f" 0 0 find
