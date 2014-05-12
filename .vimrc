@@ -18,6 +18,8 @@ Bundle 'Align'
 Bundle 'vim-pandoc/vim-pandoc'
 Bundle 'scrooloose/nerdtree'
 Bundle 'mattn/emmet-vim'
+Bundle 'taglist.vim'
+"Bundle 'joeytwiddle/sexy_scroller.vim'
 " end
 " powerline plugin
 if or(has("gui_running"),has("unix"))
@@ -78,6 +80,9 @@ set foldlevelstart=99
 set colorcolumn=132
 " end
 nmap <leader>d :NERDTreeToggle<CR>
+nmap <leader>t :TlistToggle<CR>
+nmap <C-b>n :bnext<CR>
+nmap <C-b>p :bprev<CR>
 " my key-map for fortran gnuplot in microsoft windows system
 if !has("unix")
 	nmap <F12> :w<cr>:silent !start cmd /k gfortran -g -Wall -Wtabs % -o %:r & echo ===============compile successed, run?==============& pause & %:r.exe & pause & exit<cr>

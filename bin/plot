@@ -6,14 +6,14 @@ do
 	file=${f##*/}
 	cd ${f/$file/.}
 	if ! [ -f "${file/.*}".plt ]; then
-		sed -n "1,/#data/p" "$file" >"${file/.*}".plt
+		sed -n "0,/#data/p" "$file" >"${file/.*}".plt
 		sed -i "s/\"-\"/\"$file\"/g" "${file/.*}".plt
 		sed -i "s/\"-\.\"/\"${file%.*}\.\"/g" "${file/.*}".plt
 	fi
-	sed -i "1,/#data/s/^/#/" "$file"
-	gnuplot "${file/.*}".plt
+	sed -i "0,/#data/s/^/#/" "$file"
+	gnuplot -p "${file/.*}".plt
 	if grep "##data" "$file" >/dev/null; then
-		sed -i "1,/#data/s/^#//" "$file"
+		sed -i "0,/#data/s/^#//" "$file"
 	fi
 	#rm plot.plt
 done

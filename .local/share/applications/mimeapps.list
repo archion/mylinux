@@ -25,6 +25,7 @@ application/x-executable=gvim.desktop;
 application/x-raw-disk-image=gvim.desktop;
 audio/x-ms-wma=deadbeef.desktop;
 application/vnd.adobe.flash.movie=mplayer.desktop;
+application/x-archive=gvim.desktop;
 
 [Default Applications]
 text/html=chromium.desktop

@@ -117,9 +117,9 @@ prefwin.geometry.x 245
 prefwin.geometry.y 16
 replaygain_mode 0
 replaygain_scale 1
-resume.paused 0
+resume.paused 1
 resume.playlist 0
-resume.position 4.3885818
+resume.position 9.3576746
 resume.track 0
 streamer.8_to_16 1
 trkproperties.geometry.h 400
