@@ -33,7 +33,7 @@ bin/
 .zshrc
 .profile
 .zprofile
-.sxiv/exec/
 .local/share/applications/mplayer.desktop
 .local/share/applications/sxiv-rifle.desktop
 .local/share/applications/mimeapps.list
+.config/sxiv/exec/
