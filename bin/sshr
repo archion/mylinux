@@ -1,10 +1,9 @@
 #!/bin/bash
 while true;do
-	RET=`ps ax | grep "ssh -R 2220:localhost:22" | grep -v "grep"`
-	if [ "$RET" = "" ]; then
+	if ! ps ax | grep "[s]sh -R 2220:localhost:22"; then
 		echo "restart ssh server"
-	ssh -R 2220:localhost:22 zuodong@life4zturn.no-ip.biz
-	#ssh -R 2220:localhost:22 zuodong@114.212.206.74
+		ssh -R 2220:localhost:22 zuodong@life4zturn.no-ip.biz
+		#ssh -R 2220:localhost:22 zuodong@114.212.206.74
 	fi
 	sleep 10
 done

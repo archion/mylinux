@@ -26,6 +26,7 @@ application/x-raw-disk-image=gvim.desktop;
 audio/x-ms-wma=deadbeef.desktop;
 application/vnd.adobe.flash.movie=mplayer.desktop;
 application/x-archive=gvim.desktop;
+application/x-ole-storage=libreoffice-writer.desktop;
 
 [Default Applications]
 text/html=chromium.desktop
