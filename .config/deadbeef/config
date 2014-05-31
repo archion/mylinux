@@ -93,7 +93,7 @@ notify.format_content %a - %b
 output_plugin PulseAudio output plugin
 playback.loop 0
 playback.order 0
-playback.volume -11.00000
+playback.volume -17.00000
 playlist.column.00 "专辑封面" "" 8 100 0
 playlist.column.01 "正在播放" "" 1 50 0
 playlist.column.02 "音轨号" "%n" -1 100 0
