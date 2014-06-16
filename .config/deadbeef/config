@@ -35,6 +35,7 @@ gtkui.tabs.visible 1
 gtkui.tabscroll 0
 gtkui.titlebar_playing %a - %t - DeaDBeeF-%V
 gtkui.titlebar_stopped DeaDBeeF-%V
+gui_plugin GTK2
 hotkey.key01 "Ctrl f" 0 0 find
 hotkey.key02 "Ctrl o" 0 0 open_files
 hotkey.key03 "Ctrl q" 0 0 quit
@@ -66,7 +67,8 @@ hotkey.key30 b 0 0 next
 hotkey.key31 n 0 0 playback_random
 hotkeys_created 1
 ignore_archives 1
-junk.enable_cp1251_detection 1
+junk.enable_cp1251_detection 0
+junk.enable_cp936_detection 1
 lastfm.disable_np 0
 lastfm.enable 0
 lastfm.login 
@@ -76,8 +78,8 @@ lastfm.scrobbler_url http://post.audioscrobbler.com
 mainwin.geometry.h 373
 mainwin.geometry.maximized 0
 mainwin.geometry.w 500
-mainwin.geometry.x 861
-mainwin.geometry.y 160
+mainwin.geometry.x 785
+mainwin.geometry.y 465
 mp3.id3v1_encoding iso8859-1
 mp3.id3v2_version 3
 mp3.write_id3v1 1
@@ -93,7 +95,7 @@ notify.format_content %a - %b
 output_plugin PulseAudio output plugin
 playback.loop 0
 playback.order 0
-playback.volume -17.00000
+playback.volume -15.00000
 playlist.column.00 "专辑封面" "" 8 100 0
 playlist.column.01 "正在播放" "" 1 50 0
 playlist.column.02 "音轨号" "%n" -1 100 0
@@ -119,7 +121,7 @@ replaygain_mode 0
 replaygain_scale 1
 resume.paused 0
 resume.playlist 0
-resume.position 190.28811
+resume.position 0.4693334
 resume.track 0
 streamer.8_to_16 1
 trkproperties.geometry.h 400

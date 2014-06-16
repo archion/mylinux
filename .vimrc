@@ -19,6 +19,7 @@ Bundle 'vim-pandoc/vim-pandoc'
 Bundle 'scrooloose/nerdtree'
 Bundle 'mattn/emmet-vim'
 Bundle 'taglist.vim'
+Bundle 'LaTeX-Suite-aka-Vim-LaTeX'
 "Bundle 'joeytwiddle/sexy_scroller.vim'
 " end
 " powerline plugin
