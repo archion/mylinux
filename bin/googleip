@@ -1,0 +1,7 @@
+#!/bin/bash
+ip="216.239.32."
+for i in {1..255}; do
+	if curl -s --connect-timeout 2 $ip$i >/dev/null; then
+		echo $ip$i 
+	fi
+done
