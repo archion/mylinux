@@ -80,6 +80,9 @@ set foldlevelstart=99
 "set textwidth=130
 set colorcolumn=132
 " end
+" latex
+let g:Tex_DefaultTargetFormat='pdf'
+let g:Tex_ViewRule_pdf = 'zathura'
 nmap <leader>d :NERDTreeToggle<CR>
 nmap <leader>t :TlistToggle<CR>
 nmap <C-b>n :bnext<CR>
