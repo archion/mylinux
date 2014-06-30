@@ -1,7 +1,9 @@
 #!/bin/bash
-ip=${1%.*}.
-for i in {1..255}; do
-	if curl -s --connect-timeout 1 $ip$i >/dev/null; then
-		echo $ip$i 
-	fi
+for f in "$@"; do
+	ip=${f%.*}.
+	for i in {1..255}; do
+		if curl -s --connect-timeout 0.3 $ip$i | grep "<title>Google</title>">/dev/null; then
+			echo -e "$ip$i|\c" 
+		fi
+	done
 done
