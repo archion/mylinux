@@ -29,6 +29,7 @@ application/x-archive=gvim.desktop;
 application/x-ole-storage=libreoffice-writer.desktop;
 application/x-bittorrent=gvim.desktop;
 image/vnd.microsoft.icon=sxiv-rifle.desktop;
+application/x-pak=gvim.desktop;
 
 [Default Applications]
 text/html=chromium.desktop
