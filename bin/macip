@@ -1,5 +1,5 @@
 #!/bin/bash
-#usage:macip 114.212.200-207.1/24 XJP
+#usage:macip 114.212.200-207.1/24 XJP ZQL CWP
 CWP=e0:3f:49:e7:b6:dc
 XJP=40:16:7e:34:03:e5
 ZQL=bc:ee:7b:da:66:1e
@@ -11,6 +11,6 @@ ip=${1%.*.*}
 arp -n|awk '/^[1-9]/ {print "arp -d "$1}' |sudo sh
 for ((i=$ipa;i<=$ipb;i++))
 do
-	nmap -sn $ip.$i.$ip1 >/dev/null && arp -n | grep ${!2}
+	nmap -sn $ip.$i.$ip1 >/dev/null && arp -n | grep -E "${!2}|${!2}|${!3}"
 	arp -n|awk '/^[1-9]/ {print "arp -d "$1}' |sudo sh
 done
