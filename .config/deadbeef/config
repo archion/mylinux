@@ -32,7 +32,7 @@ gtkui.override_listview_colors 1
 gtkui.override_tabstrip_colors 0
 gtkui.statusbar.visible 1
 gtkui.tabs.visible 1
-gtkui.tabscroll 0
+gtkui.tabscroll 110
 gtkui.titlebar_playing %a - %t - DeaDBeeF-%V
 gtkui.titlebar_stopped DeaDBeeF-%V
 gui_plugin GTK2
@@ -95,7 +95,7 @@ notify.format_content %a - %b
 output_plugin PulseAudio output plugin
 playback.loop 0
 playback.order 0
-playback.volume -21.00000
+playback.volume 0.0000000
 playlist.column.00 "专辑封面" "" 8 100 0
 playlist.column.01 "正在播放" "" 1 50 0
 playlist.column.02 "音轨号" "%n" -1 100 0
@@ -105,7 +105,7 @@ playlist.column.05 "艺人 / 专辑" "%a - %b" -1 150 0
 playlist.column.06 "音轨号" "%n" -1 50 1
 playlist.column.07 "时长" "%l" -1 50 0
 playlist.current 0
-playlist.cursor.0 -1
+playlist.cursor.0 0
 playlist.cursor.1 0
 playlist.group_by %b
 playlist.scroll.0 0
@@ -121,7 +121,7 @@ replaygain_mode 0
 replaygain_scale 1
 resume.paused 0
 resume.playlist 0
-resume.position 7.2678695
+resume.position 139.26525
 resume.track 0
 streamer.8_to_16 1
 trkproperties.geometry.h 400
