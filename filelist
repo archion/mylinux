@@ -37,3 +37,4 @@ bin/
 .local/share/applications/sxiv-rifle.desktop
 .local/share/applications/mimeapps.list
 .config/sxiv/exec/
+.twister/twister.conf

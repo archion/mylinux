@@ -30,6 +30,7 @@ application/x-ole-storage=libreoffice-writer.desktop;
 application/x-bittorrent=gvim.desktop;
 image/vnd.microsoft.icon=sxiv-rifle.desktop;
 application/x-pak=gvim.desktop;
+application/vnd.ms-publisher=gvim.desktop;
 
 [Default Applications]
 text/html=chromium.desktop
