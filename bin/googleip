@@ -1,10 +1,14 @@
 #!/bin/bash
-for f in "$@"; do
-	ip=${f%.*}.
-	for i in {1..255}; do
-		if curl -s --connect-timeout 0.3 $ip$i | grep "<title>Google</title>">/dev/null; then
-		#if curl -s --connect-timeout 0.3 $ip$i > /dev/null; then
-			echo -e "$ip$i|\c" 
-		fi
+if (($#>0));then
+	for f in "$@"; do
+		ip=${f%.*}.
+		for i in {1..255}; do
+			if curl -s --connect-timeout 0.3 $ip$i | grep "<title>Google</title>">/dev/null; then
+				#if curl -s --connect-timeout 0.3 $ip$i > /dev/null; then
+				echo -e "$ip$i|\c" 
+			fi
+		done
 	done
-done
+else
+	dig @8.8.8.8 _netblocks.google.com txt +short
+fi

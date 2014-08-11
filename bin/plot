@@ -7,13 +7,15 @@ do
 	cd ${f/$file/.}
 	if ! [ -f "${file/.*}".plt ]; then
 		sed -n "0,/#data/p" "$file" >"${file/.*}".plt
-		sed -i "s/\"-\"/\"$file\"/g" "${file/.*}".plt
-		sed -i "s/\"-\.\"/\"${file%.*}\.\"/g" "${file/.*}".plt
 	fi
+	sed -i "s/\"-\"/\"$file\"/g" "${file/.*}".plt
+	sed -i "s/\"-\.\"/\"${file%.*}\.\"/g" "${file/.*}".plt
 	sed -i "0,/#data/s/^/#/" "$file"
 	gnuplot -p "${file/.*}".plt
 	if grep "##data" "$file" >/dev/null; then
 		sed -i "0,/#data/s/^#//" "$file"
+		sed -i "s/\"$file\"/\"-\"/g" "${file/.*}".plt
+		sed -i "s/\"${file%.*}\.\"/\"-\.\"/g" "${file/.*}".plt
 	fi
 	#rm plot.plt
 	if ! ps ax | grep -e "[z]athura.*"${file/.*}"\." > /dev/null && [ -f "${file/.*}".eps ]; then
