@@ -85,12 +85,21 @@ set colorcolumn=132
 let g:Tex_DefaultTargetFormat='pdf'
 let g:Tex_MultipleCompileFormats = 'dvi,pdf'
 let g:Tex_ViewRule_pdf = 'zathura'
-let g:Tex_GotoError = 1
+let g:Tex_IgnoredWarnings =
+			\'Underfull'."\n".
+			\'Overfull'."\n".
+			\'specifier changed to'."\n".
+			\'You have requested'."\n".
+			\'Missing number, treated as zero.'."\n".
+			\'There were undefined references'."\n".
+			\'Latex Warning:'."\n".
+			\'Citation %.%# undefined'
 " end
 nmap <leader>d :NERDTreeToggle<CR>
 nmap <leader>t :TlistToggle<CR>
 nmap <C-b>n :bnext<CR>
 nmap <C-b>p :bprev<CR>
+nmap <leader>p :w<cr>:!plot %:r.dat<cr>
 " my key-map for fortran gnuplot in microsoft windows system
 if !has("unix")
 	nmap <F12> :w<cr>:silent !start cmd /k gfortran -g -Wall -Wtabs % -o %:r & echo ===============compile successed, run?==============& pause & %:r.exe & pause & exit<cr>

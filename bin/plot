@@ -20,6 +20,6 @@ do
 	#rm plot.plt
 	if ! ps ax | grep -e "[z]athura.*"${file/.*}"\." > /dev/null && [ -f "${file/.*}".eps ]; then
 		zathura "${file/.*}".eps &
-		gvim -p "${file/.*}".plt "${file/.*}".dat
+		gvim -o "${file/.*}".plt "${file/.*}".dat
 	fi
 done

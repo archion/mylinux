@@ -27,7 +27,7 @@ session = ~/Downloads/torrents/session/
 
 # Watch a directory for new torrents, and stop those that have been
 # deleted.
-schedule = watch_directory,5,5,load_start=/home/archion/Downloads/torrents/*.torrent
+schedule = watch_directory,5,5,load_start=~/Downloads/torrents/*.torrent
 schedule = untied_directory,5,5,stop_untied=
 schedule = tied_directory,5,5,start_tied=
 
@@ -54,7 +54,7 @@ schedule = low_diskspace,5,60,close_low_diskspace=100M
 check_hash = yes
 
 # Set whether the client should try to connect to UDP trackers.
-#use_udp_trackers = yes
+use_udp_trackers = yes
 
 # Alternative calls to bind and ip that should handle dynamic ip's.
 #schedule = ip_tick,0,1800,ip=rakshasa
@@ -67,19 +67,27 @@ check_hash = yes
 # outgoing connections but retries with encryption if they fail, preferring
 # plaintext to RC4 encryption after the encrypted handshake
 #
-# encryption = allow_incoming,enable_retry,prefer_plaintext
+encryption = allow_incoming,try_outgoing,enable_retry
 
 # Enable DHT support for trackerless torrents or when all trackers are down.
 # May be set to "disable" (completely disable DHT), "off" (do not start DHT),
 # "auto" (start and stop DHT as needed), or "on" (start DHT immediately).
 # The default is "off". For DHT to work, a session directory must be defined.
 # 
-# dht = auto
+dht = auto
 
 # UDP port to use for DHT. 
 # 
-# dht_port = 6881
+dht_port = 6881
 
 # Enable peer exchange (for torrents not marked private)
 #
-# peer_exchange = yes
+peer_exchange = yes
+
+# Delete data files when removing any download
+# system.method.set_key = event.download.erased,remove_files,"execute={rm,-rf,--,$d.get_base_path=}"
+
+# Delete data when removing incomplete downloads
+# schedule = watch_dir,10,10,"load_start_verbose=~/Downloads/torrents/*.torrent,d.set_custom=incomplete,1"
+# system.method.set_key = event.download.finished, cldvar,d.set_custom=incomplete,0
+# system.method.set_key = event.download.erased, rm_files,"branch=d.get_custom=incomplete,\"execute={rm,-rf,--,$d.get_base_path=}\""
