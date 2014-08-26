@@ -10,5 +10,5 @@ fi
 rsync -av --files-from=`echo ~`/mylinux/filelist ~ ~/mylinux
 git add .
 git commit -a -m "backup"
-git push mylinux master
+git push origin master
 #rsync -av --files-from=`echo ~`/mylinux/filelist ~/mylinux ~
