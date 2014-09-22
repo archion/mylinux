@@ -62,7 +62,7 @@ ${diskiograph sda 25}
 Disk I/O:${alignr}${diskio_write}/${diskio_read}
 
 ${color white}NETWORK ${hr 1}${color}
-IP Address:${alignr}${addr wlp4s0}${exec ip addr | grep "state UP" | awk -F: '{print $2}'}
-Down ${downspeed wlp4s0} k/s ${alignr}Up ${upspeed wlp4s0} k/s
-${downspeedgraph wlp4s0 25,107} ${alignr}${upspeedgraph wlp4s0 25,107}
-Total ${totaldown wlp4s0} ${alignr}Total ${totalup wlp4s0}
+IP Address:${alignr}${addr enp3s0}${exec ip addr | grep "state UP" | awk -F: '{print $2}'}
+Down ${downspeed enp3s0} k/s ${alignr}Up ${upspeed enp3s0} k/s
+${downspeedgraph enp3s0 25,107} ${alignr}${upspeedgraph enp3s0 25,107}
+Total ${totaldown enp3s0} ${alignr}Total ${totalup enp3s0}

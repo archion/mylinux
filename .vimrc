@@ -81,9 +81,14 @@ set foldlevelstart=99
 "set textwidth=130
 set colorcolumn=132
 " end
+let $LANGUAGE = 'c'
 " latex
 let g:Tex_DefaultTargetFormat='pdf'
-let g:Tex_MultipleCompileFormats = 'dvi,pdf'
+let g:Tex_MultipleCompileFormats = 'dvi'
+let g:Tex_FormatDependency_pdf = 'dvi,ps,pdf'
+let g:Tex_CompileRule_dvi = 'latex --interaction=nonstopmode $*'
+let g:Tex_CompileRule_ps = 'dvips -Ppdf -o $*.ps $*.dvi'
+let g:Tex_CompileRule_pdf = 'ps2pdf $*.ps'
 let g:Tex_ViewRule_pdf = 'zathura'
 let g:Tex_IgnoredWarnings =
 			\'Underfull'."\n".
