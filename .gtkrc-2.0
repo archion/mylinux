@@ -8,7 +8,7 @@ style "user-font"
 }
 widget_class "*" style "user-font"
 gtk-font-name="Sans Serif  9"
-gtk-theme-name="Faience"
+gtk-theme-name="Zukitwo"
 gtk-icon-theme-name="Faenza"
 gtk-fallback-icon-theme="gnome"
 gtk-toolbar-style=GTK_TOOLBAR_TEXT

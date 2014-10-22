@@ -32,6 +32,7 @@ image/vnd.microsoft.icon=sxiv-rifle.desktop;
 application/x-pak=gvim.desktop;
 application/vnd.ms-publisher=gvim.desktop;
 video/x-msvideo=mplayer.desktop;
+application/vnd.ms-tnef=gvim.desktop;
 
 [Default Applications]
 text/html=chromium.desktop

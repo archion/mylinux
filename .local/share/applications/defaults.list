@@ -4,3 +4,4 @@ text/plain=gvim.desktop;
 text/html=chromium.desktop
 x-scheme-handler/http=chromium.desktop
 x-scheme-handler/https=chromium.desktop
+video/mp4=mplayer.desktop

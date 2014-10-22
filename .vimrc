@@ -105,6 +105,9 @@ nmap <leader>t :TlistToggle<CR>
 nmap <C-b>n :bnext<CR>
 nmap <C-b>p :bprev<CR>
 nmap <leader>p :w<cr>:!plot %:r.dat<cr>
+nmap mk :make<CR>
+nmap cp :cp<CR>
+nmap cn :cn<CR>
 " my key-map for fortran gnuplot in microsoft windows system
 if !has("unix")
 	nmap <F12> :w<cr>:silent !start cmd /k gfortran -g -Wall -Wtabs % -o %:r & echo ===============compile successed, run?==============& pause & %:r.exe & pause & exit<cr>
@@ -117,3 +120,5 @@ if !has("unix")
 endif
 " autocommand
 au BufNewFile,BufRead *.plt,*.gnuplot,*.dat set ft=gnuplot
+au QuickFixCmdPost [^l]* nested cwindow
+au QuickFixCmdPost    l* nested lwindow

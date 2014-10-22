@@ -1,2 +1,3 @@
 #!/bin/bash
-rsync -avz --delete -e "ssh -p 2222" /home/zuodong/Projects/FortranProgram/ --exclude=".*" --exclude="*.out" --exclude="*.mod" --exclude=data --exclude=makefile YZD@114.212.205.227:/home/YZD/Projects/FortranProgram
+ip=$(who | awk -F'[()]' '{print $2}')
+rsync -avz --delete archion@$ip:/home/archion/Projects/FortranProgram/ --exclude=".*" --exclude="*.out" --exclude="*.mod" --exclude="*.a" --exclude=data --exclude=makefile /home/YZD/Projects/FortranProgram

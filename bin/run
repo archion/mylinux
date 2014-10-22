@@ -1,0 +1,19 @@
+#!/bin/bash
+t1=$(date +%F\ %T)
+if [ $(whoami) != "archion" ]; then
+	ssh YZD@192.168.0.206 -p 2222 "upload"
+fi
+if (($#>0)); then 
+	echo -e "\e[0;32m run in remote \e[0m"
+	ssh YZD@192.168.0.205 "cd $(pwd) && make clean && make && ./$(ls *.out)"
+else
+	echo -e "\e[0;32m run in localhost \e[0m"
+	make clean
+	make
+	./$(ls *.out)
+fi
+if [ $(whoami) != "archion" ]; then
+	ssh YZD@192.168.0.206 -p 2222 "download"
+fi
+t2=$(date +%F\ %T)
+echo -e "\e[0;32m From $t1 to $t2 \e[0m"
