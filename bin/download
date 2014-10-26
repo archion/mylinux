@@ -1,3 +1,5 @@
 #!/bin/bash
-ip=$(who | awk -F'[()]' '{print $2}')
+ip=$(who| grep YZD | awk -F'[()]' '{print $2}')
 rsync -avz /home/YZD/Projects/FortranProgram/data/ archion@$ip:/home/archion/Projects/FortranProgram/data
+ssh -X archion@$ip 'DISPLAY=:0 notify-send "Program complete!" "Run complete!" --icon=dialog-information'
+
