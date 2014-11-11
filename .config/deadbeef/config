@@ -79,8 +79,8 @@ lastfm.scrobbler_url http://post.audioscrobbler.com
 mainwin.geometry.h 373
 mainwin.geometry.maximized 0
 mainwin.geometry.w 500
-mainwin.geometry.x 290
-mainwin.geometry.y 190
+mainwin.geometry.x 844
+mainwin.geometry.y 251
 mp3.id3v1_encoding iso8859-1
 mp3.id3v2_version 3
 mp3.write_id3v1 1
@@ -114,6 +114,7 @@ playlist.scroll.1 0
 playlist.scroll.cursorfollowplayback 1
 playlist.scroll.followplayback 0
 playlist.tab.00000 默认
+playlist.tab.00001 Default
 prefwin.geometry.h 501
 prefwin.geometry.w 651
 prefwin.geometry.x 245
