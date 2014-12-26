@@ -108,6 +108,10 @@ nmap <leader>p :w<cr>:!plot %:r.dat<cr>
 nmap mk :make<CR>
 nmap cp :cp<CR>
 nmap cn :cn<CR>
+" horizontal scroll
+set sidescroll=1
+set sidescrolloff=15
+map <silent><expr> <C-H> ':set wrap! go'.'-+'[&wrap]."=b\r"
 " my key-map for fortran gnuplot in microsoft windows system
 if !has("unix")
 	nmap <F12> :w<cr>:silent !start cmd /k gfortran -g -Wall -Wtabs % -o %:r & echo ===============compile successed, run?==============& pause & %:r.exe & pause & exit<cr>

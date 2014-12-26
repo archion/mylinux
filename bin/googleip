@@ -1,12 +1,30 @@
 #!/bin/bash
 if (($#>0));then
 	for f in "$@"; do
-		ip=${f%.*}.
-		for i in {1..255}; do
-			if curl -s --connect-timeout 0.3 $ip$i | grep "<title>Google</title>">/dev/null; then
-				#if curl -s --connect-timeout 0.3 $ip$i > /dev/null; then
-				echo -e "$ip$i|\c" 
-			fi
+		sip=(${f//[.\/]/ })
+		eip=(${f//[.\/]/ })
+		m=$((${sip[4]}/8))
+		n=$((${sip[4]}%8))
+		eip[$m]=$((${eip[$m]}+256/2**$n-1))
+		for ((i=$m+1;i<4;i++));do
+			eip[$i]=$((255))
+		done
+		echo ${sip[0]}.${sip[1]}.${sip[2]}.${sip[3]} - ${eip[0]}.${eip[1]}.${eip[2]}.${eip[3]}
+		for ((i=${sip[0]};i<=${eip[0]};i++));do
+			for ((j=${sip[1]};j<=${eip[1]};j++));do
+				for ((k=${sip[2]};k<=${eip[2]};k++));do
+					for ((l=${sip[3]};l<=${eip[3]};l++));do
+						ip=$(echo $i.$j.$k.$l)
+						echo -en "$ip"
+						if curl -s --connect-timeout 0.3 $ip | grep "<title>Google</title>">/dev/null; then
+							#if curl -s --connect-timeout 0.3 $ip$i > /dev/null; then
+							echo -en "|" 
+							echo -en "\033[s"
+						fi
+						echo -en "\033[u\033[K"
+					done
+				done
+			done
 		done
 	done
 else
