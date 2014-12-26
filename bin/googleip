@@ -1,4 +1,5 @@
 #!/bin/bash
+#usage googleip x.x.x.x/x
 if (($#>0));then
 	for f in "$@"; do
 		sip=(${f//[.\/]/ })
@@ -10,13 +11,14 @@ if (($#>0));then
 			eip[$i]=$((255))
 		done
 		echo ${sip[0]}.${sip[1]}.${sip[2]}.${sip[3]} - ${eip[0]}.${eip[1]}.${eip[2]}.${eip[3]}
+		echo -en "\033[s"
 		for ((i=${sip[0]};i<=${eip[0]};i++));do
 			for ((j=${sip[1]};j<=${eip[1]};j++));do
 				for ((k=${sip[2]};k<=${eip[2]};k++));do
 					for ((l=${sip[3]};l<=${eip[3]};l++));do
 						ip=$(echo $i.$j.$k.$l)
 						echo -en "$ip"
-						if curl -s --connect-timeout 0.3 $ip | grep "<title>Google</title>">/dev/null; then
+						if curl -s --connect-timeout 0.3 --max-time 1 $ip | grep "<title>Google</title>">/dev/null; then
 							#if curl -s --connect-timeout 0.3 $ip$i > /dev/null; then
 							echo -en "|" 
 							echo -en "\033[s"
@@ -27,6 +29,7 @@ if (($#>0));then
 			done
 		done
 	done
+	notify-send "googleip complete!"
 else
 	dig @8.8.8.8 _netblocks.google.com txt +short
 fi
