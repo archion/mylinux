@@ -99,6 +99,8 @@ let g:Tex_IgnoredWarnings =
 			\'There were undefined references'."\n".
 			\'Latex Warning:'."\n".
 			\'Citation %.%# undefined'
+let tlist_tex_settings   = 'latex;s:sections;g:graphics;l:labels'
+let tlist_make_settings  = 'make;m:makros;t:targets'
 " end
 nmap <leader>d :NERDTreeToggle<CR>
 nmap <leader>t :TlistToggle<CR>
