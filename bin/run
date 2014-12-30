@@ -1,7 +1,7 @@
 #!/bin/bash
 t1=$(date +%F\ %T)
 if [ $(whoami) != "archion" ]; then
-	ssh YZD@192.168.0.206 -p 2222 "upload"
+	upload
 fi
 if (($#>0)); then 
 	echo -e "\e[0;32m run in remote at $t1 \e[0m"
@@ -13,7 +13,7 @@ else
 	./$(ls *.out)
 fi
 if [ $(whoami) != "archion" ]; then
-	ssh YZD@192.168.0.206 -p 2222 "download"
+	download
 else
 	notify-send 'Program complete!' $(ls *.out)' complete!' --icon=dialog-information
 fi
