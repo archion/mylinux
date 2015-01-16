@@ -1,6 +1,16 @@
 #!/bin/bash
 #file=`basename "$1"`
 #cd `dirname "$1"`
+silence=false
+while getopts :s OPTION
+do
+    case $OPTION in
+        s)
+            silence=true
+            ;;
+    esac
+done
+shift $((OPTIND - 1))
 for f in "$@"
 do
 	file=${f##*/}
@@ -29,12 +39,12 @@ do
 	sed -i "s/\"$file\"/\"-\"/g" $plt
 	sed -i "s/\"${file%.*}\.\"/\"-\.\"/g" $plt
 	#rm plot.plt
-	if ! grep -q "#set output" $plt; then
+	if ! grep -q "#set output" $plt && ! $silence; then
 		if ! ps ax | grep -e "[z]athura.*"${file%.*}"\." > /dev/null ; then
 			zathura "${file%.*}".eps &
 		fi
 	fi
-	if ! ps ax | grep -e "[g]vim -o $plt "${file%.*}".dat" > /dev/null ; then
+	if ! ps ax | grep -e "[g]vim -o $plt "${file%.*}".dat" > /dev/null  && ! $silence; then
 		gvim -o $plt "${file%.*}".dat &
 	fi
 done

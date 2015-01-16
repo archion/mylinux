@@ -19,7 +19,7 @@ if (($#>0));then
 						ip=$(echo $i.$j.$k.$l)
 						echo -en "$ip"
 						if curl -s --connect-timeout 0.3 --max-time 1 $ip | grep "<title>Google</title>">/dev/null; then
-							#if curl -s --connect-timeout 0.3 $ip$i > /dev/null; then
+						#if curl -s --connect-timeout 0.3 --max-time 1 $ip | grep "200">/dev/null; then
 							echo -en "|" 
 							echo -en "\033[s"
 						fi
