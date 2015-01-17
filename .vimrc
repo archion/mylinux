@@ -106,7 +106,12 @@ nmap <leader>d :NERDTreeToggle<CR>
 nmap <leader>t :TlistToggle<CR>
 nmap <C-b>n :bnext<CR>
 nmap <C-b>p :bprev<CR>
-nmap <leader>p :w<cr>:!plot %:r.dat<cr>
+nmap <leader>p :w<cr> <C-w>j :!plot %:r.dat<cr> :call Close()<cr>
+function Close()
+	if winnr()==1
+		q
+	endif
+endfunction
 nmap mk :make<CR>
 nmap cp :cp<CR>
 nmap cn :cn<CR>
