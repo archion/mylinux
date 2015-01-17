@@ -21,7 +21,11 @@ do
 			if grep -q "#data" "$file"; then
 				sed -n "0,/#data/p" "$file" > $plt
 			else
-				cp gnuplot.plt $plt
+				if [ -f ../${plt%%_*}.plt ]; then
+					plt=../${plt%%_*}.plt
+				else
+					cp ~/FortranProgram/data/gnuplot.plt $plt
+				fi
 			fi
 		else
 			plt=${file%%_*}.plt
