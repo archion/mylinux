@@ -4,23 +4,25 @@ syntax on
 "filetype on
 filetype off
 if has("unix")
-	set rtp+=~/.vim/bundle/vundle/ 
-	call vundle#rc()
+	set rtp+=~/.vim/bundle/Vundle.vim/ 
+	call vundle#begin()
 else
-	set rtp+=$VIM/vimfiles/bundle/vundle/ 
-	call vundle#rc('$VIM/vimfiles/bundle/')
+	set rtp+=$VIM/vimfiles/bundle/Vundle.vim/ 
+	call vundle#begin('$VIM/vimfiles/bundle/')
 endif
-Bundle 'gmarik/vundle'
-Bundle 'Lokaltog/vim-powerline'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'Align'
-Bundle 'vim-pandoc/vim-pandoc'
-Bundle 'scrooloose/nerdtree'
-Bundle 'mattn/emmet-vim'
-Bundle 'taglist.vim'
-Bundle 'LaTeX-Suite-aka-Vim-LaTeX'
-"Bundle 'joeytwiddle/sexy_scroller.vim'
+Plugin 'gmarik/Vundle.vim'
+Plugin 'Lokaltog/vim-powerline'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'Align'
+Plugin 'vim-pandoc/vim-pandoc'
+Plugin 'vim-pandoc/vim-pandoc-syntax'
+Plugin 'scrooloose/nerdtree'
+Plugin 'mattn/emmet-vim'
+Plugin 'taglist.vim'
+Plugin 'LaTeX-Suite-aka-Vim-LaTeX'
+call vundle#end()
+filetype plugin indent on
 " end
 " powerline plugin
 if or(has("gui_running"),has("unix"))
@@ -49,7 +51,6 @@ endif
 set number
 set nobackup
 set noswapfile
-filetype plugin indent on
 set omnifunc=syntaxcomplete#Complete
 " others
 "set spell
@@ -86,8 +87,8 @@ let $LANGUAGE = 'c'
 let g:Tex_DefaultTargetFormat='pdf'
 let g:Tex_MultipleCompileFormats = 'dvi'
 let g:Tex_FormatDependency_pdf = 'dvi,ps,pdf'
-let g:Tex_CompileRule_dvi = 'latex --interaction=nonstopmode $*'
-let g:Tex_CompileRule_ps = 'dvips -Ppdf -o $*.ps $*.dvi'
+let g:Tex_CompileRule_dvi = 'latex --interaction=nonstopmode $* '
+let g:Tex_CompileRule_ps = 'dvips -Ppdf -o $*.ps $*.dvi '
 let g:Tex_CompileRule_pdf = 'ps2pdf $*.ps'
 let g:Tex_ViewRule_pdf = 'zathura'
 let g:Tex_IgnoredWarnings =

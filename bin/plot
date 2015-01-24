@@ -15,8 +15,8 @@ for f in "$@"
 do
 	file=${f##*/}
 	cd ${f/$file/.}
-	plt=${file%.*}.plt
-	if ! [ -f $plt ]; then
+	plt=${file%.*}
+	if ! [ -f ${plt}.plt ]; then
 		if ! [ -f ${plt%%_*}.plt ]; then
 			if grep -q "#data" "$file"; then
 				sed -n "0,/#data/p" "$file" > $plt
@@ -30,6 +30,8 @@ do
 		else
 			plt=${file%%_*}.plt
 		fi
+	else
+		plt=${plt}.plt
 	fi
 	sed -i "s/\"-\"/\"$file\"/g" $plt
 	sed -i "s/\"-\.\"/\"${file%.*}\.\"/g" $plt

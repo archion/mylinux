@@ -3,19 +3,31 @@ t1=$(date +%F\ %T)
 if [ $(whoami) != "archion" ]; then
 	upload
 fi
-if (($#>0)); then 
-	echo -e "\e[0;32m run in remote at $t1 \e[0m"
-	ssh YZD@192.168.0.205 "cd $(pwd) && make clean && make && ./$(ls *.out)"
+remote=false
+while getopts :r OPTION
+do
+    case $OPTION in
+        r)
+            remote=true
+            ;;
+    esac
+done
+shift $((OPTIND - 1))
+f=${1:-$(ls -t *.f90|awk 'NR==1{print $1}')}
+sed -i "s/^[^#].*=.*out/out = ${f%.*}.out/" makefile 
+if $remote; then 
+	echo -e "\e[0;32;1m run \e[41;32;1m ${f%.*}.out \e[0;32;1m in remote at $t1 \e[0m"
+	ssh YZD@192.168.0.205 "cd $(pwd) && make clean && make && ./${f%.*}.out"
 else
-	echo -e "\e[0;32m run in localhost at $t1 \e[0m"
+	echo -e "\e[0;32;1m run \e[41;32;1m ${f%.*}.out \e[0;32;1m in localhost at $t1 \e[0m"
 	make clean
 	make
-	./$(ls *.out)
+	./${f%.*}.out
 fi
 if [ $(whoami) != "archion" ]; then
 	download
 else
-	notify-send 'Program complete!' $(ls *.out)' complete!' --icon=dialog-information
+	notify-send 'Program complete!' ${f%.*}.out' complete!' --icon=dialog-information
 fi
 t2=$(date +%F\ %T)
-echo -e "\e[0;32m From $t1 to $t2 \e[0m"
+echo -e "\e[0;32;1m run \e[41;32;1m ${f%.*}.out \e[0;32;1m From $t1 to $t2 \e[0m"
