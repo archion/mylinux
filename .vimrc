@@ -21,6 +21,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'mattn/emmet-vim'
 Plugin 'taglist.vim'
 Plugin 'LaTeX-Suite-aka-Vim-LaTeX'
+Plugin 'wting/rust.vim'
 call vundle#end()
 filetype plugin indent on
 " end
