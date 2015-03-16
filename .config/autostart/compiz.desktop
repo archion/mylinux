@@ -1,5 +1,6 @@
 [Desktop Entry]
 Exec=compiz --replace ccp
+Hidden=true
 Name=compiz
 Type=Application
 Version=1.0
