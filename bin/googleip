@@ -18,7 +18,7 @@ if (($#>0));then
 					for ((l=${sip[3]};l<=${eip[3]};l++));do
 						ip=$(echo $i.$j.$k.$l)
 						echo -en "$ip"
-						if curl -s --connect-timeout 0.3 --max-time 1 $ip | grep "<title>Google</title>">/dev/null; then
+						if curl -s --connect-timeout 0.5 --max-time 1 $ip | grep "<title>Google</title>">/dev/null; then
 						#if curl -s --connect-timeout 0.3 --max-time 1 $ip | grep "200">/dev/null; then
 							echo -en "|" 
 							echo -en "\033[s"

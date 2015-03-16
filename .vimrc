@@ -22,6 +22,7 @@ Plugin 'mattn/emmet-vim'
 Plugin 'taglist.vim'
 Plugin 'LaTeX-Suite-aka-Vim-LaTeX'
 Plugin 'wting/rust.vim'
+Plugin 'rking/ag.vim'
 call vundle#end()
 filetype plugin indent on
 " end
@@ -30,9 +31,9 @@ if or(has("gui_running"),has("unix"))
 	let g:Powerline_symbols = 'fancy'
 	set laststatus=2
 	if has("unix")
-		set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 12
+		set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 11
 	else
-		set guifont=Consolas\ for\ Powerline\ FixedD:h12
+		set guifont=Consolas\ for\ Powerline\ FixedD:h11
 	endif
 	set encoding=utf-8
 	" end
@@ -104,6 +105,7 @@ let g:Tex_IgnoredWarnings =
 let tlist_tex_settings   = 'latex;s:sections;g:graphics;l:labels'
 let tlist_make_settings  = 'make;m:makros;t:targets'
 " end
+let g:agprg = "ag --nogroup --nocolor --column"
 nmap <leader>d :NERDTreeToggle<CR>
 nmap <leader>t :TlistToggle<CR>
 nmap <C-b>n :bnext<CR>
