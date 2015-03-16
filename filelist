@@ -38,4 +38,4 @@ bin/
 .local/share/applications/mimeapps.list
 .config/sxiv/exec/
 .twister/twister.conf
-.config/lxqt
+.config/lxqt/
