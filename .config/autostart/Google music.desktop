@@ -1,5 +1,6 @@
 [Desktop Entry]
-Exec=google-musicmanager 
+Exec=google-musicmanager
+Hidden=true
 Name=Google music
 Type=Application
 Version=1.0
