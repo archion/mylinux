@@ -31,9 +31,9 @@ if or(has("gui_running"),has("unix"))
 	let g:Powerline_symbols = 'fancy'
 	set laststatus=2
 	if has("unix")
-		set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 11
+		set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 12
 	else
-		set guifont=Consolas\ for\ Powerline\ FixedD:h11
+		set guifont=Consolas\ for\ Powerline\ FixedD:h12
 	endif
 	set encoding=utf-8
 	" end
