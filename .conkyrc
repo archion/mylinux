@@ -2,7 +2,7 @@ cpu_avg_samples 2
 net_avg_samples 2
 out_to_console no
 use_xft yes
-xftfont Sans:size=8
+xftfont Sans:size=9
 xftalpha 0.8
 update_interval 1
 own_window yes
@@ -16,7 +16,7 @@ draw_shades no
 draw_outline no
 draw_borders no
 stippled_borders no
-border_margin 4
+#border_margin 4
 border_width 1
 default_color white
 default_shade_color black
@@ -30,8 +30,8 @@ uppercase no
 
 TEXT
 
-${alignc}${font Sans:style=Bold:size=12}${time %p%l:%M:%S}
-${alignr}${font Sans:style=Bold:size=8}${time  %b%d日 星期%a  }
+${alignc}${font WenQuanYi Zen Hei:style=Bold:size=12}${time %p%l:%M:%S}
+${alignr}${font WenQuanYi Zen Hei:style=Bold:size=8}${time  %b%d日 星期%a  }
 ${image ~/Resource/archlinux-icon.png -p 0,0 -s 79x60}
 ${color white}SYSTEM ${hr 1}${color}
 Hostname: $alignr$nodename
