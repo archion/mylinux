@@ -3,4 +3,5 @@ Exec=conky
 Name=conky
 Type=Application
 Version=1.0
+X-LXQt-Need-Tray=true
 X-Razor-Need-Tray=true
