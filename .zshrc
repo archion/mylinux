@@ -45,3 +45,5 @@ plugins=(git command-not-found history-substring-search)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
+#
+source .zprofile
