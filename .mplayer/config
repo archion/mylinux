@@ -18,6 +18,7 @@ subfont-autoscale=1 #字幕占屏幕的大小
 subfont-blur=8
 subfont-outline=5
 #font=wqy-microhei.ttc #选择字体
+#font=wqy-zenhei.ttc #选择字体
 overlapsub=1 #支持多语言字幕
 sub-fuzziness=2 #设定字幕自动加载的识别
 osdlevel=3 #在屏幕的左上角显示相应时间等

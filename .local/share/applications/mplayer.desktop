@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Application
-Name=MPlayer Media Player Resumer
+Name=MPlayer Media Player
 Name[ca]=Reproductor multimèdia MPlayer
 Name[pl]=MPlayer odtwarzacz multimedialny 
 GenericName=Multimedia player
@@ -14,7 +14,7 @@ Comment[zh]=多媒体播放器
 Comment[pl]=Odtwarzaj filmy i muzykę
 Icon=mplayer
 TryExec=mplayer
-Exec=mplayer-resumer %F
+Exec=mplayer %F
 Terminal=false
 NoDisplay=false
 Categories=GTK;AudioVideo;Audio;Video;Player;TV;
