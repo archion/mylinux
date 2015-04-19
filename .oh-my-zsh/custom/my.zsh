@@ -12,3 +12,4 @@ alias ls='ls --time-style="+%Y-%m-%d %H:%M:%S"'
 alias ll='ls -lh'
 alias tmux="tmux -2"
 alias qmv="qmv -f do"
+alias fuck='$(thefuck $(fc -ln -1))'

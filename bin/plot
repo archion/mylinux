@@ -24,7 +24,8 @@ do
 				if [ -f ../${plt%%_*}.plt ]; then
 					plt=../${plt%%_*}.plt
 				else
-					cp ~/FortranProgram/data/gnuplot.plt $plt
+					plt=${plt%%_*}.plt
+					cp ~/Projects/FortranProgram/data/gnuplot.plt $plt
 				fi
 			fi
 		else

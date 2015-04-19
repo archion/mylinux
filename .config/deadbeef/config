@@ -33,7 +33,7 @@ gtkui.override_listview_colors 1
 gtkui.override_tabstrip_colors 0
 gtkui.statusbar.visible 1
 gtkui.tabs.visible 1
-gtkui.tabscroll 190
+gtkui.tabscroll 0
 gtkui.titlebar_playing %a - %t - DeaDBeeF-%V
 gtkui.titlebar_stopped DeaDBeeF-%V
 gui_plugin GTK2
@@ -79,7 +79,7 @@ lastfm.scrobbler_url http://post.audioscrobbler.com
 mainwin.geometry.h 373
 mainwin.geometry.maximized 0
 mainwin.geometry.w 500
-mainwin.geometry.x 451
+mainwin.geometry.x -3
 mainwin.geometry.y 249
 mp3.id3v1_encoding iso8859-1
 mp3.id3v2_version 3
@@ -107,7 +107,7 @@ playlist.column.06 "音轨号" "%n" -1 50 1
 playlist.column.07 "时长" "%l" -1 50 0
 playlist.current 1
 playlist.cursor.0 -1
-playlist.cursor.1 -1
+playlist.cursor.1 0
 playlist.group_by %b
 playlist.scroll.0 0
 playlist.scroll.1 0
@@ -123,7 +123,7 @@ replaygain_mode 0
 replaygain_scale 1
 resume.paused 0
 resume.playlist 1
-resume.position 126.63191
+resume.position 14.079945
 resume.track 0
 streamer.8_to_16 1
 trkproperties.geometry.h 400

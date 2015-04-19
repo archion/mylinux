@@ -23,6 +23,7 @@ Plugin 'taglist.vim'
 Plugin 'LaTeX-Suite-aka-Vim-LaTeX'
 Plugin 'wting/rust.vim'
 Plugin 'rking/ag.vim'
+Plugin 'phildawes/racer'
 call vundle#end()
 filetype plugin indent on
 " end
@@ -119,6 +120,10 @@ endfunction
 nmap mk :make<CR>
 nmap cp :cp<CR>
 nmap cn :cn<CR>
+" racer 
+set hidden
+let g:racer_cmd = "/usr/bin/racer"
+let $RUST_SRC_PATH="/usr/local/src/rust/src/"
 " horizontal scroll
 set sidescroll=1
 set sidescrolloff=15
