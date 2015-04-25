@@ -19,9 +19,12 @@ if (($#>0));then
 						ip=$(echo $i.$j.$k.$l)
 						echo -en "$ip"
 						if curl -s --connect-timeout 0.5 --max-time 1 $ip | grep "<title>Google</title>">/dev/null; then
-						#if curl -s --connect-timeout 0.3 --max-time 1 $ip | grep "200">/dev/null; then
-							echo -en "|" 
-							echo -en "\033[s"
+							if curl -s -k --max-time 2 --resolve "google.com:443" "https://"$ip | grep "<title>Google</title>">/dev/null; then
+							#if curl -v --max-time 1 "https://$ip" 2>&1 >/dev/null | grep "'google.com'">/dev/null; then
+								#if curl -s --connect-timeout 0.3 --max-time 1 $ip | grep "200">/dev/null; then
+								echo -en "|" 
+								echo -en "\033[s"
+							fi
 						fi
 						echo -en "\033[u\033[K"
 					done
