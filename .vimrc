@@ -24,6 +24,7 @@ Plugin 'LaTeX-Suite-aka-Vim-LaTeX'
 Plugin 'wting/rust.vim'
 Plugin 'rking/ag.vim'
 Plugin 'phildawes/racer'
+"Plugin 'LanguageTool'
 call vundle#end()
 filetype plugin indent on
 " end
@@ -128,6 +129,9 @@ let $RUST_SRC_PATH="/usr/local/src/rust/src/"
 set sidescroll=1
 set sidescrolloff=15
 map <silent><expr> <C-H> ':set wrap! go'.'-+'[&wrap]."=b\r"
+" 
+let g:languagetool_jar = "/usr/share/java/languagetool/languagetool-commandline.jar"
+let g:languagetool_lang = "en-US"
 " my key-map for fortran gnuplot in microsoft windows system
 if !has("unix")
 	nmap <F12> :w<cr>:silent !start cmd /k gfortran -g -Wall -Wtabs % -o %:r & echo ===============compile successed, run?==============& pause & %:r.exe & pause & exit<cr>
@@ -140,5 +144,6 @@ if !has("unix")
 endif
 " autocommand
 au BufNewFile,BufRead *.plt,*.gnuplot,*.dat set ft=gnuplot
+autocmd FileType tex,pandoc setlocal spell spelllang=en_us
 au QuickFixCmdPost [^l]* nested cwindow
 au QuickFixCmdPost    l* nested lwindow
