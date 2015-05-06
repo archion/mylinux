@@ -124,7 +124,7 @@ nmap cn :cn<CR>
 " racer 
 set hidden
 let g:racer_cmd = "/usr/bin/racer"
-let $RUST_SRC_PATH="/usr/local/src/rust/src/"
+let $RUST_SRC_PATH= expand("~/.multirust/src")
 " horizontal scroll
 set sidescroll=1
 set sidescrolloff=15

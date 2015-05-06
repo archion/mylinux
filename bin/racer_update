@@ -1,0 +1,13 @@
+#!/bin/bash
+cd /tmp
+echo "downloading rustc src"
+curl -O -C - https://static.rust-lang.org/dist/rustc-nightly-src.tar.gz
+tar -zxf rustc-nightly-src.tar.gz rustc-nightly/src/
+rm -r ~/.multirust/src
+cp -r rustc-nightly/src ~/.multirust
+echo "updating racer"
+git clone https://github.com/phildawes/racer.git
+cd racer
+multirust override nightly
+cargo build -j2 --release
+sudo cp ./target/release/racer /usr/bin/
