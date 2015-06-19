@@ -112,7 +112,6 @@ nmap <leader>d :NERDTreeToggle<CR>
 nmap <leader>t :TlistToggle<CR>
 nmap <C-b>n :bnext<CR>
 nmap <C-b>p :bprev<CR>
-nmap <leader>p :w<cr> <C-w>j :!plot %:r.dat<cr> :call Close()<cr>
 function Close()
 	if winnr()==1
 		q
@@ -144,6 +143,7 @@ if !has("unix")
 endif
 " autocommand
 au BufNewFile,BufRead *.plt,*.gnuplot,*.dat set ft=gnuplot
+au FileType gnuplot nmap <leader>p :w<cr> <C-w>j :!plot %:r.dat<cr> :call Close()<cr>
 autocmd FileType tex,pandoc setlocal spell spelllang=en_us
 au QuickFixCmdPost [^l]* nested cwindow
 au QuickFixCmdPost    l* nested lwindow

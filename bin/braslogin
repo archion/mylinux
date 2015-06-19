@@ -7,7 +7,7 @@ fi
 if  ping -c 1 -w 1 p.nju.edu.cn &> /dev/null; then
 	while true;do
 		echo 正在尝试联网...
-		if curl -s --data "username=$1&password=$2&acctsessionid=`curl -s --data "username=$1&password=$2" http://p.nju.edu.cn/proxy/onlinelist.php | grep -o 'acctsessionid":"[0-9]*"'|grep -o '[0-9]*'`" http://p.nju.edu.cn/proxy/disconnect.php > /dev/null && curl -s --data "action=login&username=$1&password=$2" http://p.nju.edu.cn/portal/portal_io.do |grep -o "登录成功"; then
+		if  curl -s --data "username=$1&password=$2" http://p.nju.edu.cn/portal_io/login |grep -o "登录成功"; then
 			break
 		else
 			echo -e '\033[0;31;1m登录失败，等待重试...'

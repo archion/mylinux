@@ -1,7 +1,7 @@
 #!/bin/bash
 t1=$(date +%F\ %T)
 if [ $(whoami) != "archion" ]; then
-	upload
+	upload $1
 fi
 remote=false
 while getopts :r OPTION
@@ -25,7 +25,7 @@ else
 	./${f%.*}.out
 fi
 if [ $(whoami) != "archion" ]; then
-	download
+	download $1
 else
 	notify-send 'Program complete!' ${f%.*}.out' complete!' --icon=dialog-information
 fi
