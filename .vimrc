@@ -21,10 +21,10 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'mattn/emmet-vim'
 Plugin 'taglist.vim'
 Plugin 'LaTeX-Suite-aka-Vim-LaTeX'
-Plugin 'wting/rust.vim'
 Plugin 'rking/ag.vim'
 Plugin 'phildawes/racer'
 "Plugin 'LanguageTool'
+Plugin 'rust-lang/rust.vim'
 call vundle#end()
 filetype plugin indent on
 " end
@@ -143,6 +143,7 @@ if !has("unix")
 endif
 " autocommand
 au BufNewFile,BufRead *.plt,*.gnuplot,*.dat set ft=gnuplot
+autocmd BufRead,BufNewFile Cargo.toml,Cargo.lock,*.rs compiler cargo
 au FileType gnuplot nmap <leader>p :w<cr> <C-w>j :!plot %:r.dat<cr> :call Close()<cr>
 autocmd FileType tex,pandoc setlocal spell spelllang=en_us
 au QuickFixCmdPost [^l]* nested cwindow

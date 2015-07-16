@@ -30,4 +30,11 @@ else
 	notify-send 'Program complete!' ${f%.*}.out' complete!' --icon=dialog-information
 fi
 t2=$(date +%F\ %T)
-echo -e "\e[0;32;1m run \e[41;32;1m ${f%.*}.out \e[0;32;1m From $t1 to $t2 \e[0m"
+dt=$(($(date -d "$t2" +%s) - $(date -d "$t1" +%s)))
+day=$((dt/(60*60*24)))
+dt=$((dt-day*(60*60*24)))
+hour=$((dt/(60*60)))
+dt=$((dt-hour*(60*60)))
+min=$((dt/(60)))
+sec=$((dt-min*(60)))
+echo -e "\e[0;32;1m run \e[41;32;1m ${f%.*}.out \e[0;32;1m From $t1 to $t2 total time is ${day}D ${hour}h ${min}m ${sec}s \e[0m"
