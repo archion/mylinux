@@ -41,3 +41,4 @@ bin/
 .config/lxqt/
 /home/archion/.ssh/config
 .ssh/config
+config
