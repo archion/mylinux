@@ -39,6 +39,4 @@ bin/
 .config/sxiv/exec/
 .twister/twister.conf
 .config/lxqt/
-/home/archion/.ssh/config
 .ssh/config
-config
