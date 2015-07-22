@@ -40,3 +40,4 @@ bin/
 .twister/twister.conf
 .config/lxqt/
 /home/archion/.ssh/config
+.ssh/config
