@@ -79,8 +79,8 @@ lastfm.scrobbler_url http://post.audioscrobbler.com
 mainwin.geometry.h 373
 mainwin.geometry.maximized 0
 mainwin.geometry.w 500
-mainwin.geometry.x -3
-mainwin.geometry.y 249
+mainwin.geometry.x 318
+mainwin.geometry.y 351
 mp3.id3v1_encoding iso8859-1
 mp3.id3v2_version 3
 mp3.write_id3v1 1
@@ -107,7 +107,7 @@ playlist.column.06 "音轨号" "%n" -1 50 1
 playlist.column.07 "时长" "%l" -1 50 0
 playlist.current 1
 playlist.cursor.0 -1
-playlist.cursor.1 -1
+playlist.cursor.1 0
 playlist.group_by %b
 playlist.scroll.0 0
 playlist.scroll.1 0
@@ -121,9 +121,9 @@ prefwin.geometry.x 245
 prefwin.geometry.y 16
 replaygain_mode 0
 replaygain_scale 1
-resume.paused 0
+resume.paused 1
 resume.playlist 1
-resume.position 74.922622
+resume.position 309.63562
 resume.track 0
 streamer.8_to_16 1
 trkproperties.geometry.h 400
