@@ -1,1 +1,1 @@
-exec razor-session
+exec startlxqt

@@ -1,2 +1,2 @@
 #!/bin/bash
-ssh YZD@192.168.0.206 -p 2222 'rsync -avz --delete archion@$(who |grep YZD |grep -oE "([0-9]{1,3}\.){3}[0-9]{1,3}"|head -n 1):/home/archion/Projects/FortranProgram/ --exclude=".*" --exclude="*.out" --exclude="*.mod" --exclude="*.a" --exclude=data /home/YZD/Projects/FortranProgram'
+ssh YZD@192.168.0.206 -p 2222 'rsync -avz --delete archion:/home/archion/Projects/FortranProgram/ --exclude=".*" --exclude="*.out" --exclude="*.mod" --exclude="*.a" --exclude=data /home/YZD/Projects/FortranProgram'
