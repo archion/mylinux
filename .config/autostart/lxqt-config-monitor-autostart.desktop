@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=LXQt-config-monitor autostart
+Comment=Autostart monitor settings for LXQt-config-monitor
+Exec=xrandr --output LVDS-0 --mode 1280x800 --pos 0x0 --primary --brightness 1 --gamma 1:1:1
+OnlyShowIn=LXQt

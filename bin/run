@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ $(whoami) != "archion" ]; then
+if [[ $1 != "l" ]]; then
 	ip=$(ssh YZD@192.168.0.206 -p 2222 'who |grep YZD |grep -oE "([0-9]{1,3}\.){3}[0-9]{1,3}"|head -n 1')
 	if (($#>0));then
 		ip=$1
@@ -10,15 +10,15 @@ if [ $(whoami) != "archion" ]; then
 fi
 
 t1=$(date +%F\ %T)
+f=$(ls -t *.f90|head -1)
 echo -e "\e[0;32;1m run \e[41;32;1m ${f%.*}.out \e[0;32;1m at $t1 \e[0m"
-f=${1:-$(ls -t *.f90|awk 'NR==1{print $1}')}
 sed -i "s/^[^#].*=.*out/out = ${f%.*}.out/" makefile 
 make clean
 make
 ./${f%.*}.out
 t2=$(date +%F\ %T)
 
-if [ $(whoami) != "archion" ]; then
+if [[ $1 != "l" ]]; then
 	download
 else
 	notify-send 'Program complete!' ${f%.*}.out' complete!' --icon=dialog-information

@@ -1,6 +1,8 @@
 #!/bin/bash
-#usage googleip x.x.x.x/x
+# usage googleip x.x.x.x/x
+# the ip and cert info will be saved in /tmp/ip
 if (($#>0));then
+	nb=0
 	for f in "$@"; do
 		sip=(${f//[.\/]/ })
 		eip=(${f//[.\/]/ })
@@ -18,12 +20,14 @@ if (($#>0));then
 					for ((l=${sip[3]};l<=${eip[3]};l++));do
 						ip=$(echo $i.$j.$k.$l)
 						echo -en "$ip"
-						if curl -s --connect-timeout 0.5 --max-time 1 $ip | grep "<title>Google</title>">/dev/null; then
-							if curl -s -k --max-time 2 --resolve "google.com:443" "https://"$ip | grep "<title>Google</title>">/dev/null; then
-							#if curl -v --max-time 1 "https://$ip" 2>&1 >/dev/null | grep "'google.com'">/dev/null; then
-								#if curl -s --connect-timeout 0.3 --max-time 1 $ip | grep "200">/dev/null; then
-								echo -en "|" 
-								echo -en "\033[s"
+						echo -en " $nb"
+						if curl -s --connect-timeout 1 --max-time 1 $ip | grep "google">/dev/null; then
+							ssl=$(timeout 3 openssl s_client -connect ${ip}:443 </dev/null 2>/dev/null)
+							if ssl=$(echo "$ssl" | grep "google" | grep "Inc/CN"); then
+								echo $ip ${ssl##*=} >>/tmp/ip
+								nb=$((nb + 1))
+								#echo -en "|" 
+								#echo -en "\033[s"
 							fi
 						fi
 						echo -en "\033[u\033[K"
@@ -32,7 +36,8 @@ if (($#>0));then
 			done
 		done
 	done
+	echo -e "add $nb ips in /tmp/ip"
 	notify-send "googleip complete!"
 else
-	dig @8.8.8.8 _netblocks.google.com txt +short
+	dig @8.8.8.8 _netblocks.google.com txt +short | awk 'BEGIN {FS="ip4:"};{ for (i = 2; i <= NF; i++) print $i};'
 fi
