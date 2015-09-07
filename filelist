@@ -23,7 +23,6 @@
 #.config/tilda/config_0
 .config/zathura/zathurarc
 .emerald/themes/my_theme/
-.local/share/applications/defaults.list
 .mplayer/
 .mplayer/fonts/
 .oh-my-zsh/custom/my.zsh
@@ -35,7 +34,6 @@ bin/
 .zprofile
 .local/share/applications/mplayer.desktop
 .local/share/applications/sxiv-rifle.desktop
-.local/share/applications/mimeapps.list
 .config/sxiv/exec/
 .twister/twister.conf
 .config/lxqt/
