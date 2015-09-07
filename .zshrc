@@ -46,7 +46,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 #
-source .zprofile
+source .zprofile 2>/dev/null
 
 # 增强的历史补全
 bindkey '\eOA' history-beginning-search-backward
@@ -63,3 +63,5 @@ alias ll='ls -lh'
 alias tmux="tmux -2"
 alias qmv="qmv -f do"
 alias fuck='$(thefuck $(fc -ln -1))'
+alias vim="nvim"
+alias vimdiff="nvim -d"

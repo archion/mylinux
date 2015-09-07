@@ -1,5 +1,10 @@
 export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel'
 export PATH=$PATH:~/bin:~/.cabal/bin:~/Projects/gocode/bin
+if [ -e /usr/share/terminfo/x/xterm-256color ]; then
+	export TERM='xterm-256color'
+else
+	export TERM='xterm-color'
+fi
 if [[ $(uname -m) == "i686" ]]; then
 	source /opt/intel/composerxe/bin/compilervars.sh ia32
 	source /opt/intel/mkl/bin/mklvars.sh ia32 mod

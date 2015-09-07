@@ -1,5 +1,5 @@
 [Default Applications]
-application/pdf=zathura.desktop
+application/pdf=llpp.desktop
 text/plain=gvim.desktop;
 text/x-c=gvim.desktop;
 text/html=chromium.desktop

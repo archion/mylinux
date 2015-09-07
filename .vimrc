@@ -1,7 +1,4 @@
-syntax on
-" my settings
-" vundle plugin manager, use :BundleInstall to install new plugin
-"filetype on
+" Vundle
 filetype off
 if has("unix")
 	set rtp+=~/.vim/bundle/Vundle.vim/ 
@@ -11,7 +8,7 @@ else
 	call vundle#begin('$VIM/vimfiles/bundle/')
 endif
 Plugin 'gmarik/Vundle.vim'
-Plugin 'Lokaltog/vim-powerline'
+Plugin 'bling/vim-airline'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'Align'
@@ -27,74 +24,83 @@ Plugin 'phildawes/racer'
 Plugin 'rust-lang/rust.vim'
 call vundle#end()
 filetype plugin indent on
-" end
-" powerline plugin
+
+" airline
+if !exists('g:airline_symbols')	
+	let g:airline_symbols = {}
+endif
+let g:airline_theme="powerlineish"
+let g:airline_powerline_fonts=1
+let g:airline#extensions#whitespace#enabled=0
+"let g:airline#extensions#tabline#enabled = 1
+set laststatus=2
+
 if or(has("gui_running"),has("unix"))
-	let g:Powerline_symbols = 'fancy'
-	set laststatus=2
 	if has("unix")
 		set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 12
 	else
 		set guifont=Consolas\ for\ Powerline\ FixedD:h12
 	endif
-	set encoding=utf-8
-	" end
+
 	" solve the problem in display chinese characters
 	set langmenu=zh_CN.utf-8
-	set fileencodings=ucs-bom,utf-8,cp936,big5,gb18030,euc-jp,euc-kr,latin1
 	language messages zh_CN.utf-8
 	source $VIMRUNTIME/delmenu.vim
 	source $VIMRUNTIME/menu.vim
-	" end
-	" set better looking
-	set background=dark
-	colorscheme solarized
-	set t_Co=256
-	hi Normal ctermbg=NONE
+	" hide gui menu and toolbar
+	" set guioptions-=m
+	" set guioptions-=T
 endif
+
+let g:solarized_termcolors=256
+let g:solarized_termtrans=0
+set t_Co=256
+"colorscheme solarizeda
+colorscheme darkblue
+set background=dark
+syntax on
+
+set encoding=utf-8
+set fileencodings=ucs-bom,utf-8,cp936,big5,gb18030,euc-jp,euc-kr,latin1
+set title
 set number
 set nobackup
 set noswapfile
 set omnifunc=syntaxcomplete#Complete
-" others
-"set spell
 set ignorecase
 set nowrapscan
-vnoremap < <gv
-vnoremap > >gv
-let mapleader=","
 set autochdir
 set tags=./tags;
-" worksession
 set sessionoptions+=unix,slash
 set sessionoptions-=options
-" hide gui menu and toolbar
-" set guioptions-=m
-" set guioptions-=T
-" just for better fortran program
 set smartindent 
 set shiftwidth=4
 set tabstop=4
+
+" just for better fortran program
 let fortran_more_precise=1
 let fortran_have_tabs=1
 let fortran_do_enddo=1
 let fortran_fold=1
 let fortran_fold_conditionals=1
+let fortran_fold_multilinecomments=1
+set colorcolumn=132
+"set textwidth=130
+
 "set foldmethod=syntax  "may slow the vim
 set foldmethod=indent
 set foldlevelstart=99
-"set textwidth=130
-set colorcolumn=132
-" end
+"set foldmethod=manual
 let $LANGUAGE = 'c'
+
 " latex
 let g:Tex_DefaultTargetFormat='pdf'
 let g:Tex_MultipleCompileFormats = 'dvi'
 let g:Tex_FormatDependency_pdf = 'dvi,ps,pdf'
 let g:Tex_CompileRule_dvi = 'latex --interaction=nonstopmode $* '
 let g:Tex_CompileRule_ps = 'dvips -Ppdf -o $*.ps $*.dvi '
-let g:Tex_CompileRule_pdf = 'ps2pdf $*.ps'
-let g:Tex_ViewRule_pdf = 'zathura'
+let g:Tex_CompileRule_pdf = 'ps2pdf $*.ps ; killall -SIGHUP llpp'
+let g:Tex_ViewRule_pdf = 'llpp'
 let g:Tex_IgnoredWarnings =
 			\'Underfull'."\n".
 			\'Overfull'."\n".
@@ -106,31 +112,34 @@ let g:Tex_IgnoredWarnings =
 			\'Citation %.%# undefined'
 let tlist_tex_settings   = 'latex;s:sections;g:graphics;l:labels'
 let tlist_make_settings  = 'make;m:makros;t:targets'
-" end
+
+let mapleader=","
 let g:agprg = "ag --nogroup --nocolor --column"
+vnoremap < <gv
+vnoremap > >gv
 nmap <leader>d :NERDTreeToggle<CR>
 nmap <leader>t :TlistToggle<CR>
 nmap <C-b>n :bnext<CR>
 nmap <C-b>p :bprev<CR>
-function Close()
-	if winnr()==1
-		q
-	endif
-endfunction
 nmap mk :make<CR>
 nmap cp :cp<CR>
 nmap cn :cn<CR>
+nmap <ESC><ESC> :nohl<CR>
+
 " racer 
 set hidden
 let g:racer_cmd = "/usr/bin/racer"
 let $RUST_SRC_PATH= expand("~/.multirust/src")
+
 " horizontal scroll
 set sidescroll=1
 set sidescrolloff=15
-map <silent><expr> <C-H> ':set wrap! go'.'-+'[&wrap]."=b\r"
-" 
-let g:languagetool_jar = "/usr/share/java/languagetool/languagetool-commandline.jar"
-let g:languagetool_lang = "en-US"
+map <silent><expr> <C-S> ':set wrap! go'.'-+'[&wrap]."=b\r"
+
+"languagetool
+"let g:languagetool_jar = "/usr/share/java/languagetool/languagetool-commandline.jar"
+"let g:languagetool_lang = "en-US"
+
 " my key-map for fortran gnuplot in microsoft windows system
 if !has("unix")
 	nmap <F12> :w<cr>:silent !start cmd /k gfortran -g -Wall -Wtabs % -o %:r & echo ===============compile successed, run?==============& pause & %:r.exe & pause & exit<cr>
@@ -141,10 +150,20 @@ if !has("unix")
 	nmap <C-P> :w<cr>:silent !start cmd /k gnuplot %<cr>
 	nmap <C-G> :silent !start cmd /k cd /d %:h & git commit -a<cr>
 endif
+
 " autocommand
-au BufNewFile,BufRead *.plt,*.gnuplot,*.dat set ft=gnuplot
+au BufNewFile,BufRead *.plt,*.gnuplot set ft=gnuplot
 autocmd BufRead,BufNewFile Cargo.toml,Cargo.lock,*.rs compiler cargo
-au FileType gnuplot nmap <leader>p :w<cr> <C-w>j :!plot %:r.dat<cr> :call Close()<cr>
+"au BufNewFile,BufRead *.plt,*.gnuplot,*.dat nmap <leader>p :w<cr> <C-w>j :!plot %:r.dat<cr> :call Close()<cr>
+au BufNewFile,BufRead *.plt,*.gnuplot,*.dat nmap <leader>p :w<cr> <C-w>j :!plot %:r.dat<cr>
 autocmd FileType tex,pandoc setlocal spell spelllang=en_us
 au QuickFixCmdPost [^l]* nested cwindow
 au QuickFixCmdPost    l* nested lwindow
+"au BufReadPre * colorscheme solarized
+"au BufReadPre * set background=dark
+
+function Close()
+	if winnr()==1
+		q
+	endif
+endfunction

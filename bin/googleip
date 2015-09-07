@@ -1,5 +1,7 @@
 #!/bin/bash
-# usage googleip x.x.x.x/x
+# usage:
+# 1. googleip
+# 2. googleip x.x.x.x/x x.x.x.x/x
 # the ip and cert info will be saved in /tmp/ip
 if (($#>0));then
 	nb=0

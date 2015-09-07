@@ -3,12 +3,12 @@ read -p "update racer? (y/n) " RESP
 multirust update nightly
 multirust update stable
 cd /tmp
-#for i in "nightly-i686-pc-windows-gnu" "nightly-x86_64-pc-windows-gnu"; do
-	#curl -O -C - http://static.rust-lang.org/dist/rustc-${i}.tar.gz
-	#tar -zxf rustc-${i}.tar.gz rustc-${i}/rustc/bin/rustlib/${i#*-}
-	#rm -r ~/.multirust/toolchains/nightly/lib/rustlib/${i#*-}
-	#cp -r rustc-${i}/rustc/bin/rustlib/${i#*-} ~/.multirust/toolchains/${i%%-*}/lib/rustlib
-#done
+for i in "nightly-i686-pc-windows-gnu" "nightly-x86_64-pc-windows-gnu"; do
+	curl -O -C - http://static.rust-lang.org/dist/rustc-${i}.tar.gz
+	tar -zxf rustc-${i}.tar.gz rustc-${i}/rustc/bin/rustlib/${i#*-}
+	rm -r ~/.multirust/toolchains/nightly/lib/rustlib/${i#*-}
+	cp -r rustc-${i}/rustc/bin/rustlib/${i#*-} ~/.multirust/toolchains/${i%%-*}/lib/rustlib
+done
 for i in "nightly-i686-unknown-linux-gnu" "nightly-x86_64-apple-darwin"; do
 	curl -O -C - http://static.rust-lang.org/dist/rustc-${i}.tar.gz
 	tar -zxf rustc-${i}.tar.gz rustc-${i}/rustc/lib/rustlib/${i#*-}
