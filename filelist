@@ -40,3 +40,6 @@ bin/
 .twister/twister.conf
 .config/lxqt/
 .ssh/config
+.nvimrc
+.config/llpp.conf
+.gv
