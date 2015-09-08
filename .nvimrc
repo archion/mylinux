@@ -154,8 +154,16 @@ endif
 au BufNewFile,BufRead *.plt,*.gnuplot set ft=gnuplot
 autocmd BufRead,BufNewFile Cargo.toml,Cargo.lock,*.rs compiler cargo
 au BufNewFile,BufRead *.plt,*.gnuplot,*.dat nmap <leader>p :w<cr> <C-w>j :!plot %:r.dat<cr>
-autocmd FileType tex,pandoc setlocal spell spelllang=en_us
+"autocmd FileType tex,pandoc setlocal spell spelllang=en_us
 au QuickFixCmdPost [^l]* nested cwindow
 au QuickFixCmdPost    l* nested lwindow
-au BufReadPre * colorscheme solarized
-au BufReadPre * set background=dark
+if has("autocmd")
+    au InsertEnter *
+        \ if v:insertmode == 'i' |
+        \   silent execute "!dconf write /org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9/cursor-shape \"'ibeam'\"" |
+        \ elseif v:insertmode == 'r' |
+        \   silent execute "!dconf write /org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9/cursor-shape \"'underline'\"" |
+        \ endif
+    au InsertLeave * silent execute "!dconf write /org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9/cursor-shape \"'block'\""
+    au VimLeave * silent execute "!dconf write /org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9/cursor-shape \"'block'\""
+endif
