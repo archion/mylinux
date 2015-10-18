@@ -19,17 +19,17 @@ GV.respectDSC:		True
 GV.ignoreEOF:		True
 GV.confirmPrint:	True
 GV.reverseScrolling:	True
-GV.scrollingEyeGuide:	False
-GV.autoResize:		False
+GV.scrollingEyeGuide:	True
+GV.autoResize:		True
 GV.maximumWidth:	screen-20
 GV.maximumHeight:	screen-44
-GV.minimumWidth:	20
-GV.minimumHeight:	20
-GV.geometry:		+5+5
+GV.minimumWidth:	50
+GV.minimumHeight:	50
+GV.geometry:		-5-5
 GV.confirmQuit:		1
 GV.watchFile:		True
 GV.watchFileFrequency:	1000
-GV.titleStyle:		2
+GV.titleStyle:		1
 GV.miscMenuEntries:	redisplay	\n\
 			# update	\n\
 			stop		\n\
@@ -43,7 +43,7 @@ GV.miscMenuEntries:	redisplay	\n\
 			print_marked	\n\
 			save_all	\n\
 			save_marked
-GV.scale:		-6
+GV.scale:		0
 GV.scaleBase:		1
 GV.medias:		Letter,		612	792	\n\
 			# LetterSmall,	612	792	\n\
@@ -146,5 +146,22 @@ GV*filters:		None\n\
 			*.*ps*   no  .*\n\
 			*.pdf*  no  .*\n\
 			no  .*
+
+
+GV*control.layout:			\
+|v{					\
+    |h{                                 \
+        fileButton                      \
+        stateButton                     \
+        pageButton                      \
+        orientationButton               \
+        scaleButton                     \
+        pageMediaButton                 \
+        locator<*-100%>			\
+    }                                   \
+    |h{                                 \
+        viewFrame<+9999-100%*+9999-100%>\
+    }                                   \
+}
 
 GV.version:		gv 3.6.7.90

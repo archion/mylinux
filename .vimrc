@@ -55,8 +55,8 @@ endif
 let g:solarized_termcolors=256
 let g:solarized_termtrans=0
 set t_Co=256
-"colorscheme solarizeda
-colorscheme darkblue
+colorscheme solarized
+"colorscheme darkblue
 set background=dark
 syntax on
 

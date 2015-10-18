@@ -9,12 +9,12 @@ if [[ $1 != "l" ]]; then
 	upload
 fi
 
-t1=$(date +%F\ %T)
 f=$(ls -t *.f90|head -1)
-echo -e "\e[0;32;1m run \e[41;32;1m ${f%.*}.out \e[0;32;1m at $t1 \e[0m"
 sed -i "s/^[^#].*=.*out/out = ${f%.*}.out/" makefile 
 make clean
 make
+t1=$(date +%F\ %T)
+echo -e "\e[0;32;1m run \e[41;32;1m ${f%.*}.out \e[0;32;1m at $t1 \e[0m"
 ./${f%.*}.out
 t2=$(date +%F\ %T)
 

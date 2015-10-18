@@ -16,7 +16,7 @@ Plugin 'vim-pandoc/vim-pandoc'
 Plugin 'vim-pandoc/vim-pandoc-syntax'
 Plugin 'scrooloose/nerdtree'
 Plugin 'mattn/emmet-vim'
-Plugin 'taglist.vim'
+Plugin 'majutsushi/tagbar'
 Plugin 'LaTeX-Suite-aka-Vim-LaTeX'
 Plugin 'rking/ag.vim'
 Plugin 'phildawes/racer'
@@ -69,12 +69,13 @@ set omnifunc=syntaxcomplete#Complete
 set ignorecase
 set nowrapscan
 set autochdir
-set tags=./tags;
+"set tags=./tags;
 set sessionoptions+=unix,slash
 set sessionoptions-=options
 set smartindent 
 set shiftwidth=4
 set tabstop=4
+set nospell
 
 " just for better fortran program
 let fortran_more_precise=1
@@ -84,6 +85,7 @@ let fortran_fold=1
 let fortran_fold_conditionals=1
 "let fortran_fold_multilinecomments=1 "slow down vim when have large block of comment
 set colorcolumn=132
+set synmaxcol=256
 "set textwidth=130
 
 "set foldmethod=syntax  "may slow the vim
@@ -117,13 +119,34 @@ let g:agprg = "ag --nogroup --nocolor --column"
 vnoremap < <gv
 vnoremap > >gv
 nmap <leader>d :NERDTreeToggle<CR>
-nmap <leader>t :TlistToggle<CR>
 nmap <C-b>n :bnext<CR>
 nmap <C-b>p :bprev<CR>
 nmap mk :make<CR>
 nmap cp :cp<CR>
 nmap cn :cn<CR>
 nmap <ESC><ESC> :nohl<CR>
+
+" tagbar
+nmap <leader>t :TagbarToggle<CR>
+let g:tagbar_type_tex = {
+			\ 'ctagstype' : 'latex',
+			\ 'kinds'     : [
+			\ 's:sections',
+			\ 'g:graphics:0:0',
+			\ 'l:labels',
+			\ 'r:refs:1:0',
+			\ 'p:pagerefs:1:0'
+			\ ],
+			\ 'sort'    : 0,
+			\ }
+let g:tagbar_type_pandoc = {
+			\ 'ctagstype' : 'markdown',
+			\ 'kinds' : [
+			\ 'h:Heading_L1',
+			\ 'i:Heading_L2',
+			\ 'k:Heading_L3'
+			\ ]
+			\ }
 
 " racer 
 set hidden
@@ -153,10 +176,12 @@ endif
 " autocommand
 au BufNewFile,BufRead *.plt,*.gnuplot set ft=gnuplot
 autocmd BufRead,BufNewFile Cargo.toml,Cargo.lock,*.rs compiler cargo
-au BufNewFile,BufRead *.plt,*.gnuplot,*.dat nmap <leader>p :w<cr> <C-w>j :!plot %:r.dat<cr>
+au BufNewFile,BufRead *.plt,*.gnuplot,*.dat nmap <leader>p :e<cr> :w<cr> <C-w>j :silent !plot %:r.dat 2>/tmp/ploterr<cr>
 "autocmd FileType tex,pandoc setlocal spell spelllang=en_us
 au QuickFixCmdPost [^l]* nested cwindow
 au QuickFixCmdPost    l* nested lwindow
+au BufReadPre * colorscheme solarized
+au BufReadPre * set background=dark
 if has("autocmd")
     au InsertEnter *
         \ if v:insertmode == 'i' |

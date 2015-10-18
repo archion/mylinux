@@ -12,12 +12,13 @@ else
 	source /opt/intel/composerxe/bin/compilervars.sh intel64
 	source /opt/intel/mkl/bin/mklvars.sh intel64 mod lp64
 fi
-export LIBRARY_PATH=$LIBRARY_PATH:../lib
-export CPATH=$CPATH:$INCLUDE:../lib
+export LIBRARY_PATH=$LIBRARY_PATH:../lib:../lib/nlopt/lib
+export CPATH=$CPATH:$INCLUDE:../lib:../lib/nlopt/include
 export GOPATH=~/Projects/gocode
 ulimit -s unlimited
 export OMP_STACKSIZE="1G"
-if tty | grep pts > /dev/null; then
-	#if not inside a tmux session, and if no session is started, start a new session
-	test -z "$TMUX" && (tmux attach || tmux new-session)
-fi
+#if tty | grep pts > /dev/null; then
+	##if not inside a tmux session, and if no session is started, start a new session
+	#test -z "$TMUX" && (tmux attach || tmux new-session)
+#fi
+

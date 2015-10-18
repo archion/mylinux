@@ -40,7 +40,7 @@ ZSH_THEME="bira"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git command-not-found history-substring-search)
+plugins=(git command-not-found history-substring-search tmux-title)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -63,5 +63,7 @@ alias ll='ls -lh'
 alias tmux="tmux -2"
 alias qmv="qmv -f do"
 alias fuck='$(thefuck $(fc -ln -1))'
+#alias nvim="nvim '+colorscheme solarized' '+set background=dark'"
+#alias nvim-wrapper="nvim-wrapper '+colorscheme solarized' '+set background=dark'"
 alias vim="nvim"
-alias vimdiff="nvim -d"
+alias vimdiff="vim -d"

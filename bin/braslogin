@@ -1,4 +1,24 @@
 #!/bin/bash
+t=0
+trap disconnect SIGINT
+function disconnect() {
+	if  curl -s http://210.28.129.9/portal_io/logout | grep -o "下线成功"; then
+		notify-send "bras下线成功" --icon=dialog-information
+	else
+		echo -e '\033[0;31;1mbras下线失败'
+		notify-send "bras下线失败" --icon=dialog-information
+	fi
+	exit
+}
+while getopts "t:" OPTION
+do
+    case $OPTION in
+        t)
+			t=$((OPTARG*60))
+            ;;
+    esac
+done
+shift $((OPTIND - 1))
 while true;do
 	echo 正在检查网络链接...
 	if  ping -c 1 -w 1 www.baidu.com &> /dev/null; then
@@ -21,5 +41,10 @@ while true;do
 	else
 		echo -e '\033[0;31;1m无法链接内网，检查是否链接网线'
 		exit
+	fi
+	if (($t>0)) ; then
+		echo "$((t/60))分钟后断开"
+		sleep $t
+		disconnect
 	fi
 done
