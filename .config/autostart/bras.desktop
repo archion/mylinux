@@ -1,5 +1,6 @@
 [Desktop Entry]
 Exec=braslogin 9401925 83596085
+Hidden=true
 Name=bras
 Type=Application
 Version=1.0

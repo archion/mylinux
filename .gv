@@ -23,8 +23,8 @@ GV.scrollingEyeGuide:	True
 GV.autoResize:		True
 GV.maximumWidth:	screen-20
 GV.maximumHeight:	screen-44
-GV.minimumWidth:	50
-GV.minimumHeight:	50
+GV.minimumWidth:	10
+GV.minimumHeight:	10
 GV.geometry:		-5-5
 GV.confirmQuit:		1
 GV.watchFile:		True
