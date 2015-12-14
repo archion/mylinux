@@ -41,4 +41,3 @@ bin/
 .nvimrc
 .config/llpp.conf
 .gv
-.vim/after/plugin/nvimcolorscheme.vim
