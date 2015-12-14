@@ -1,6 +1,5 @@
 #!/bin/bash
 t=0
-trap disconnect SIGINT
 function disconnect() {
 	if  curl -s http://210.28.129.9/portal_io/logout | grep -o "下线成功"; then
 		notify-send "bras下线成功" --icon=dialog-information
@@ -15,6 +14,7 @@ do
     case $OPTION in
         t)
 			t=$((OPTARG*60))
+			trap disconnect SIGINT
             ;;
     esac
 done

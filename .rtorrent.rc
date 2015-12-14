@@ -3,7 +3,7 @@
 # uncomment the options you wish to enable.
 
 # Maximum and minimum number of peers to connect to per torrent.
-#min_peers = 40
+# min_peers = 40
 max_peers = 100
 
 # Same as above but for seeding completed torrents (-1 = same as downloading)
@@ -11,14 +11,17 @@ max_peers = 100
 max_peers_seed = 50
 
 # Maximum number of simultanious uploads per torrent.
-max_uploads = 15
+max_uploads = 10
+
+# max_downloads_global = 10
+# max_uploads_global = 20
 
 # Global upload and download rate in KiB. "0" for unlimited.
 download_rate = 0
 upload_rate = 0
 
 # Default directory to save the downloaded torrents.
-directory = ~/Downloads/torrents/
+directory = ~/Downloads/torrents/tmp/
 
 # Default session directory. Make sure you don't run multiple instance
 # of rtorrent using the same session directory. Perhaps using a
@@ -28,8 +31,8 @@ session = ~/Downloads/torrents/session/
 # Watch a directory for new torrents, and stop those that have been
 # deleted.
 schedule = watch_directory,5,5,load_start=~/Downloads/torrents/*.torrent
-schedule = untied_directory,5,5,stop_untied=
-schedule = tied_directory,5,5,start_tied=
+# schedule = untied_directory,5,5,stop_untied=
+# schedule = tied_directory,5,5,start_tied=
 
 # Close torrents when diskspace is low.
 schedule = low_diskspace,5,60,close_low_diskspace=100M
@@ -44,10 +47,10 @@ schedule = low_diskspace,5,60,close_low_diskspace=100M
 #bind = rakshasa.no
 
 # Port range to use for listening.
-#port_range = 6890-6999
+port_range = 6890-6999
 
 # Start opening ports at a random position within the port range.
-#port_random = no
+port_random = yes
 
 # Check hash for finished torrents. Might be usefull until the bug is
 # fixed that causes lack of diskspace not to be properly reported.
@@ -85,9 +88,8 @@ dht_port = 6881
 peer_exchange = yes
 
 # Delete data files when removing any download
-# system.method.set_key = event.download.erased,remove_files,"execute={rm,-rf,--,$d.get_base_path=}"
+method.set_key = event.download.erased,remove_files,"execute={rm,-rf,$d.base_path=}"
 
-# Delete data when removing incomplete downloads
-# schedule = watch_dir,10,10,"load_start_verbose=~/Downloads/torrents/*.torrent,d.set_custom=incomplete,1"
-# system.method.set_key = event.download.finished, cldvar,d.set_custom=incomplete,0
-# system.method.set_key = event.download.erased, rm_files,"branch=d.get_custom=incomplete,\"execute={rm,-rf,--,$d.get_base_path=}\""
+# Move data files when finishing any download
+method.insert=do_move,simple,"d.stop=; d.directory.set=/home/archion/Downloads/torrents/Downloads/; execute_nothrow={mv,-u,$d.base_path=, /home/archion/Downloads/torrents/Downloads/}; d.start=; execute_nothrow={notify-send,-a,rtorrent,$d.name=}"
+method.set_key = event.download.finished,move_files,do_move=

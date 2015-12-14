@@ -77,10 +77,10 @@ lastfm.password
 lastfm.prefer_album_artist 0
 lastfm.scrobbler_url http://post.audioscrobbler.com
 mainwin.geometry.h 373
-mainwin.geometry.maximized 0
+mainwin.geometry.maximized 1
 mainwin.geometry.w 500
-mainwin.geometry.x -3067
-mainwin.geometry.y 291
+mainwin.geometry.x 899
+mainwin.geometry.y 384
 mp3.id3v1_encoding iso8859-1
 mp3.id3v2_version 3
 mp3.write_id3v1 1
@@ -96,18 +96,18 @@ notify.format_content %a - %b
 output_plugin PulseAudio output plugin
 playback.loop 0
 playback.order 0
-playback.volume 0.0000000
+playback.volume -11.42856
 playlist.column.00 "专辑封面" "" 8 100 0
 playlist.column.01 "正在播放" "" 1 50 0
 playlist.column.02 "音轨号" "%n" -1 100 0
 playlist.column.03 "标题" "%t" -1 185 0
-playlist.column.04 "专辑" "%b" -1 100 0
+playlist.column.04 "专辑" "%b" -1 106 0
 playlist.column.05 "艺人 / 专辑" "%a - %b" -1 150 0
 playlist.column.06 "音轨号" "%n" -1 50 1
 playlist.column.07 "时长" "%l" -1 50 0
 playlist.current 1
 playlist.cursor.0 -1
-playlist.cursor.1 2
+playlist.cursor.1 16
 playlist.group_by %b
 playlist.scroll.0 0
 playlist.scroll.1 0
@@ -117,17 +117,17 @@ playlist.tab.00000 默认
 playlist.tab.00001 Default
 prefwin.geometry.h 501
 prefwin.geometry.w 651
-prefwin.geometry.x 245
-prefwin.geometry.y 16
+prefwin.geometry.x 421
+prefwin.geometry.y 214
 replaygain_mode 0
 replaygain_scale 1
 resume.paused 0
 resume.playlist 1
-resume.position 15.719971
-resume.track 2
+resume.position 174.31008
+resume.track 16
 streamer.8_to_16 1
 trkproperties.geometry.h 400
 trkproperties.geometry.w 400
-trkproperties.geometry.x 444
-trkproperties.geometry.y 311
+trkproperties.geometry.x 770
+trkproperties.geometry.y 334
 wv.write_apev2 1

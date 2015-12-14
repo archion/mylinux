@@ -22,6 +22,7 @@ Plugin 'rking/ag.vim'
 Plugin 'phildawes/racer'
 "Plugin 'LanguageTool'
 Plugin 'rust-lang/rust.vim'
+Plugin 'JuliaLang/julia-vim'
 call vundle#end()
 filetype plugin indent on
 

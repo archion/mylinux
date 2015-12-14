@@ -22,6 +22,9 @@ Plugin 'rking/ag.vim'
 Plugin 'phildawes/racer'
 "Plugin 'LanguageTool'
 Plugin 'rust-lang/rust.vim'
+Plugin 'xolox/vim-misc'
+Plugin 'lua.vim'
+Plugin 'JuliaLang/julia-vim'
 call vundle#end()
 filetype plugin indent on
 
@@ -87,6 +90,10 @@ let fortran_fold_conditionals=1
 set colorcolumn=132
 set synmaxcol=256
 "set textwidth=130
+
+"lua
+let g:lua_complete_omni = 1
+let g:lua_check_syntax = 1
 
 "set foldmethod=syntax  "may slow the vim
 set foldmethod=indent

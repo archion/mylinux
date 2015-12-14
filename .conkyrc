@@ -60,7 +60,9 @@ Home: ${alignr}${fs_used /home} / ${fs_size /home}
 ${fs_bar 4 /home}
 Windows E: ${alignr}${fs_used /mnt/Windows_E} / ${fs_size /mnt/Windows_E}
 ${fs_bar 4 /mnt/Windows_E}
-${diskiograph sda 25}
+Zhou E: ${alignr}${fs_used /mnt/Zhou_E} / ${fs_size /mnt/Zhou_E}
+${fs_bar 4 /mnt/Zhou_E}
+${diskiograph sdb 25}
 Disk I/O:${alignr}${diskio_write}/${diskio_read}
 
 ${color white}NETWORK ${hr 1}${color}
