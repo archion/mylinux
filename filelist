@@ -44,3 +44,4 @@ bin/
 .config/mpv/lua-settings
 .config/mpv
 .config/mpv/config
+.config/mpv/input.conf
