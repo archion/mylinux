@@ -1,0 +1,10 @@
+title=${filename}
+save-position-on-quit
+geometry=-3-50
+autofit-larger=50%
+osd-font-size=40
+osd-level=3
+af=drc
+
+[pseudo-gui]
+screenshot-directory=/tmp/mpv-screenshot/

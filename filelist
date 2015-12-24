@@ -43,3 +43,4 @@ bin/
 .gv
 .config/mpv/lua-settings
 .config/mpv
+.config/mpv/config
