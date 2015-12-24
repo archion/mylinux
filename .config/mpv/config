@@ -2,7 +2,8 @@ title=${filename}
 save-position-on-quit
 geometry=-3-50
 autofit-larger=50%
-osd-font-size=40
+osd-scale-by-window=no
+osd-font-size=20
 osd-level=3
 af=drc
 osd-bar-align-y=0.95
