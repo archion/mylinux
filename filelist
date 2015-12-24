@@ -42,6 +42,6 @@ bin/
 .config/llpp.conf
 .gv
 .config/mpv/lua-settings
-.config/mpv
 .config/mpv/config
 .config/mpv/input.conf
+.config/mpv/scripts
