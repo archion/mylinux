@@ -13,9 +13,6 @@ max_peers_seed = 50
 # Maximum number of simultanious uploads per torrent.
 max_uploads = 10
 
-# max_downloads_global = 10
-# max_uploads_global = 20
-
 # Global upload and download rate in KiB. "0" for unlimited.
 download_rate = 0
 upload_rate = 0
@@ -93,3 +90,8 @@ method.set_key = event.download.erased,remove_files,"execute={rm,-rf,$d.base_pat
 # Move data files when finishing any download
 method.insert=do_move,simple,"d.stop=; d.directory.set=/home/archion/Downloads/torrents/Downloads/; execute_nothrow={mv,-u,$d.base_path=, /home/archion/Downloads/torrents/Downloads/}; d.start=; execute_nothrow={notify-send,-a,rtorrent,$d.name=}"
 method.set_key = event.download.finished,move_files,do_move=
+
+# sort view
+view.sort_current = seeding,greater="d.up.rate="
+view.filter = seeding,"and=d.complete=,d.peers_connected="
+schedule = sort_seeding,0,5,view.sort=seeding

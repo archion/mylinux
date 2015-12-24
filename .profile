@@ -1,5 +1,5 @@
 export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel'
-export PATH=$PATH:~/bin:~/.cabal/bin:~/Projects/gocode/bin
+export PATH=$PATH:~/bin:~/.cabal/bin:~/Projects/gocode/bin:~/.multirust/toolchains/nightly/cargo/bin/
 if [ -e /usr/share/terminfo/x/xterm-256color ]; then
 	export TERM='xterm-256color'
 else
@@ -15,6 +15,7 @@ fi
 export LIBRARY_PATH=$LIBRARY_PATH:../lib:../lib/nlopt/lib
 export CPATH=$CPATH:$INCLUDE:../lib:../lib/nlopt/include
 export GOPATH=~/Projects/gocode
+export RUST_SRC_PATH=~/.multirust/src
 ulimit -s unlimited
 export OMP_STACKSIZE="1G"
 #if tty | grep pts > /dev/null; then

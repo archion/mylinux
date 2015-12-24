@@ -2,7 +2,7 @@
 pkill gost
 pkill shadowsocks-go
 echo "start gost"
-setsid ~/cloud9/gost -L :8888 -S demo-project-archion.c9.io  -sp archion -sm aes-256-cfb -ws -ss & >/dev/null
+setsid ~/cloud9/gost -L=ss+socks+ws://:8888 -F=socks+ws://workspace-archion.c9.io/ & >/dev/null
 echo "start shadowsocks"
 setsid ~/cloud9/shadowsocks-go -s 0.0.0.0 -p 8888 -k archion -b 127.0.0.1 -l 8899 & >/dev/null
 #./shadowsocks-go -s 162.221.196.172 -p 6000 -k archion -b 127.0.0.1 -l 8899

@@ -41,3 +41,4 @@ bin/
 .nvimrc
 .config/llpp.conf
 .gv
+.config/mpv/lua-settings
