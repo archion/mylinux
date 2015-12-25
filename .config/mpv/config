@@ -7,6 +7,7 @@ osd-font-size=20
 osd-level=3
 af=drc
 osd-bar-align-y=0.95
+sub-auto=fuzzy
 
 [pseudo-gui]
 screenshot-directory=/tmp/mpv-screenshot/
