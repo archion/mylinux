@@ -45,3 +45,4 @@ bin/
 .config/mpv/config
 .config/mpv/input.conf
 .config/mpv/scripts/
+.config/mimeapps.list
