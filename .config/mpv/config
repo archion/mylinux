@@ -1,13 +1,20 @@
 title=${filename}
 save-position-on-quit
-geometry=-3-50
-autofit-larger=50%
+# no-border
+no-osd-bar
+ignore-path-in-watch-later-config
 osd-scale-by-window=no
 osd-font-size=20
 osd-level=3
+osd-border-color=0/0/0/0.5
+sub-text-font-size=35
+sub-text-border-color=0/0/0/0.5
 af=drc
 osd-bar-align-y=0.95
 sub-auto=fuzzy
+volume=60
+geometry=-3-50
+autofit-larger=x30%
 
 [pseudo-gui]
 screenshot-directory=/tmp/mpv-screenshot/
