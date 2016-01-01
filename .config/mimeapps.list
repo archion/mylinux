@@ -1,7 +1,7 @@
 [Added Associations]
 video/mp4=mplayer.desktop;
 video/mp2t=mplayer.desktop;
-application/x-partial-download=mplayer.desktop;
+application/x-partial-download=llpp.desktop;mpv.desktop;mplayer.desktop;
 image/x-eps=llpp.desktop;sxiv-rifle.desktop;
 text/x-log=neovim.desktop;
 text/x-fortran=neovim.desktop;

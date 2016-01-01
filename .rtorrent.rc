@@ -3,7 +3,7 @@
 # uncomment the options you wish to enable.
 
 # Maximum and minimum number of peers to connect to per torrent.
-# min_peers = 40
+min_peers = 40
 max_peers = 100
 
 # Same as above but for seeding completed torrents (-1 = same as downloading)
@@ -88,8 +88,8 @@ peer_exchange = yes
 method.set_key = event.download.erased,remove_files,"execute={rm,-rf,$d.base_path=}"
 
 # Move data files when finishing any download
-method.insert=do_move,simple,"d.stop=; d.directory.set=/home/archion/Downloads/torrents/Downloads/; execute_nothrow={mv,-u,$d.base_path=, /home/archion/Downloads/torrents/Downloads/}; d.start=; execute_nothrow={notify-send,-a,rtorrent,$d.name=}"
-method.set_key = event.download.finished,move_files,do_move=
+method.insert=do_move,simple,"d.stop=; d.directory.set=\"$cat=/home/archion/Downloads/torrents/,$argument.0=\"; execute_nothrow={mv,-u,$d.base_path=, \"$cat=/home/archion/Downloads/torrents/,$argument.0=\"}; d.start=; execute_nothrow={notify-send,-a,rtorrent,$d.name=}"
+method.set_key = event.download.finished,move_files,do_move=Downloads
 
 # sort view
 view.sort_current = seeding,greater="d.up.rate="

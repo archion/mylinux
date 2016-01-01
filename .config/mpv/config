@@ -1,4 +1,6 @@
 title=${filename}
+#vo=opengl:deband=no
+#hwdec=vdpau
 save-position-on-quit
 # no-border
 no-osd-bar
