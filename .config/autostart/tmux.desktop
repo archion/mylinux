@@ -3,4 +3,5 @@ Exec=tmux attach
 Name=tmux
 Type=Application
 Version=1.0
+X-LXQt-Need-Tray=true
 X-Razor-Need-Tray=true

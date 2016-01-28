@@ -12,6 +12,7 @@ else
 	source /opt/intel/composerxe/bin/compilervars.sh intel64
 	source /opt/intel/mkl/bin/mklvars.sh intel64 mod lp64
 fi
+source /opt/intel/vtune_amplifier_xe_2015.2.0.393444/amplxe-vars.sh >/dev/null
 export LIBRARY_PATH=$LIBRARY_PATH:../lib:../lib/nlopt/lib
 export CPATH=$CPATH:$INCLUDE:../lib:../lib/nlopt/include
 export GOPATH=~/Projects/gocode

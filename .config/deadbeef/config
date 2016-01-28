@@ -76,11 +76,11 @@ lastfm.login
 lastfm.password 
 lastfm.prefer_album_artist 0
 lastfm.scrobbler_url http://post.audioscrobbler.com
-mainwin.geometry.h 373
+mainwin.geometry.h 340
 mainwin.geometry.maximized 0
-mainwin.geometry.w 500
-mainwin.geometry.x 294
-mainwin.geometry.y 69
+mainwin.geometry.w 545
+mainwin.geometry.x 839
+mainwin.geometry.y 386
 mp3.id3v1_encoding iso8859-1
 mp3.id3v2_version 3
 mp3.write_id3v1 1
@@ -123,7 +123,7 @@ replaygain_mode 0
 replaygain_scale 1
 resume.paused 0
 resume.playlist 1
-resume.position 189.05128
+resume.position 6.7338080
 resume.track 0
 streamer.8_to_16 1
 trkproperties.geometry.h 400

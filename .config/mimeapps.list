@@ -24,6 +24,7 @@ application/pdf=xarchiver.desktop;
 application/x-bittorrent=gvim.desktop;
 audio/x-wav=deadbeef.desktop;
 video/x-matroska=mplayer.desktop;
+image/png=sxiv-rifle.desktop;
 
 [Default Applications]
 application/pdf=llpp.desktop

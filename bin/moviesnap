@@ -4,19 +4,19 @@ cd /tmp/.moviesnap
 info=$(mplayer -ao null -vo null -frames 0 -identify "$1" 2>/dev/null)
 video_length=$(echo "$info"|grep LENGTH |awk -v FS="=" '{print $2}' | awk -v FS="." '{print $1}')
 video_duration=$(date -u -d @${video_length} +"%T")
-video_length=$(((video_length)/33))
+video_length=$(((video_length)/17))
 video_width=$(echo "$info"|grep WIDTH |awk -v FS="=" '{print $2}')
 video_height=$(echo "$info"|grep HEIGHT |awk -v FS="=" '{print $2}')
 video_format=$(echo "$info"|grep VIDEO_FORMAT |awk -v FS="=" '{print $2}')
 video_bitrate=$(echo "$info"|grep VIDEO: |awk '{print $7,$8}')
 video_size=$(ls -lh "$1" | awk '{print $5}')
-mplayer -benchmark -nosound -quiet -osdlevel 3 -progbar-align 200 -zoom -ss 5 -sstep $video_length -frames 32 -vf expand=::::1: -vo jpeg:outdir=./ "$1" &>/dev/null
+mplayer -benchmark -nosound -noautosub -quiet -osdlevel 3 -progbar-align 200 -zoom -ss 5 -sstep $video_length -frames 32 -vf expand=::::1: -vo jpeg:outdir=./ "$1" &>/dev/null
 gm montage -mode concatenate -resize "x480>" -font /usr/share/fonts/wenquanyi/wqy-zenhei/wqy-zenhei.ttc -pointsize 35 -title "File Name: ${1##*/}\n\
 Length: $video_duration        \
 Size: $video_size        \
 Resolution: ${video_width}x${video_height}        \
 Format: $video_format        \
-Bitrate: $video_bitrate" -borderwidth 1 -bordercolor white -tile 4x8 *.jpg /tmp/moviesnap.jpg
+Bitrate: $video_bitrate" -borderwidth 1 -bordercolor white -tile 4x4 *.jpg /tmp/moviesnap.jpg
 cd - >/dev/null
 rm -r /tmp/.moviesnap
 

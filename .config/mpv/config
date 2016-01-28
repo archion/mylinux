@@ -17,6 +17,7 @@ sub-auto=fuzzy
 volume=60
 geometry=-3-50
 autofit-larger=x30%
+sub-codepage=enca:zh:ucs-2
 
 [pseudo-gui]
 screenshot-directory=/tmp/mpv-screenshot/
