@@ -46,3 +46,4 @@ bin/
 .config/mpv/input.conf
 .config/mpv/scripts/
 .config/mimeapps.list
+/home/archion/.gitconfig
