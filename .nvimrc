@@ -158,7 +158,7 @@ let g:tagbar_type_pandoc = {
 
 " racer 
 set hidden
-"let g:racer_cmd = expand("~/.multirust/toolchains/nightly/cargo/bin/racer")
+let g:racer_cmd = expand("~/.multirust/toolchains/nightly/cargo/bin/racer")
 "let $RUST_SRC_PATH= expand("~/.multirust/src")
 
 " horizontal scroll

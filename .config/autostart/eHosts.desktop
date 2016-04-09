@@ -1,5 +1,5 @@
 [Desktop Entry]
-Exec=eHosts -s -f /etc/hosts -d 210.28.129.15
+Exec=eHosts -s -f /etc/hosts -d 223.5.5.5
 Name=eHosts
 Type=Application
 Version=1.0

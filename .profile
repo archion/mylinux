@@ -6,17 +6,18 @@ else
 	export TERM='xterm-color'
 fi
 if [[ $(uname -m) == "i686" ]]; then
-	source /opt/intel/composerxe/bin/compilervars.sh ia32
+	source /opt/intel/composerxe/linux/bin/compilervars.sh ia32
 	source /opt/intel/mkl/bin/mklvars.sh ia32 mod
 else
-	source /opt/intel/composerxe/bin/compilervars.sh intel64
+	source /opt/intel/composerxe/linux/bin/compilervars.sh intel64
 	source /opt/intel/mkl/bin/mklvars.sh intel64 mod lp64
 fi
-source /opt/intel/vtune_amplifier_xe_2015.2.0.393444/amplxe-vars.sh >/dev/null
+source /opt/intel/vtune_amplifier_xe_2016.1.1.434111/amplxe-vars.sh >/dev/null
 export LIBRARY_PATH=$LIBRARY_PATH:../lib:../lib/nlopt/lib
 export CPATH=$CPATH:$INCLUDE:../lib:../lib/nlopt/include
 export GOPATH=~/Projects/gocode
 export RUST_SRC_PATH=~/.multirust/src
+export EDITOR=vim
 ulimit -s unlimited
 export OMP_STACKSIZE="1G"
 #if tty | grep pts > /dev/null; then
