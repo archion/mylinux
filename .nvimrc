@@ -9,7 +9,8 @@ else
 endif
 Plugin 'gmarik/Vundle.vim'
 Plugin 'bling/vim-airline'
-Plugin 'altercation/vim-colors-solarized'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'romainl/flattened'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'Align'
 Plugin 'vim-pandoc/vim-pandoc'
@@ -25,6 +26,7 @@ Plugin 'rust-lang/rust.vim'
 Plugin 'xolox/vim-misc'
 Plugin 'lua.vim'
 Plugin 'JuliaLang/julia-vim'
+Plugin 'benekastah/neomake'
 call vundle#end()
 filetype plugin indent on
 
@@ -55,12 +57,8 @@ if or(has("gui_running"),has("unix"))
 	" set guioptions-=T
 endif
 
-let g:solarized_termcolors=256
-let g:solarized_termtrans=0
-set t_Co=256
-colorscheme solarized
-set background=dark
 syntax on
+colorscheme flattened_dark
 
 set encoding=utf-8
 set fileencodings=ucs-bom,utf-8,cp936,big5,gb18030,euc-jp,euc-kr,latin1
@@ -128,10 +126,13 @@ vnoremap > >gv
 nmap <leader>d :NERDTreeToggle<CR>
 nmap <C-b>n :bnext<CR>
 nmap <C-b>p :bprev<CR>
-nmap mk :make<CR>
+nmap mk :Neomake!<CR>
 nmap cp :cp<CR>
 nmap cn :cn<CR>
 nmap <ESC><ESC> :nohl<CR>
+let g:neomake_open_list = 2
+let g:neomake_verbose = 1
+let g:neomake_list_height = 4
 
 " tagbar
 nmap <leader>t :TagbarToggle<CR>
@@ -187,8 +188,8 @@ au BufNewFile,BufRead *.plt,*.gnuplot,*.dat nmap <leader>p :e<cr> :w<cr> <C-w>j 
 "autocmd FileType tex,pandoc setlocal spell spelllang=en_us
 au QuickFixCmdPost [^l]* nested cwindow
 au QuickFixCmdPost    l* nested lwindow
-au BufReadPre * colorscheme solarized
-au BufReadPre * set background=dark
+autocmd! BufWritePost * Neomake!
+autocmd! BufWritePost *.rs Neomake! cargo
 if has("autocmd")
     au InsertEnter *
         \ if v:insertmode == 'i' |

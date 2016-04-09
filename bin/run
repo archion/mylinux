@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [[ $1 != "l" ]]; then
-	ip=$(ssh YZD@192.168.0.206 -p 2222 'who |grep YZD |grep -oE "([0-9]{1,3}\.){3}[0-9]{1,3}"|head -n 1')
+	ip=$(ssh YZD@192.168.0.206 -p 2222 'who -m |grep YZD |grep -oE "([0-9]{1,3}\.){3}[0-9]{1,3}"|head -n 1')
 	if (($#>0));then
 		ip=$1
 	fi
