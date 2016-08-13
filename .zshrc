@@ -66,4 +66,3 @@ alias fuck='$(thefuck $(fc -ln -1))'
 #alias nvim-wrapper="nvim-wrapper '+colorscheme solarized' '+set background=dark'"
 alias vim="nvim"
 alias vimdiff="vim -d"
-alias sudo="sudo "

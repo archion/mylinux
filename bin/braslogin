@@ -27,7 +27,7 @@ while true;do
 		sleep 180
 		continue
 	fi
-	if  ping -c 1 -w 1 210.28.129.9 &> /dev/null; then
+	#if  ping -c 1 -w 1 210.28.129.9 &> /dev/null; then
 		while true;do
 			echo 正在尝试联网...
 			if  curl -s --data "username=$1&password=$2" http://210.28.129.9/portal_io/login |grep -o "登录成功"; then
@@ -38,10 +38,10 @@ while true;do
 				break
 			fi
 		done
-	else
-		echo -e '\033[0;31;1m无法链接内网，检查是否链接网线'
-		exit
-	fi
+	#else
+		#echo -e '\033[0;31;1m无法链接内网，检查是否链接网线'
+		#exit
+	#fi
 	if (($t>0)) ; then
 		echo "$((t/60))分钟后断开"
 		sleep $t

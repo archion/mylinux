@@ -1,2 +1,2 @@
 #!/bin/bash
-mpv tv:// -tv driver=v4l2:device=/dev/video0
+mplayer tv:// -tv driver=v4l2:device=/dev/video0

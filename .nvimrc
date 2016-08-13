@@ -27,6 +27,7 @@ Plugin 'xolox/vim-misc'
 Plugin 'lua.vim'
 Plugin 'JuliaLang/julia-vim'
 Plugin 'benekastah/neomake'
+Plugin 'jiangmiao/auto-pairs'
 call vundle#end()
 filetype plugin indent on
 
@@ -64,6 +65,7 @@ set encoding=utf-8
 set fileencodings=ucs-bom,utf-8,cp936,big5,gb18030,euc-jp,euc-kr,latin1
 set title
 set number
+set relativenumber
 set nobackup
 set noswapfile
 set omnifunc=syntaxcomplete#Complete
@@ -105,7 +107,7 @@ let g:Tex_MultipleCompileFormats = 'dvi'
 let g:Tex_FormatDependency_pdf = 'dvi,ps,pdf'
 let g:Tex_CompileRule_dvi = 'latex --interaction=nonstopmode $* '
 let g:Tex_CompileRule_ps = 'dvips -Ppdf -o $*.ps $*.dvi '
-let g:Tex_CompileRule_pdf = 'ps2pdf $*.ps ; killall -SIGHUP llpp'
+let g:Tex_CompileRule_pdf = 'ps2pdf -dAutoFilterColorImages=false -dColorImageFilter=/FlateEncode -dPDFsettings=/prepress $*.ps ; killall -SIGHUP llpp'
 let g:Tex_ViewRule_pdf = 'llpp'
 let g:Tex_IgnoredWarnings =
 			\'Underfull'."\n".
@@ -158,13 +160,18 @@ let g:tagbar_type_pandoc = {
 
 " racer 
 set hidden
-let g:racer_cmd = expand("~/.multirust/toolchains/nightly/cargo/bin/racer")
+"let g:racer_cmd = expand("~/.multirust/toolchains/nightly/cargo/bin/racer")
 "let $RUST_SRC_PATH= expand("~/.multirust/src")
 
 " horizontal scroll
 set sidescroll=1
 set sidescrolloff=15
 map <silent><expr> <C-S> ':set wrap! go'.'-+'[&wrap]."=b\r"
+set splitbelow
+set splitright
+
+nmap <A-r> :5sp term://./%:r.out<cr>
+tnoremap <Esc> <C-\><C-n>
 
 "languagetool
 "let g:languagetool_jar = "/usr/share/java/languagetool/languagetool-commandline.jar"
@@ -188,7 +195,7 @@ au BufNewFile,BufRead *.plt,*.gnuplot,*.dat nmap <leader>p :e<cr> :w<cr> <C-w>j 
 "autocmd FileType tex,pandoc setlocal spell spelllang=en_us
 au QuickFixCmdPost [^l]* nested cwindow
 au QuickFixCmdPost    l* nested lwindow
-autocmd! BufWritePost * Neomake!
+"autocmd! BufWritePost * Neomake!
 autocmd! BufWritePost *.rs Neomake! cargo
 if has("autocmd")
     au InsertEnter *
