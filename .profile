@@ -12,7 +12,7 @@ else
 	source /opt/intel/composerxe/linux/bin/compilervars.sh intel64
 	source /opt/intel/composerxe/linux/mkl/bin/mklvars.sh intel64 mod lp64
 fi
-source /opt/intel/vtune_amplifier_xe_2016.3.0.463186/amplxe-vars.sh >/dev/null
+#source /opt/intel/vtune_amplifier_xe_2016.3.0.463186/amplxe-vars.sh >/dev/null
 export LIBRARY_PATH=$LIBRARY_PATH:../lib:../lib/nlopt/lib
 export CPATH=$CPATH:$INCLUDE:../lib:../lib/nlopt/include
 export GOPATH=~/Projects/gocode
@@ -24,4 +24,4 @@ export EDITOR=nvim
 	##if not inside a tmux session, and if no session is started, start a new session
 	#test -z "$TMUX" && (tmux attach || tmux new-session)
 #fi
-
+export TERM=xterm-256color

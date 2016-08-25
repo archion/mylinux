@@ -28,8 +28,11 @@ Plugin 'lua.vim'
 Plugin 'JuliaLang/julia-vim'
 Plugin 'benekastah/neomake'
 Plugin 'jiangmiao/auto-pairs'
+Plugin 'carbonscott/vim-smartfold'
 call vundle#end()
 filetype plugin indent on
+
+let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
 
 " airline
 if !exists('g:airline_symbols')	
@@ -59,6 +62,7 @@ if or(has("gui_running"),has("unix"))
 endif
 
 syntax on
+set t_Co=256
 colorscheme flattened_dark
 
 set encoding=utf-8
@@ -95,10 +99,10 @@ set synmaxcol=256
 let g:lua_complete_omni = 1
 let g:lua_check_syntax = 1
 
-"set foldmethod=syntax  "may slow the vim
-set foldmethod=indent
+""set foldmethod=syntax  "may slow the vim
+"set foldmethod=indent
 set foldlevelstart=99
-"set foldmethod=manual
+set foldmethod=manual
 let $LANGUAGE = 'c'
 
 " latex

@@ -9,8 +9,8 @@ own_window yes
 own_window_type normal
 own_window_transparent yes
 own_window_argb_visual yes
-#own_window_argb_value：3
-own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+##own_window_argb_value：3
+own_window_hints below,sticky,skip_taskbar,skip_pager
 double_buffer yes
 draw_shades no
 draw_outline no
@@ -71,6 +71,6 @@ ${exec ip addr | grep -E 'inet .*global'|awk '{printf("|--->%s %12s\n",$2,$8)}'}
 Down ${downspeed enp3s0}/s ${alignr}Up ${upspeed enp3s0}/s
 ${downspeedgraph enp3s0 25,107} ${alignr}${upspeedgraph enp3s0 25,107}
 Total ${totaldown enp3s0} ${alignr}Total ${totalup enp3s0}
-Down ${downspeed enp0s26f7u5}/s ${alignr}Up ${upspeed enp0s26f7u5}/s
-${downspeedgraph enp0s26f7u5 25,107} ${alignr}${upspeedgraph enp0s26f7u5 25,107}
+Down ${downspeed wls1}/s ${alignr}Up ${upspeed wls1}/s
+${downspeedgraph wls1 25,107} ${alignr}${upspeedgraph wls1 25,107}
 Total ${totaldown enp0s26f7u5} ${alignr}Total ${totalup enp0s26f7u5}

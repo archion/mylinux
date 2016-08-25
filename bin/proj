@@ -1,0 +1,3 @@
+#!/bin/bash
+xrandr --output VIRTUAL1 --auto --primary --output VGA1 --off
+xrandr --output VIRTUAL1 --auto --primary --output VGA1 --auto --right-of VIRTUAL1
