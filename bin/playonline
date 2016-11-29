@@ -1,0 +1,29 @@
+#!/bin/bash
+dl=false
+while getopts :d OPTION
+do
+    case $OPTION in
+        d)
+			dl=true
+            ;;
+    esac
+done
+shift $((OPTIND - 1))
+
+if $dl; then
+	if echo $1 | grep -q youtube; then 
+		echo "using 127.0.0.1:8888"
+		you-get -s 127.0.0.1:8888 $1
+	else
+		you-get $1
+	fi
+else
+	if echo $1 | grep -q youtube; then 
+		echo "using 127.0.0.1:8888"
+		you-get -s 127.0.0.1:8888 -p mpv $1
+	else
+		you-get -p mpv $1
+	fi
+fi
+
+#danmaku2ass -o foo.ass -s 1280x720 -fs 38 -a 0.6 -dm 5 -ds 5 这个空耳真厉害！第三期.cmt.xml

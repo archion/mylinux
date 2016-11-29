@@ -47,3 +47,4 @@ bin/
 .config/mpv/scripts/
 .config/mimeapps.list
 .gitconfig
+.config/qpdfview

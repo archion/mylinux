@@ -29,6 +29,7 @@ Plugin 'JuliaLang/julia-vim'
 Plugin 'benekastah/neomake'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'carbonscott/vim-smartfold'
+Plugin 'renamer.vim'
 call vundle#end()
 filetype plugin indent on
 
@@ -109,10 +110,11 @@ let $LANGUAGE = 'c'
 let g:Tex_DefaultTargetFormat='pdf'
 let g:Tex_MultipleCompileFormats = 'dvi'
 let g:Tex_FormatDependency_pdf = 'dvi,ps,pdf'
-let g:Tex_CompileRule_dvi = 'latex --interaction=nonstopmode $* '
+let g:Tex_CompileRule_dvi = "latex --interaction=nonstopmode $*; cd pic; asy *.asy; cd -; latex --interaction=nonstopmode $*"
 let g:Tex_CompileRule_ps = 'dvips -Ppdf -o $*.ps $*.dvi '
-let g:Tex_CompileRule_pdf = 'ps2pdf -dAutoFilterColorImages=false -dColorImageFilter=/FlateEncode -dPDFsettings=/prepress $*.ps ; killall -SIGHUP llpp'
-let g:Tex_ViewRule_pdf = 'llpp'
+"let g:Tex_CompileRule_pdf = 'ps2pdf -dAutoFilterColorImages=false -dColorImageFilter=/FlateEncode -dPDFsettings=/prepress $*.ps ; killall -SIGHUP llpp'
+let g:Tex_CompileRule_pdf = 'ps2pdf -dAutoFilterColorImages=false -dColorImageFilter=/FlateEncode -dPDFsettings=/prepress $*.ps'
+let g:Tex_ViewRule_pdf = 'setsid qpdfview --platformtheme qt5ct'
 let g:Tex_IgnoredWarnings =
 			\'Underfull'."\n".
 			\'Overfull'."\n".

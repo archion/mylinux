@@ -1,0 +1,18 @@
+#!/bin/bash
+#xterm  -bg rgb:e1/e1/e1 -fg black -geometry 45x15$(xdotool getmouselocation | awk -F":| " '{print"+"$2"+"$4}') -e "yd -v $(xsel)"
+psel="0"
+if [ $1 == 1 ]; then
+	while true; do
+		sleep 0.3
+		if [ "$psel" != "$(xsel)" ];  then
+			psel=$(xsel)
+			if (( ${#psel}<20 ));  then
+				pkill -9 -f "tilda -x"
+				tilda -x $(xdotool getmouselocation | awk -F":| " '{print $2}') -y $(xdotool getmouselocation | awk -F":| " '{print $4}') -c "yd -avy $(xsel)" &
+			fi
+		fi
+	done
+else
+	pkill -9 -f "tilda -x"
+	tilda -x $(xdotool getmouselocation | awk -F":| " '{print $2}') -y $(xdotool getmouselocation | awk -F":| " '{print $4}') -c "yd -avy $(xsel)"
+fi

@@ -1,4 +1,5 @@
 #!/bin/bash
+
 #file=`basename "$1"`
 #cd `dirname "$1"`
 silence=false
@@ -65,11 +66,12 @@ do
 	#if ! ps ax | grep -e "[g]vim -o $plt "${file%.*}".dat" > /dev/null  && ! $silence; then
 		#gvim -o $plt "${file%.*}".dat &
 	if ! ps ax | grep -e "[n]vim -o $plt "${file%.*}".dat" > /dev/null  && ! $silence; then
-		nvim-wrapper -o $plt "${file%.*}".dat
+		xterm -e nvim -o $plt "${file%.*}".dat &
+		echo "[x]term -e nvim -o $plt "${file%.*}".dat" >/tmp/a
 		while true; do
-			if ps ax | grep -e "[n]vim -o $plt "${file%.*}".dat" > /dev/null; then
+			if ps ax | grep -e "[x]term -e nvim -o $plt "${file%.*}".dat" > /dev/null; then
 				sleep 0.5
-				pkill -9 -f "nvim [^ ]*${file%.*}"
+				pkill -9 -f "xterm -e nvim [^ ]*${file%.*}"
 				break
 			fi
 		done

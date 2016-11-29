@@ -2,6 +2,9 @@
 # ~/.rtorrent.rc and enable/modify the options as needed. Remember to
 # uncomment the options you wish to enable.
 
+set_max_file_size=107374182400
+max_memory_usage = 100M
+
 # Maximum and minimum number of peers to connect to per torrent.
 min_peers = 40
 max_peers = 100
@@ -95,3 +98,6 @@ method.insert=do_move,simple,"d.stop=; d.close=; execute={mv,-u,$d.base_path=, \
 view.sort_current = seeding,greater="d.up.rate="
 view.filter = seeding,"and=d.complete=,d.peers_connected="
 schedule = sort_seeding,0,5,view.sort=seeding
+
+# network.http.proxy_address.set = 114.212.205.227:8800
+# network.proxy_address.set = 114.212.205.227:8800

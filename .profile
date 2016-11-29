@@ -13,6 +13,7 @@ else
 	source /opt/intel/composerxe/linux/mkl/bin/mklvars.sh intel64 mod lp64
 fi
 #source /opt/intel/vtune_amplifier_xe_2016.3.0.463186/amplxe-vars.sh >/dev/null
+#source /opt/intel/composerxe/linux/mpi/bin64/mpivars.sh intel64
 export LIBRARY_PATH=$LIBRARY_PATH:../lib:../lib/nlopt/lib
 export CPATH=$CPATH:$INCLUDE:../lib:../lib/nlopt/include
 export GOPATH=~/Projects/gocode
@@ -25,3 +26,6 @@ export EDITOR=nvim
 	#test -z "$TMUX" && (tmux attach || tmux new-session)
 #fi
 export TERM=xterm-256color
+#export http_proxy=http://user:pass@114.212.200.3:64143/
+#export https_proxy=http://user:pass@114.212.200.3:64143/
+export QT_QPA_PLATFORMTHEME="qt5ct"
