@@ -48,3 +48,6 @@ bin/
 .config/mimeapps.list
 .gitconfig
 .config/qpdfview
+.config/qpdfview/pdf-plugin.conf
+.config/qpdfview/qpdfview.conf
+.config/qpdfview/shortcuts.conf
