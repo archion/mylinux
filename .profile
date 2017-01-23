@@ -1,5 +1,5 @@
 export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel'
-export PATH=$PATH:~/bin:~/.cabal/bin:~/Projects/gocode/bin:~/.multirust/toolchains/nightly/cargo/bin/
+export PATH=$PATH:~/bin:~/.cabal/bin:~/Projects/gocode/bin:~/.multirust/toolchains/nightly/cargo/bin/:~/.cargo/bin
 if [ -e /usr/share/terminfo/x/xterm-256color ]; then
 	export TERM='xterm-256color'
 else

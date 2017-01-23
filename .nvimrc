@@ -85,6 +85,7 @@ set shiftwidth=4
 set tabstop=4
 set nospell
 
+let g:tagbar_sort = 0
 " just for better fortran program
 let fortran_more_precise=1
 let fortran_have_tabs=1
@@ -110,7 +111,7 @@ let $LANGUAGE = 'c'
 let g:Tex_DefaultTargetFormat='pdf'
 let g:Tex_MultipleCompileFormats = 'dvi'
 let g:Tex_FormatDependency_pdf = 'dvi,ps,pdf'
-let g:Tex_CompileRule_dvi = "latex --interaction=nonstopmode $*; cd pic; asy *.asy; cd -; latex --interaction=nonstopmode $*"
+let g:Tex_CompileRule_dvi = "latex --interaction=nonstopmode $*; bibtex $*.aux; cd pic; asy *.asy; cd -; latex --interaction=nonstopmode $*"
 let g:Tex_CompileRule_ps = 'dvips -Ppdf -o $*.ps $*.dvi '
 "let g:Tex_CompileRule_pdf = 'ps2pdf -dAutoFilterColorImages=false -dColorImageFilter=/FlateEncode -dPDFsettings=/prepress $*.ps ; killall -SIGHUP llpp'
 let g:Tex_CompileRule_pdf = 'ps2pdf -dAutoFilterColorImages=false -dColorImageFilter=/FlateEncode -dPDFsettings=/prepress $*.ps'

@@ -42,6 +42,7 @@ application/x-extension-xhtml=userapp-Firefox-EJUNLY.desktop;
 application/x-extension-xht=userapp-Firefox-EJUNLY.desktop;
 text/x-c++src=neovim.desktop;
 text/x-bibtex=neovim.desktop;
+application/x-sqlite3=zotero.desktop;
 
 [Default Applications]
 application/pdf=llpp.desktop
