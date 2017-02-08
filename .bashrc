@@ -10,3 +10,6 @@ alias ll='ls -l'
 PS1='\[\e[1;37m\][\u@\h \W]\$\[\e[0m\] '
 bind '"\e[A": history-search-backward'
 bind '"\e[B": history-search-forward'
+
+# added by travis gem
+[ -f /home/archion/.travis/travis.sh ] && source /home/archion/.travis/travis.sh

@@ -66,3 +66,6 @@ alias fuck='$(thefuck $(fc -ln -1))'
 #alias nvim-wrapper="nvim-wrapper '+colorscheme solarized' '+set background=dark'"
 alias vim="nvim"
 alias vimdiff="vim -d"
+
+# added by travis gem
+[ -f /home/archion/.travis/travis.sh ] && source /home/archion/.travis/travis.sh

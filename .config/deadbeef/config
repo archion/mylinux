@@ -85,7 +85,7 @@ mainwin.geometry.h 340
 mainwin.geometry.maximized 0
 mainwin.geometry.w 568
 mainwin.geometry.x 525
-mainwin.geometry.y 371
+mainwin.geometry.y 344
 mp3.id3v1_encoding iso8859-1
 mp3.id3v2_version 3
 mp3.write_id3v1 1
@@ -114,7 +114,7 @@ playlist.column.06 "音轨号" "%n" -1 50 1
 playlist.column.07 "时长" "%l" -1 50 0
 playlist.current 1
 playlist.cursor.0 -1
-playlist.cursor.1 0
+playlist.cursor.1 -1
 playlist.group_by %b
 playlist.scroll.0 0
 playlist.scroll.1 0
@@ -130,8 +130,8 @@ replaygain_mode 0
 replaygain_scale 1
 resume.paused 0
 resume.playlist 1
-resume.position 0.6400000
-resume.track 0
+resume.position -1.000000
+resume.track -1
 streamer.8_to_16 1
 trkproperties.geometry.h 400
 trkproperties.geometry.w 400
