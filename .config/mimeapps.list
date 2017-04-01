@@ -19,7 +19,7 @@ application/x-ole-storage=libreoffice-writer.desktop;
 video/x-flv=mplayer.desktop;
 video/x-msvideo=mplayer.desktop;
 application/vnd.rn-realmedia=mplayer.desktop;
-text/plain=nvim.desktop;wolfram-mathematica10.desktop;
+text/plain=neovim.desktop;nvim.desktop;wolfram-mathematica10.desktop;
 application/pdf=qpdfview-new.desktop;qpdfview-lxqt.desktop;qpdfview.desktop;xarchiver.desktop;
 application/x-bittorrent=neovim.desktop;gvim.desktop;
 audio/x-wav=deadbeef.desktop;
@@ -45,7 +45,7 @@ text/x-bibtex=neovim.desktop;
 application/x-sqlite3=zotero.desktop;
 
 [Default Applications]
-application/pdf=llpp.desktop
+application/pdf=qpdfview-lxqt.desktop
 application/postscript=gv.desktop
 image/x-eps=gv.desktop
 text/html=userapp-Firefox-EJUNLY.desktop

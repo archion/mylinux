@@ -30,3 +30,4 @@ export TERM=xterm-256color
 #export https_proxy=http://user:pass@114.212.200.3:64143/
 export QT_QPA_PLATFORMTHEME="qt5ct"
 export RUSTUP_DIST_SERVER="https://mirrors.ustc.edu.cn/rust-static"
+#export LD_LIBRARY_PATH=/usr/lib/openmpi/:$LD_LIBRARY_PATH

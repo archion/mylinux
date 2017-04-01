@@ -3,12 +3,12 @@ from __future__ import print_function
 import requests
 
 URL='https://app.arukas.io/api/containers'
-ARUKAS_JSON_API_SECRET='PW54yKDimCBkcwmRGBVFWCLAJdHjx08i0eAcfwV6KfnwxzqlFN2mQJm6ya7YuT6A'
-ARUKAS_JSON_API_TOKEN='6cbd63a6-66f0-434e-aa65-9f7c6e512bfa'
+ARUKAS_JSON_API_SECRET='5npNv77xuorNYVTNsULc0qPgXFFlDxxsnUGPEolccpsTxMNceRQWiRLuatZy4fXI'
+ARUKAS_JSON_API_TOKEN='54729c6e-01d6-441e-a46b-1affed010622'
 
 def response():
     r = requests.get(URL, auth=(ARUKAS_JSON_API_TOKEN, ARUKAS_JSON_API_SECRET))
-    js = r.json()['data'][1]['attributes']['port_mappings'][0][0]
+    js = r.json()['data'][0]['attributes']['port_mappings'][0][0]
     return js['host'], js['service_port']
 
 if __name__ == '__main__':

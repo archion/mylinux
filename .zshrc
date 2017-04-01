@@ -66,6 +66,7 @@ alias fuck='$(thefuck $(fc -ln -1))'
 #alias nvim-wrapper="nvim-wrapper '+colorscheme solarized' '+set background=dark'"
 alias vim="nvim"
 alias vimdiff="vim -d"
+alias termux="adb forward tcp:8022 tcp:8022 && ssh 127.0.0.1 -p 8022"
 
 # added by travis gem
 [ -f /home/archion/.travis/travis.sh ] && source /home/archion/.travis/travis.sh
