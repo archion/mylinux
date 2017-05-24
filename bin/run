@@ -9,7 +9,8 @@ if [[ $1 != "l" ]]; then
 	upload
 fi
 
-f=$(ls -t *.f90|head -1)
+#f=$(ls -t *.f90|head -1)
+f=$(ls -t $(grep -l program *.f90)|head -1)
 sed -i "s/^[^#].*=.*out/out = ${f%.*}.out/" makefile 
 make clean
 make

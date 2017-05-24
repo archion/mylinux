@@ -1,7 +1,7 @@
 #!/bin/bash
 t=0
 function disconnect() {
-	if  curl -s http://210.28.129.9/portal_io/logout | grep -o "下线成功"; then
+	if  curl -s http://p.nju.edu.cn/portal_io/logout | grep -o "下线成功"; then
 		notify-send "bras下线成功" --icon=dialog-information
 	else
 		echo -e '\033[0;31;1mbras下线失败'
@@ -30,7 +30,7 @@ while true;do
 	#if  ping -c 1 -w 1 210.28.129.9 &> /dev/null; then
 		while true;do
 			echo 正在尝试联网...
-			if  curl -s --data "username=$1&password=$2" http://210.28.129.9/portal_io/login |grep -o "登录成功"; then
+			if  curl -s --data "username=$1&password=$2" http://p.nju.edu.cn/portal_io/login |grep -o "登录成功"; then
 				break
 			else
 				echo -e '\033[0;31;1m登录失败，等待重试...'

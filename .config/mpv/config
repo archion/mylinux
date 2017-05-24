@@ -11,8 +11,8 @@ osd-level=3
 osd-border-color=0/0/0/0.5
 sub-text-font-size=35
 sub-text-border-color=0/0/0/0.5
-af=drc
 osd-bar-align-y=0.95
+af=lavfi=[acompressor]
 sub-auto=fuzzy
 volume=100
 geometry=-3-25

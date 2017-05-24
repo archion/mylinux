@@ -20,7 +20,7 @@ Plugin 'mattn/emmet-vim'
 Plugin 'majutsushi/tagbar'
 Plugin 'LaTeX-Suite-aka-Vim-LaTeX'
 Plugin 'rking/ag.vim'
-Plugin 'phildawes/racer'
+Plugin 'racer-rust/vim-racer'
 "Plugin 'LanguageTool'
 Plugin 'rust-lang/rust.vim'
 Plugin 'xolox/vim-misc'
@@ -30,10 +30,11 @@ Plugin 'benekastah/neomake'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'carbonscott/vim-smartfold'
 Plugin 'renamer.vim'
+Plugin 'vim-syntastic/syntastic'
 call vundle#end()
 filetype plugin indent on
 
-let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
+set guicursor=n-v-c:block-Cursor/lCursor-blinkon0,i-ci:ver25-Cursor/lCursor,r-cr:hor20-Cursor/lCursor
 
 " airline
 if !exists('g:airline_symbols')	
@@ -64,6 +65,7 @@ endif
 
 syntax on
 set t_Co=256
+set mouse=a
 colorscheme flattened_dark
 
 set encoding=utf-8
@@ -167,8 +169,26 @@ let g:tagbar_type_pandoc = {
 
 " racer 
 set hidden
-"let g:racer_cmd = expand("~/.multirust/toolchains/nightly/cargo/bin/racer")
-"let $RUST_SRC_PATH= expand("~/.multirust/src")
+"let g:racer_experimental_completer = 1
+au FileType rust nmap gd <Plug>(rust-def)
+au FileType rust nmap gs <Plug>(rust-def-split)
+au FileType rust nmap gx <Plug>(rust-def-vertical)
+au FileType rust nmap <leader>gd <Plug>(rust-doc)
+
+" syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 0
+let g:syntastic_check_on_wq = 1
+let g:syntastic_rust_rustc_exe = 'cargo check'
+let g:syntastic_rust_rustc_fname = ''
+let g:syntastic_rust_rustc_args = '--'
+let g:syntastic_rust_checkers = ['rustc']
+map <leader>s :SyntasticToggleMode<CR>
+
 
 " horizontal scroll
 set sidescroll=1
@@ -197,13 +217,11 @@ endif
 
 " autocommand
 au BufNewFile,BufRead *.plt,*.gnuplot set ft=gnuplot
-autocmd BufRead,BufNewFile Cargo.toml,Cargo.lock,*.rs compiler cargo
 au BufNewFile,BufRead *.plt,*.gnuplot,*.dat nmap <leader>p :e<cr> :w<cr> <C-w>j :silent !plot %:r.dat 2>/tmp/ploterr<cr>
 "autocmd FileType tex,pandoc setlocal spell spelllang=en_us
 au QuickFixCmdPost [^l]* nested cwindow
 au QuickFixCmdPost    l* nested lwindow
 "autocmd! BufWritePost * Neomake!
-autocmd! BufWritePost *.rs Neomake! cargo
 if has("autocmd")
     au InsertEnter *
         \ if v:insertmode == 'i' |
