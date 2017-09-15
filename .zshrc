@@ -59,6 +59,7 @@ bindkey '^U' backward-kill-line
 unalias gm
 alias ls='ls --time-style="+%Y-%m-%d %H:%M:%S"'
 alias ll='ls -lh'
+alias ll='exa -bglh --time-style long-iso'
 alias tmux="tmux -2"
 alias qmv="qmv -f do"
 alias fuck='$(thefuck $(fc -ln -1))'

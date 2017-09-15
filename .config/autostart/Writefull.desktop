@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Writefull
+Comment=Writefullstartup script
+Exec=/usr/share/writefull/Writefull --hidden
+StartupNotify=false
+Terminal=false
