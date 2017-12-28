@@ -1,5 +1,5 @@
 #!/bin/bash
 #ssh YZD@192.168.0.206 -p 2222 'rsync -avz /home/YZD/Projects/FortranProgram/data/ archion:/home/archion/Projects/FortranProgram/data'
 #ssh YZD@192.168.0.206 -p 2222 'ssh -X archion "DISPLAY=:0 notify-send \"Program complete!\" \"Run complete!\" --icon=dialog-information"'
-rsync -avz --size-only --blocking-io run:~/Projects/FortranProgram/data/ /home/archion/Projects/FortranProgram/data
+rsync -avzh run:~/Projects/FortranProgram/data/ /home/archion/Projects/FortranProgram/data
 

@@ -2,6 +2,16 @@
 __userfile__=true
 panels=panel1
 
+[clock]
+UTC=false
+alignment=Right
+autoRotate=true
+customDateFormat=
+dateFormat=MMM dd
+showDate=below
+timeFormat=HH:mm
+type=clock
+
 [desktopswitch]
 type=desktopswitch
 
@@ -33,9 +43,8 @@ lineCount=1
 lockPanel=false
 opacity=100
 panelSize=34
-plugins=mainmenu, quicklaunch, taskbar, tray2, mount, volume2, worldclock2
+plugins=mainmenu, quicklaunch, taskbar, tray2, mount, volume2, clock
 position=Bottom
-reserve-space=true
 show-delay=0
 width=100
 width-percent=true
@@ -46,9 +55,9 @@ type=panelvolume
 
 [quicklaunch]
 alignment=Left
-apps\1\desktop=/usr/share/applications/lxqt-config.desktop
-apps\2\desktop=/usr/share/applications/pcmanfm.desktop
-apps\3\desktop=/usr/share/applications/firefox-nightly.desktop
+apps\1\desktop=/usr/share/applications/firefox.desktop
+apps\2\desktop=/usr/share/applications/lxqt-config.desktop
+apps\3\desktop=/usr/share/applications/pcmanfm.desktop
 apps\size=3
 type=quicklaunch
 
@@ -59,7 +68,6 @@ buttonHeight=100
 buttonStyle=IconText
 buttonWidth=250
 closeOnMiddleClick=true
-cycleOnWheelScroll=true
 groupingEnabled=true
 iconByClass=true
 raiseOnCurrentDesktop=false
@@ -82,26 +90,3 @@ device=0
 ignoreMaxVolume=true
 type=volume
 volumeAdjustStep=1
-
-[worldclock2]
-alignment=Right
-autoRotate=true
-customFormat="'<b>'HH:mm:ss'</b><br/><font size=\"-2\">'ddd, d MMM yyyy'<br/>'TT'</font>'"
-dateFormatType=short
-dateLongNames=false
-datePadDay=false
-datePosition=below
-dateShowDoW=false
-dateShowYear=false
-defaultTimeZone=
-formatType=custom-timeonly
-showDate=true
-showTimezone=false
-timeAMPM=false
-timePadHour=false
-timeShowSeconds=false
-timeZones\size=0
-timezoneFormatType=iana
-timezonePosition=below
-type=worldclock
-useAdvancedManualFormat=false

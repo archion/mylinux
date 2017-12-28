@@ -3692,3 +3692,24 @@
 2017-12-26 09:45:44.103 (0x7ffe8cd00aa0) Debug: Systray started
 2017-12-26 10:46:55.322 (0x7ffe8cd00aa0) Debug: "/org/freedesktop/UDisks2/drives/Linux_File_CD_Gadget_4fb57bbc" has new interfaces: ("org.freedesktop.UDisks2.Drive")
 2017-12-26 10:46:55.329 (0x7ffe8cd00aa0) Debug: "/org/freedesktop/UDisks2/block_devices/sr1" has new interfaces: ("org.freedesktop.UDisks2.Block", "org.freedesktop.UDisks2.Filesystem")
+2017-12-28 10:02:33.940 (0x7ffe794216c0) Warning: UdevQt: unhandled device action "bind"
+2017-12-28 10:02:33.940 (0x7ffcf67d46d0) Warning: UdevQt: unhandled device action "bind"
+2017-12-28 10:05:21.265 (0x7ffcf67d46d0) Debug: execAction "/usr/share/applications/firefox-nightly.desktop"
+2017-12-28 10:05:57.393 (0x7ffcf67d46d0) Debug: execAction "/usr/share/applications/pcmanfm.desktop"
+2017-12-28 10:39:58.380 (0x7ffeea0b6bf0) Warning: The X11 connection broke (error 1). Did the X11 server die?
+2017-12-28 10:39:58.398 (0x7ffcf67d46d0) Warning: The X11 connection broke (error 1). Did the X11 server die?
+2017-12-28 10:53:31.425 (0x7ffd988a9210) Warning: Error expanding environment variable BROWSER = ""
+2017-12-28 10:53:31.447 (0x7ffd988a9210) Warning: Error expanding environment variable TERM = ""
+2017-12-28 10:53:34.104 (0x7fffbeeffb80) Debug: New PolkitAgentListener  0x5569bc26d8e0
+2017-12-28 10:53:34.154 (0x7fffbeeffb80) Debug: Adding new listener  PolkitQt1::Agent::Listener(0x7fffbeeffb90) for  0x5569bc26d8e0
+2017-12-28 10:53:53.518 (0x7fffde4bf9b0) Debug: WinIdChange 1c00007 handle QWidgetWindow(0x563eebd9b370, name="LXQtPanel panel1Window") QScreen(0x563eebb477c0, name="LVDS1")
+2017-12-28 10:53:53.562 (0x7fffde4bf9b0) Debug: Systray started
+2017-12-28 10:55:28.367 (0x7fffde4bf9b0) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 9011, resource id: 29360648, major code: 18 (ChangeProperty), minor code: 0
+2017-12-28 10:56:18.458 (0x7fffde4bf9b0) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 11695, resource id: 29360843, major code: 18 (ChangeProperty), minor code: 0
+2017-12-28 11:00:15.004 (0x7fffde4bf9b0) Warning: UdevQt: unhandled device action "bind"
+2017-12-28 11:00:15.006 (0x7fffde4bf9b0) Warning: UdevQt: unhandled device action "bind"
+2017-12-28 11:00:16.189 (0x7fffde4bf9b0) Debug: "/org/freedesktop/UDisks2/drives/Linux_File_CD_Gadget_4fb57bbc" has new interfaces: ("org.freedesktop.UDisks2.Drive")
+2017-12-28 11:00:16.196 (0x7fffde4bf9b0) Debug: "/org/freedesktop/UDisks2/block_devices/sr0" has new interfaces: ("org.freedesktop.UDisks2.Block", "org.freedesktop.UDisks2.Filesystem")
+2017-12-28 11:00:23.720 (0x7fffde4bf9b0) Debug: execAction "/usr/share/applications/firefox-nightly.desktop"
+2017-12-28 11:25:57.491 (0x7fffde4bf9b0) Warning: UdevQt: unhandled device action "bind"
+2017-12-28 11:46:37.820 (0x7fffde4bf9b0) Debug: execAction "/usr/share/applications/pcmanfm.desktop"
