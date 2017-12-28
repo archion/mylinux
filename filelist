@@ -48,5 +48,4 @@ bin/
 .config/mimeapps.list
 .gitconfig
 .config/qpdfview/
-/home/archion/.Xresources
-/home/archion/.Xresources
+.Xresources
