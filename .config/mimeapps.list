@@ -10,7 +10,7 @@ application/x-shellscript=neovim.desktop;
 text/x-tex=neovim.desktop;libreoffice-writer.desktop;
 application/x-gzpostscript=llpp.desktop;
 inode/socket=neovim.desktop;
-application/octet-stream=qpdfview.desktop;sxiv-rifle.desktop;neovim.desktop;
+application/octet-stream=nvim.desktop;qpdfview.desktop;sxiv-rifle.desktop;neovim.desktop;
 application/x-cd-image=mpv.desktop;xarchiver.desktop;
 application/postscript=gsview.desktop
 image/x-eps=gsview.desktop
@@ -43,6 +43,7 @@ application/x-extension-xht=userapp-Firefox-EJUNLY.desktop;userapp-Nightly-DY849
 text/x-c++src=neovim.desktop;
 text/x-bibtex=neovim.desktop;
 application/x-sqlite3=zotero.desktop;
+image/jpeg=libreoffice-draw.desktop;
 
 [Default Applications]
 application/pdf=qpdfview-lxqt.desktop

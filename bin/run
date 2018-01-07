@@ -10,13 +10,54 @@ if [[ $1 != "l" ]]; then
 fi
 
 #f=$(ls -t *.f90|head -1)
-f=$(ls -t $(grep -l program *.f90)|head -1)
-sed -i "s/^[^#].*=.*out/out = ${f%.*}.out/" makefile 
-make clean
+f=$(ls -t $(grep -ils program *.f90 *.f)|head -1)
+ext=${f#*.}
+f=${f%.*}
+#name=$(sed -n "/\(open.*file=\)\"\(.*\).dat\")/p" ${f}.${ext})
+name=$(grep "open" ${f}.${ext} | grep "File" | grep -Eo '[^"]*.dat')
+sed -i "s/^[^#].*=.*out/out = ${f}.out/" makefile 
+
+i=0
+for o in $name; do
+	#if [ -f $i ]; then
+		#echo -e "file" $i "already exists, try another name?\c"
+		echo -e "change file \"$o\"? \c"
+		read tmp
+		if [ -n "$tmp" ]; then
+			app_all[i]=$tmp
+			n=${o%.*}_${tmp}.dat
+			echo -en "\033[1A\033[2Knew filename: $n\n"
+			#sed -i "s|\(open.*file=\)\"$o\")|\1\"$n\")|" ${f}.${ext}
+		fi
+	#fi
+	i+=1
+done
+
+i=0
+for o in $name; do
+	if [ -n "${app_all[i]}" ]; then
+		n=${o%.*}_${app_all[i]}.dat
+		sed -i "s|\(open.*File=\)\"$o\")|\1\"$n\")|" ${f}.${ext}
+	fi
+	i+=1
+done
+
+make clean 
 make
+
+i=0
+for o in $name; do
+	if [ -n "${app_all[i]}" ]; then
+		n=${o%.*}_${app_all[i]}.dat
+		sed -i "s|\(open.*File=\)\"$n\")|\1\"$o\")|" ${f}.${ext}
+	fi
+	i+=1
+done
+
 t1=$(date +%F\ %T)
 echo -e "\e[0;32;1m run \e[41;32;1m ${f%.*}.out \e[0;32;1m at $t1 \e[0m"
-./${f%.*}.out
+./${f}.out
+
 t2=$(date +%F\ %T)
 
 if [[ $1 != "l" ]]; then
@@ -33,3 +74,14 @@ dt=$((dt-hour*(60*60)))
 min=$((dt/(60)))
 sec=$((dt-min*(60)))
 echo -e "\e[0;32;1m run \e[41;32;1m ${f%.*}.out \e[0;32;1m From $t1 to $t2 total time is ${day}D ${hour}h ${min}m ${sec}s \e[0m"
+
+echo "The output file is:"
+i=0
+for o in $name; do
+	if [ -n "${app_all[i]}" ]; then
+		echo ${o%.*}_${app_all[i]}.dat
+	else
+		echo ${o}
+	fi
+	i+=1
+done

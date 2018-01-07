@@ -16,19 +16,16 @@ throttle.global_down.max_rate.set_kb = 0
 throttle.global_up.max_rate.set_kb = 0
 
 # Default directory to save the downloaded torrents.
-#directory.default.set = ~/Downloads/torrents/Downloads
-directory.default.set = /mnt/Zhou_E/Downloads
+directory.default.set = ~/Downloads/torrents/Downloads
 
 # Default session directory. Make sure you don't run multiple instance
 # of rtorrent using the same session directory. Perhaps using a
 # relative path?
-#session.path.set = ~/Downloads/torrents/session
-session.path.set = /mnt/Zhou_E/Downloads/torrents/session
+session.path.set = ~/Downloads/torrents/session
 
 # Watch a directory for new torrents, and stop those that have been
 # deleted.
-#schedule2 = watch_directory,5,5,load.start=~/Downloads/torrents/*.torrent
-schedule2 = watch_directory,5,5,load.start=/mnt/Zhou_E/Downloads/torrents/*.torrent
+schedule2 = watch_directory,5,5,load.start=~/Downloads/torrents/*.torrent
 # schedule2 = untied_directory,5,5,stop_untied=
 # schedule2 = tied_directory,5,5,start_tied=
 
