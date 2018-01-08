@@ -9411,3 +9411,689 @@
 2018-01-07 15:30:56.344 (0x7fff55ba16e0) Debug: BatteryChanged discharging: false chargeLevel: 100 actionTime: QTime(Invalid)
 2018-01-07 16:08:43.392 (0x7ffd34ca3880) Warning: libpng warning: iCCP: known incorrect sRGB profile
 2018-01-07 16:09:59.177 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 21081, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:14:55.022 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 38345, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:33:31.395 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 8575, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:33:35.524 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 8775, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:33:36.812 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 8888, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:33:37.867 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 9001, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:33:38.436 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 9086, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:33:38.809 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 9171, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:33:39.238 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 9256, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:33:39.721 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 9365, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:33:43.038 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 9450, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:33:43.739 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 9535, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:33:44.281 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 9620, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:33:44.457 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 9705, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:33:44.777 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 9790, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:33:44.942 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 9875, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:33:45.107 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 9960, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:33:45.418 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 10045, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:33:45.756 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 10130, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:33:46.814 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 10215, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:33:47.118 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 10300, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:33:47.301 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 10441, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:33:47.477 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 10554, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:33:47.644 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 10639, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:33:47.959 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 10724, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:33:48.165 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 10809, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:33:48.318 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 10894, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:33:48.539 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 11035, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:33:48.799 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 11177, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:33:50.047 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 11262, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:33:50.866 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 11347, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:33:53.981 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 11563, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:33:57.444 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 11771, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:33:59.074 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 12011, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:34:12.641 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 12345, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:34:16.242 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 12430, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:34:17.519 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 12515, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:34:20.312 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 12600, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:34:25.259 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 12685, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:34:32.378 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 12770, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:34:37.293 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 12855, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:34:38.046 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 12940, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:34:38.836 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 13025, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:34:46.352 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 13110, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:34:47.803 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 13195, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:34:50.623 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 13280, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:36:37.235 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 13957, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:36:39.590 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 14042, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:36:40.006 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 14183, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:36:46.004 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 14280, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:36:46.108 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 14365, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:36:46.748 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 14450, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:36:47.614 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 14535, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:36:50.305 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 14620, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:36:50.419 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 14705, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:36:55.068 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 14790, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:36:55.600 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 14875, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:36:57.940 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 14960, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:36:58.009 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 15045, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:37:01.180 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 15130, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:37:05.354 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 15570, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:37:42.504 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 26410, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:37:43.206 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 26495, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:37:52.421 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 26636, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:37:55.318 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 26721, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:38:05.558 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 27088, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:38:05.663 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 27173, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:38:10.893 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 27258, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:38:11.120 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 27343, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:38:14.465 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 27428, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:38:14.743 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 27513, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:39:01.999 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 27708, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:39:02.690 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 27821, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:39:53.696 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 27991, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:42:14.473 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 50787, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:51:12.828 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 52892, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:51:18.163 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 53079, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:51:18.263 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 53164, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:51:23.074 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 53363, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:51:23.140 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 53448, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:51:27.167 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 53533, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:51:27.234 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 53618, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:51:32.243 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 53846, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:51:32.307 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 53931, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:51:35.440 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 54016, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:51:35.498 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 54101, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:52:08.842 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 54381, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:52:08.906 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 54466, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:52:28.549 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 54607, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:52:31.688 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 54692, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:52:31.761 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 54777, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:52:52.502 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 54947, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:52:58.285 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 55032, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:52:58.356 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 55117, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:59:33.010 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 56799, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:59:41.011 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 57044, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:59:41.137 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 57129, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:59:44.720 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 57214, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 16:59:47.410 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 57299, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 17:07:17.066 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 58847, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 17:07:17.160 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 58932, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 17:21:31.820 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 61567, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 17:21:41.804 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 61841, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 17:21:41.918 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 61926, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 17:26:18.854 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Darker/actions/16/"
+2018-01-07 17:26:18.854 (0x7ffc85949610) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Darker/apps/16/"
+2018-01-07 17:26:18.855 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Darker/actions/22/"
+2018-01-07 17:26:18.855 (0x7ffc85949610) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Darker/apps/22/"
+2018-01-07 17:26:18.855 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Darker/actions/24/"
+2018-01-07 17:26:18.855 (0x7ffc85949610) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Darker/apps/24/"
+2018-01-07 17:26:18.856 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Darker/actions/32/"
+2018-01-07 17:26:18.856 (0x7ffc85949610) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Darker/apps/32/"
+2018-01-07 17:26:18.856 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Darker/actions/48/"
+2018-01-07 17:26:18.856 (0x7ffc85949610) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Darker/apps/48/"
+2018-01-07 17:26:18.856 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Darker/actions/64/"
+2018-01-07 17:26:18.857 (0x7ffc85949610) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Darker/apps/64/"
+2018-01-07 17:26:18.857 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Darker/actions/96/"
+2018-01-07 17:26:18.857 (0x7ffc85949610) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Darker/apps/96/"
+2018-01-07 17:26:18.857 (0x7ffc85949610) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Darker/apps/scalable/"
+2018-01-07 17:26:18.867 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Darkest/actions/16/"
+2018-01-07 17:26:18.868 (0x7ffc85949610) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Darkest/apps/16/"
+2018-01-07 17:26:18.868 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Darkest/actions/22/"
+2018-01-07 17:26:18.868 (0x7ffc85949610) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Darkest/apps/22/"
+2018-01-07 17:26:18.868 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Darkest/actions/24/"
+2018-01-07 17:26:18.869 (0x7ffc85949610) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Darkest/apps/24/"
+2018-01-07 17:26:18.869 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Darkest/actions/32/"
+2018-01-07 17:26:18.869 (0x7ffc85949610) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Darkest/apps/32/"
+2018-01-07 17:26:18.869 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Darkest/actions/48/"
+2018-01-07 17:26:18.869 (0x7ffc85949610) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Darkest/apps/48/"
+2018-01-07 17:26:18.870 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Darkest/actions/64/"
+2018-01-07 17:26:18.870 (0x7ffc85949610) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Darkest/apps/64/"
+2018-01-07 17:26:18.870 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Darkest/actions/96/"
+2018-01-07 17:26:18.870 (0x7ffc85949610) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Darkest/apps/96/"
+2018-01-07 17:26:18.871 (0x7ffc85949610) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Darkest/apps/scalable/"
+2018-01-07 17:26:18.878 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/actions/16/"
+2018-01-07 17:26:18.879 (0x7ffc85949610) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Dark/apps/16/"
+2018-01-07 17:26:18.879 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/categories/16/"
+2018-01-07 17:26:18.879 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/status/16/"
+2018-01-07 17:26:18.879 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/actions/22/"
+2018-01-07 17:26:18.879 (0x7ffc85949610) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Dark/apps/22/"
+2018-01-07 17:26:18.880 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/categories/22/"
+2018-01-07 17:26:18.880 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/devices/22/"
+2018-01-07 17:26:18.880 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/places/22/"
+2018-01-07 17:26:18.880 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/status/22/"
+2018-01-07 17:26:18.880 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/actions/24/"
+2018-01-07 17:26:18.881 (0x7ffc85949610) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Dark/apps/24/"
+2018-01-07 17:26:18.881 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/categories/24/"
+2018-01-07 17:26:18.881 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/devices/24/"
+2018-01-07 17:26:18.881 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/places/24/"
+2018-01-07 17:26:18.881 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/status/24/"
+2018-01-07 17:26:18.882 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/actions/32/"
+2018-01-07 17:26:18.882 (0x7ffc85949610) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Dark/apps/32/"
+2018-01-07 17:26:18.882 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/categories/32/"
+2018-01-07 17:26:18.882 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/places/32/"
+2018-01-07 17:26:18.882 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/status/32/"
+2018-01-07 17:26:18.883 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/actions/48/"
+2018-01-07 17:26:18.883 (0x7ffc85949610) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Dark/apps/48/"
+2018-01-07 17:26:18.883 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/categories/48/"
+2018-01-07 17:26:18.883 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/places/48/"
+2018-01-07 17:26:18.883 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/status/48/"
+2018-01-07 17:26:18.883 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/actions/64/"
+2018-01-07 17:26:18.883 (0x7ffc85949610) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Dark/apps/64/"
+2018-01-07 17:26:18.884 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/categories/64/"
+2018-01-07 17:26:18.884 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/places/64/"
+2018-01-07 17:26:18.884 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/status/64/"
+2018-01-07 17:26:18.884 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/actions/96/"
+2018-01-07 17:26:18.884 (0x7ffc85949610) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Dark/apps/96/"
+2018-01-07 17:26:18.884 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/categories/96/"
+2018-01-07 17:26:18.885 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/places/96/"
+2018-01-07 17:26:18.885 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/status/96/"
+2018-01-07 17:26:18.885 (0x7ffc85949610) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Dark/apps/scalable/"
+2018-01-07 17:26:18.894 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/emblems/8/"
+2018-01-07 17:26:18.894 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/actions/16/"
+2018-01-07 17:26:18.894 (0x7ffc85949610) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza/apps/16/"
+2018-01-07 17:26:18.894 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/categories/16/"
+2018-01-07 17:26:18.894 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/devices/16/"
+2018-01-07 17:26:18.894 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/emblems/16/"
+2018-01-07 17:26:18.895 (0x7ffc85949610) Warning: Invalid Context= "Mimetypes" line for icon theme:  "/usr/share/icons/Faenza/mimetypes/16/"
+2018-01-07 17:26:18.895 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/places/16/"
+2018-01-07 17:26:18.895 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/status/16/"
+2018-01-07 17:26:18.895 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/actions/22/"
+2018-01-07 17:26:18.895 (0x7ffc85949610) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza/apps/22/"
+2018-01-07 17:26:18.895 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/categories/22/"
+2018-01-07 17:26:18.896 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/devices/22/"
+2018-01-07 17:26:18.896 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/emblems/22/"
+2018-01-07 17:26:18.896 (0x7ffc85949610) Warning: Invalid Context= "Mimetypes" line for icon theme:  "/usr/share/icons/Faenza/mimetypes/22/"
+2018-01-07 17:26:18.896 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/places/22/"
+2018-01-07 17:26:18.896 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/status/22/"
+2018-01-07 17:26:18.896 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/actions/24/"
+2018-01-07 17:26:18.896 (0x7ffc85949610) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza/apps/24/"
+2018-01-07 17:26:18.897 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/categories/24/"
+2018-01-07 17:26:18.897 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/devices/24/"
+2018-01-07 17:26:18.897 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/emblems/24/"
+2018-01-07 17:26:18.897 (0x7ffc85949610) Warning: Invalid Context= "Mimetypes" line for icon theme:  "/usr/share/icons/Faenza/mimetypes/24/"
+2018-01-07 17:26:18.897 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/places/24/"
+2018-01-07 17:26:18.897 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/status/24/"
+2018-01-07 17:26:18.897 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/actions/32/"
+2018-01-07 17:26:18.898 (0x7ffc85949610) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza/apps/32/"
+2018-01-07 17:26:18.898 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/categories/32/"
+2018-01-07 17:26:18.898 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/devices/32/"
+2018-01-07 17:26:18.898 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/emblems/32/"
+2018-01-07 17:26:18.898 (0x7ffc85949610) Warning: Invalid Context= "Mimetypes" line for icon theme:  "/usr/share/icons/Faenza/mimetypes/32/"
+2018-01-07 17:26:18.898 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/places/32/"
+2018-01-07 17:26:18.898 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/status/32/"
+2018-01-07 17:26:18.899 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/actions/48/"
+2018-01-07 17:26:18.899 (0x7ffc85949610) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza/apps/48/"
+2018-01-07 17:26:18.899 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/categories/48/"
+2018-01-07 17:26:18.899 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/devices/48/"
+2018-01-07 17:26:18.899 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/emblems/48/"
+2018-01-07 17:26:18.899 (0x7ffc85949610) Warning: Invalid Context= "Mimetypes" line for icon theme:  "/usr/share/icons/Faenza/mimetypes/48/"
+2018-01-07 17:26:18.899 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/places/48/"
+2018-01-07 17:26:18.900 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/status/48/"
+2018-01-07 17:26:18.900 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/actions/64/"
+2018-01-07 17:26:18.900 (0x7ffc85949610) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza/apps/64/"
+2018-01-07 17:26:18.900 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/categories/64/"
+2018-01-07 17:26:18.900 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/devices/64/"
+2018-01-07 17:26:18.900 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/emblems/64/"
+2018-01-07 17:26:18.900 (0x7ffc85949610) Warning: Invalid Context= "Mimetypes" line for icon theme:  "/usr/share/icons/Faenza/mimetypes/64/"
+2018-01-07 17:26:18.901 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/places/64/"
+2018-01-07 17:26:18.901 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/status/64/"
+2018-01-07 17:26:18.901 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/actions/96/"
+2018-01-07 17:26:18.901 (0x7ffc85949610) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza/apps/96/"
+2018-01-07 17:26:18.901 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/categories/96/"
+2018-01-07 17:26:18.901 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/devices/96/"
+2018-01-07 17:26:18.901 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/emblems/96/"
+2018-01-07 17:26:18.902 (0x7ffc85949610) Warning: Invalid Context= "Mimetypes" line for icon theme:  "/usr/share/icons/Faenza/mimetypes/96/"
+2018-01-07 17:26:18.902 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/places/96/"
+2018-01-07 17:26:18.902 (0x7ffc85949610) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/status/96/"
+2018-01-07 17:26:18.902 (0x7ffc85949610) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza/apps/scalable/"
+2018-01-07 17:26:18.902 (0x7ffc85949610) Warning: Invalid Context= "Mimetypes" line for icon theme:  "/usr/share/icons/Faenza/mimetypes/scalable/"
+2018-01-07 17:26:18.903 (0x7ffc85949610) Warning: Icon theme "gnome" not found.
+2018-01-07 18:19:12.556 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 8256, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 18:19:19.290 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 8660, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 18:19:28.198 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 15892, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 18:19:33.526 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 16109, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 18:20:55.222 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 17374, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 18:22:10.289 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 18348, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 18:26:41.383 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 20054, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 18:26:53.297 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 20918, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 18:26:55.649 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 21385, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 18:26:57.296 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 21836, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 18:26:58.894 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 22304, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 18:27:11.423 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 22613, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 18:27:11.728 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 22704, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 18:27:39.688 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 23053, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 18:27:49.183 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 23482, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 18:28:10.038 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 24021, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 18:28:28.614 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 24444, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 18:40:05.956 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 26678, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 18:40:16.287 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 26902, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 18:40:16.420 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 26993, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 18:40:19.926 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 27084, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 18:40:26.590 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 27175, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 18:40:33.864 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 27518, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 18:40:39.155 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 27941, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 18:40:41.374 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 28335, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 18:40:43.495 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 28506, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 18:40:43.575 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 28597, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 18:44:35.970 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 29391, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 18:44:36.061 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 29482, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 18:48:37.841 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 30219, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 18:48:52.241 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 30424, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 18:48:52.368 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 30515, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 18:48:59.104 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 30606, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 18:49:02.642 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 31049, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 18:49:18.457 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 31501, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 18:49:22.017 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 31672, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 18:49:27.547 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 31877, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 18:49:27.657 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 31968, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 18:49:38.000 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 32173, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 18:49:38.140 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 32264, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 18:49:44.428 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 32469, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 18:49:44.572 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 32560, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 18:49:48.312 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 32651, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 19:05:12.389 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 35242, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 19:10:52.279 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 36537, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 19:11:05.552 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 37340, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 19:33:21.405 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 41989, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 19:36:42.388 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Darker/actions/16/"
+2018-01-07 19:36:42.388 (0x7ffe187b4a20) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Darker/apps/16/"
+2018-01-07 19:36:42.388 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Darker/actions/22/"
+2018-01-07 19:36:42.389 (0x7ffe187b4a20) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Darker/apps/22/"
+2018-01-07 19:36:42.389 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Darker/actions/24/"
+2018-01-07 19:36:42.389 (0x7ffe187b4a20) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Darker/apps/24/"
+2018-01-07 19:36:42.389 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Darker/actions/32/"
+2018-01-07 19:36:42.389 (0x7ffe187b4a20) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Darker/apps/32/"
+2018-01-07 19:36:42.389 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Darker/actions/48/"
+2018-01-07 19:36:42.389 (0x7ffe187b4a20) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Darker/apps/48/"
+2018-01-07 19:36:42.389 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Darker/actions/64/"
+2018-01-07 19:36:42.389 (0x7ffe187b4a20) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Darker/apps/64/"
+2018-01-07 19:36:42.389 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Darker/actions/96/"
+2018-01-07 19:36:42.390 (0x7ffe187b4a20) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Darker/apps/96/"
+2018-01-07 19:36:42.390 (0x7ffe187b4a20) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Darker/apps/scalable/"
+2018-01-07 19:36:42.399 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Darkest/actions/16/"
+2018-01-07 19:36:42.400 (0x7ffe187b4a20) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Darkest/apps/16/"
+2018-01-07 19:36:42.400 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Darkest/actions/22/"
+2018-01-07 19:36:42.400 (0x7ffe187b4a20) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Darkest/apps/22/"
+2018-01-07 19:36:42.400 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Darkest/actions/24/"
+2018-01-07 19:36:42.401 (0x7ffe187b4a20) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Darkest/apps/24/"
+2018-01-07 19:36:42.401 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Darkest/actions/32/"
+2018-01-07 19:36:42.401 (0x7ffe187b4a20) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Darkest/apps/32/"
+2018-01-07 19:36:42.401 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Darkest/actions/48/"
+2018-01-07 19:36:42.401 (0x7ffe187b4a20) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Darkest/apps/48/"
+2018-01-07 19:36:42.402 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Darkest/actions/64/"
+2018-01-07 19:36:42.402 (0x7ffe187b4a20) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Darkest/apps/64/"
+2018-01-07 19:36:42.402 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Darkest/actions/96/"
+2018-01-07 19:36:42.402 (0x7ffe187b4a20) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Darkest/apps/96/"
+2018-01-07 19:36:42.402 (0x7ffe187b4a20) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Darkest/apps/scalable/"
+2018-01-07 19:36:42.404 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/actions/16/"
+2018-01-07 19:36:42.404 (0x7ffe187b4a20) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Dark/apps/16/"
+2018-01-07 19:36:42.405 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/categories/16/"
+2018-01-07 19:36:42.405 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/status/16/"
+2018-01-07 19:36:42.405 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/actions/22/"
+2018-01-07 19:36:42.405 (0x7ffe187b4a20) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Dark/apps/22/"
+2018-01-07 19:36:42.405 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/categories/22/"
+2018-01-07 19:36:42.405 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/devices/22/"
+2018-01-07 19:36:42.405 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/places/22/"
+2018-01-07 19:36:42.405 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/status/22/"
+2018-01-07 19:36:42.405 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/actions/24/"
+2018-01-07 19:36:42.406 (0x7ffe187b4a20) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Dark/apps/24/"
+2018-01-07 19:36:42.406 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/categories/24/"
+2018-01-07 19:36:42.406 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/devices/24/"
+2018-01-07 19:36:42.406 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/places/24/"
+2018-01-07 19:36:42.406 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/status/24/"
+2018-01-07 19:36:42.406 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/actions/32/"
+2018-01-07 19:36:42.406 (0x7ffe187b4a20) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Dark/apps/32/"
+2018-01-07 19:36:42.406 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/categories/32/"
+2018-01-07 19:36:42.407 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/places/32/"
+2018-01-07 19:36:42.407 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/status/32/"
+2018-01-07 19:36:42.407 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/actions/48/"
+2018-01-07 19:36:42.407 (0x7ffe187b4a20) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Dark/apps/48/"
+2018-01-07 19:36:42.407 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/categories/48/"
+2018-01-07 19:36:42.407 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/places/48/"
+2018-01-07 19:36:42.407 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/status/48/"
+2018-01-07 19:36:42.407 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/actions/64/"
+2018-01-07 19:36:42.408 (0x7ffe187b4a20) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Dark/apps/64/"
+2018-01-07 19:36:42.408 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/categories/64/"
+2018-01-07 19:36:42.408 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/places/64/"
+2018-01-07 19:36:42.408 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/status/64/"
+2018-01-07 19:36:42.408 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/actions/96/"
+2018-01-07 19:36:42.408 (0x7ffe187b4a20) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Dark/apps/96/"
+2018-01-07 19:36:42.409 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/categories/96/"
+2018-01-07 19:36:42.409 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/places/96/"
+2018-01-07 19:36:42.409 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/status/96/"
+2018-01-07 19:36:42.409 (0x7ffe187b4a20) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Dark/apps/scalable/"
+2018-01-07 19:36:42.410 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/emblems/8/"
+2018-01-07 19:36:42.410 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/actions/16/"
+2018-01-07 19:36:42.410 (0x7ffe187b4a20) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza/apps/16/"
+2018-01-07 19:36:42.411 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/categories/16/"
+2018-01-07 19:36:42.411 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/devices/16/"
+2018-01-07 19:36:42.411 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/emblems/16/"
+2018-01-07 19:36:42.411 (0x7ffe187b4a20) Warning: Invalid Context= "Mimetypes" line for icon theme:  "/usr/share/icons/Faenza/mimetypes/16/"
+2018-01-07 19:36:42.411 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/places/16/"
+2018-01-07 19:36:42.411 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/status/16/"
+2018-01-07 19:36:42.411 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/actions/22/"
+2018-01-07 19:36:42.411 (0x7ffe187b4a20) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza/apps/22/"
+2018-01-07 19:36:42.411 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/categories/22/"
+2018-01-07 19:36:42.412 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/devices/22/"
+2018-01-07 19:36:42.412 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/emblems/22/"
+2018-01-07 19:36:42.412 (0x7ffe187b4a20) Warning: Invalid Context= "Mimetypes" line for icon theme:  "/usr/share/icons/Faenza/mimetypes/22/"
+2018-01-07 19:36:42.412 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/places/22/"
+2018-01-07 19:36:42.412 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/status/22/"
+2018-01-07 19:36:42.412 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/actions/24/"
+2018-01-07 19:36:42.412 (0x7ffe187b4a20) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza/apps/24/"
+2018-01-07 19:36:42.412 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/categories/24/"
+2018-01-07 19:36:42.412 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/devices/24/"
+2018-01-07 19:36:42.413 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/emblems/24/"
+2018-01-07 19:36:42.413 (0x7ffe187b4a20) Warning: Invalid Context= "Mimetypes" line for icon theme:  "/usr/share/icons/Faenza/mimetypes/24/"
+2018-01-07 19:36:42.413 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/places/24/"
+2018-01-07 19:36:42.413 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/status/24/"
+2018-01-07 19:36:42.413 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/actions/32/"
+2018-01-07 19:36:42.413 (0x7ffe187b4a20) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza/apps/32/"
+2018-01-07 19:36:42.413 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/categories/32/"
+2018-01-07 19:36:42.413 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/devices/32/"
+2018-01-07 19:36:42.414 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/emblems/32/"
+2018-01-07 19:36:42.414 (0x7ffe187b4a20) Warning: Invalid Context= "Mimetypes" line for icon theme:  "/usr/share/icons/Faenza/mimetypes/32/"
+2018-01-07 19:36:42.414 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/places/32/"
+2018-01-07 19:36:42.414 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/status/32/"
+2018-01-07 19:36:42.414 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/actions/48/"
+2018-01-07 19:36:42.414 (0x7ffe187b4a20) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza/apps/48/"
+2018-01-07 19:36:42.414 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/categories/48/"
+2018-01-07 19:36:42.414 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/devices/48/"
+2018-01-07 19:36:42.415 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/emblems/48/"
+2018-01-07 19:36:42.415 (0x7ffe187b4a20) Warning: Invalid Context= "Mimetypes" line for icon theme:  "/usr/share/icons/Faenza/mimetypes/48/"
+2018-01-07 19:36:42.415 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/places/48/"
+2018-01-07 19:36:42.415 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/status/48/"
+2018-01-07 19:36:42.415 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/actions/64/"
+2018-01-07 19:36:42.415 (0x7ffe187b4a20) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza/apps/64/"
+2018-01-07 19:36:42.415 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/categories/64/"
+2018-01-07 19:36:42.415 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/devices/64/"
+2018-01-07 19:36:42.415 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/emblems/64/"
+2018-01-07 19:36:42.416 (0x7ffe187b4a20) Warning: Invalid Context= "Mimetypes" line for icon theme:  "/usr/share/icons/Faenza/mimetypes/64/"
+2018-01-07 19:36:42.416 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/places/64/"
+2018-01-07 19:36:42.416 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/status/64/"
+2018-01-07 19:36:42.416 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/actions/96/"
+2018-01-07 19:36:42.416 (0x7ffe187b4a20) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza/apps/96/"
+2018-01-07 19:36:42.416 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/categories/96/"
+2018-01-07 19:36:42.416 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/devices/96/"
+2018-01-07 19:36:42.416 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/emblems/96/"
+2018-01-07 19:36:42.417 (0x7ffe187b4a20) Warning: Invalid Context= "Mimetypes" line for icon theme:  "/usr/share/icons/Faenza/mimetypes/96/"
+2018-01-07 19:36:42.417 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/places/96/"
+2018-01-07 19:36:42.417 (0x7ffe187b4a20) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/status/96/"
+2018-01-07 19:36:42.417 (0x7ffe187b4a20) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza/apps/scalable/"
+2018-01-07 19:36:42.417 (0x7ffe187b4a20) Warning: Invalid Context= "Mimetypes" line for icon theme:  "/usr/share/icons/Faenza/mimetypes/scalable/"
+2018-01-07 19:36:42.417 (0x7ffe187b4a20) Warning: Icon theme "gnome" not found.
+2018-01-07 19:36:42.795 (0x7ffe187b4a20) Warning: QFSFileEngine::open: No file name specified
+2018-01-07 19:36:42.932 (0x7ffe187b4a20) Warning: QFSFileEngine::open: No file name specified
+2018-01-07 19:36:42.932 (0x7ffe187b4a20) Warning: QFSFileEngine::open: No file name specified
+2018-01-07 19:36:42.932 (0x7ffe187b4a20) Warning: QFSFileEngine::open: No file name specified
+2018-01-07 19:36:42.932 (0x7ffe187b4a20) Warning: QFSFileEngine::open: No file name specified
+2018-01-07 19:36:42.932 (0x7ffe187b4a20) Warning: QFSFileEngine::open: No file name specified
+2018-01-07 19:36:42.932 (0x7ffe187b4a20) Warning: QFSFileEngine::open: No file name specified
+2018-01-07 19:36:42.933 (0x7ffe187b4a20) Warning: QFSFileEngine::open: No file name specified
+2018-01-07 19:36:42.933 (0x7ffe187b4a20) Warning: QFSFileEngine::open: No file name specified
+2018-01-07 19:36:42.933 (0x7ffe187b4a20) Warning: QFSFileEngine::open: No file name specified
+2018-01-07 19:36:42.933 (0x7ffe187b4a20) Warning: QFSFileEngine::open: No file name specified
+2018-01-07 19:36:42.933 (0x7ffe187b4a20) Warning: QFSFileEngine::open: No file name specified
+2018-01-07 19:36:44.654 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 54478, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 19:36:49.393 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Darker/actions/16/"
+2018-01-07 19:36:49.393 (0x7fff953e73b0) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Darker/apps/16/"
+2018-01-07 19:36:49.393 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Darker/actions/22/"
+2018-01-07 19:36:49.393 (0x7fff953e73b0) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Darker/apps/22/"
+2018-01-07 19:36:49.394 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Darker/actions/24/"
+2018-01-07 19:36:49.394 (0x7fff953e73b0) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Darker/apps/24/"
+2018-01-07 19:36:49.394 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Darker/actions/32/"
+2018-01-07 19:36:49.394 (0x7fff953e73b0) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Darker/apps/32/"
+2018-01-07 19:36:49.394 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Darker/actions/48/"
+2018-01-07 19:36:49.394 (0x7fff953e73b0) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Darker/apps/48/"
+2018-01-07 19:36:49.394 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Darker/actions/64/"
+2018-01-07 19:36:49.394 (0x7fff953e73b0) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Darker/apps/64/"
+2018-01-07 19:36:49.394 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Darker/actions/96/"
+2018-01-07 19:36:49.394 (0x7fff953e73b0) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Darker/apps/96/"
+2018-01-07 19:36:49.394 (0x7fff953e73b0) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Darker/apps/scalable/"
+2018-01-07 19:36:49.395 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Darkest/actions/16/"
+2018-01-07 19:36:49.395 (0x7fff953e73b0) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Darkest/apps/16/"
+2018-01-07 19:36:49.395 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Darkest/actions/22/"
+2018-01-07 19:36:49.395 (0x7fff953e73b0) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Darkest/apps/22/"
+2018-01-07 19:36:49.395 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Darkest/actions/24/"
+2018-01-07 19:36:49.395 (0x7fff953e73b0) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Darkest/apps/24/"
+2018-01-07 19:36:49.395 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Darkest/actions/32/"
+2018-01-07 19:36:49.396 (0x7fff953e73b0) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Darkest/apps/32/"
+2018-01-07 19:36:49.396 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Darkest/actions/48/"
+2018-01-07 19:36:49.396 (0x7fff953e73b0) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Darkest/apps/48/"
+2018-01-07 19:36:49.396 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Darkest/actions/64/"
+2018-01-07 19:36:49.396 (0x7fff953e73b0) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Darkest/apps/64/"
+2018-01-07 19:36:49.396 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Darkest/actions/96/"
+2018-01-07 19:36:49.396 (0x7fff953e73b0) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Darkest/apps/96/"
+2018-01-07 19:36:49.396 (0x7fff953e73b0) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Darkest/apps/scalable/"
+2018-01-07 19:36:49.397 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/actions/16/"
+2018-01-07 19:36:49.397 (0x7fff953e73b0) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Dark/apps/16/"
+2018-01-07 19:36:49.397 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/categories/16/"
+2018-01-07 19:36:49.397 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/status/16/"
+2018-01-07 19:36:49.397 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/actions/22/"
+2018-01-07 19:36:49.397 (0x7fff953e73b0) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Dark/apps/22/"
+2018-01-07 19:36:49.397 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/categories/22/"
+2018-01-07 19:36:49.397 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/devices/22/"
+2018-01-07 19:36:49.397 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/places/22/"
+2018-01-07 19:36:49.397 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/status/22/"
+2018-01-07 19:36:49.397 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/actions/24/"
+2018-01-07 19:36:49.397 (0x7fff953e73b0) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Dark/apps/24/"
+2018-01-07 19:36:49.397 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/categories/24/"
+2018-01-07 19:36:49.397 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/devices/24/"
+2018-01-07 19:36:49.397 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/places/24/"
+2018-01-07 19:36:49.398 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/status/24/"
+2018-01-07 19:36:49.398 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/actions/32/"
+2018-01-07 19:36:49.398 (0x7fff953e73b0) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Dark/apps/32/"
+2018-01-07 19:36:49.398 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/categories/32/"
+2018-01-07 19:36:49.398 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/places/32/"
+2018-01-07 19:36:49.398 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/status/32/"
+2018-01-07 19:36:49.398 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/actions/48/"
+2018-01-07 19:36:49.398 (0x7fff953e73b0) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Dark/apps/48/"
+2018-01-07 19:36:49.398 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/categories/48/"
+2018-01-07 19:36:49.398 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/places/48/"
+2018-01-07 19:36:49.398 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/status/48/"
+2018-01-07 19:36:49.398 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/actions/64/"
+2018-01-07 19:36:49.398 (0x7fff953e73b0) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Dark/apps/64/"
+2018-01-07 19:36:49.398 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/categories/64/"
+2018-01-07 19:36:49.398 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/places/64/"
+2018-01-07 19:36:49.399 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/status/64/"
+2018-01-07 19:36:49.399 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/actions/96/"
+2018-01-07 19:36:49.399 (0x7fff953e73b0) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Dark/apps/96/"
+2018-01-07 19:36:49.399 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/categories/96/"
+2018-01-07 19:36:49.399 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/places/96/"
+2018-01-07 19:36:49.399 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/status/96/"
+2018-01-07 19:36:49.399 (0x7fff953e73b0) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Dark/apps/scalable/"
+2018-01-07 19:36:49.400 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/emblems/8/"
+2018-01-07 19:36:49.400 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/actions/16/"
+2018-01-07 19:36:49.400 (0x7fff953e73b0) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza/apps/16/"
+2018-01-07 19:36:49.400 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/categories/16/"
+2018-01-07 19:36:49.400 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/devices/16/"
+2018-01-07 19:36:49.400 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/emblems/16/"
+2018-01-07 19:36:49.400 (0x7fff953e73b0) Warning: Invalid Context= "Mimetypes" line for icon theme:  "/usr/share/icons/Faenza/mimetypes/16/"
+2018-01-07 19:36:49.401 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/places/16/"
+2018-01-07 19:36:49.401 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/status/16/"
+2018-01-07 19:36:49.401 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/actions/22/"
+2018-01-07 19:36:49.401 (0x7fff953e73b0) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza/apps/22/"
+2018-01-07 19:36:49.401 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/categories/22/"
+2018-01-07 19:36:49.401 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/devices/22/"
+2018-01-07 19:36:49.401 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/emblems/22/"
+2018-01-07 19:36:49.401 (0x7fff953e73b0) Warning: Invalid Context= "Mimetypes" line for icon theme:  "/usr/share/icons/Faenza/mimetypes/22/"
+2018-01-07 19:36:49.401 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/places/22/"
+2018-01-07 19:36:49.401 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/status/22/"
+2018-01-07 19:36:49.401 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/actions/24/"
+2018-01-07 19:36:49.402 (0x7fff953e73b0) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza/apps/24/"
+2018-01-07 19:36:49.402 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/categories/24/"
+2018-01-07 19:36:49.402 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/devices/24/"
+2018-01-07 19:36:49.402 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/emblems/24/"
+2018-01-07 19:36:49.402 (0x7fff953e73b0) Warning: Invalid Context= "Mimetypes" line for icon theme:  "/usr/share/icons/Faenza/mimetypes/24/"
+2018-01-07 19:36:49.402 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/places/24/"
+2018-01-07 19:36:49.402 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/status/24/"
+2018-01-07 19:36:49.402 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/actions/32/"
+2018-01-07 19:36:49.402 (0x7fff953e73b0) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza/apps/32/"
+2018-01-07 19:36:49.402 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/categories/32/"
+2018-01-07 19:36:49.403 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/devices/32/"
+2018-01-07 19:36:49.403 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/emblems/32/"
+2018-01-07 19:36:49.403 (0x7fff953e73b0) Warning: Invalid Context= "Mimetypes" line for icon theme:  "/usr/share/icons/Faenza/mimetypes/32/"
+2018-01-07 19:36:49.403 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/places/32/"
+2018-01-07 19:36:49.403 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/status/32/"
+2018-01-07 19:36:49.403 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/actions/48/"
+2018-01-07 19:36:49.403 (0x7fff953e73b0) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza/apps/48/"
+2018-01-07 19:36:49.403 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/categories/48/"
+2018-01-07 19:36:49.403 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/devices/48/"
+2018-01-07 19:36:49.403 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/emblems/48/"
+2018-01-07 19:36:49.404 (0x7fff953e73b0) Warning: Invalid Context= "Mimetypes" line for icon theme:  "/usr/share/icons/Faenza/mimetypes/48/"
+2018-01-07 19:36:49.404 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/places/48/"
+2018-01-07 19:36:49.404 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/status/48/"
+2018-01-07 19:36:49.404 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/actions/64/"
+2018-01-07 19:36:49.404 (0x7fff953e73b0) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza/apps/64/"
+2018-01-07 19:36:49.404 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/categories/64/"
+2018-01-07 19:36:49.404 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/devices/64/"
+2018-01-07 19:36:49.404 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/emblems/64/"
+2018-01-07 19:36:49.404 (0x7fff953e73b0) Warning: Invalid Context= "Mimetypes" line for icon theme:  "/usr/share/icons/Faenza/mimetypes/64/"
+2018-01-07 19:36:49.404 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/places/64/"
+2018-01-07 19:36:49.404 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/status/64/"
+2018-01-07 19:36:49.405 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/actions/96/"
+2018-01-07 19:36:49.405 (0x7fff953e73b0) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza/apps/96/"
+2018-01-07 19:36:49.405 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/categories/96/"
+2018-01-07 19:36:49.405 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/devices/96/"
+2018-01-07 19:36:49.405 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/emblems/96/"
+2018-01-07 19:36:49.405 (0x7fff953e73b0) Warning: Invalid Context= "Mimetypes" line for icon theme:  "/usr/share/icons/Faenza/mimetypes/96/"
+2018-01-07 19:36:49.405 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/places/96/"
+2018-01-07 19:36:49.405 (0x7fff953e73b0) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/status/96/"
+2018-01-07 19:36:49.405 (0x7fff953e73b0) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza/apps/scalable/"
+2018-01-07 19:36:49.405 (0x7fff953e73b0) Warning: Invalid Context= "Mimetypes" line for icon theme:  "/usr/share/icons/Faenza/mimetypes/scalable/"
+2018-01-07 19:36:49.406 (0x7fff953e73b0) Warning: Icon theme "gnome" not found.
+2018-01-07 19:36:49.511 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Darker/actions/16/"
+2018-01-07 19:36:49.511 (0x7ffd5dde6b90) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Darker/apps/16/"
+2018-01-07 19:36:49.511 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Darker/actions/22/"
+2018-01-07 19:36:49.511 (0x7ffd5dde6b90) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Darker/apps/22/"
+2018-01-07 19:36:49.511 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Darker/actions/24/"
+2018-01-07 19:36:49.511 (0x7ffd5dde6b90) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Darker/apps/24/"
+2018-01-07 19:36:49.511 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Darker/actions/32/"
+2018-01-07 19:36:49.511 (0x7ffd5dde6b90) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Darker/apps/32/"
+2018-01-07 19:36:49.511 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Darker/actions/48/"
+2018-01-07 19:36:49.511 (0x7ffd5dde6b90) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Darker/apps/48/"
+2018-01-07 19:36:49.511 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Darker/actions/64/"
+2018-01-07 19:36:49.511 (0x7ffd5dde6b90) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Darker/apps/64/"
+2018-01-07 19:36:49.512 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Darker/actions/96/"
+2018-01-07 19:36:49.512 (0x7ffd5dde6b90) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Darker/apps/96/"
+2018-01-07 19:36:49.512 (0x7ffd5dde6b90) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Darker/apps/scalable/"
+2018-01-07 19:36:49.513 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Darkest/actions/16/"
+2018-01-07 19:36:49.513 (0x7ffd5dde6b90) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Darkest/apps/16/"
+2018-01-07 19:36:49.513 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Darkest/actions/22/"
+2018-01-07 19:36:49.513 (0x7ffd5dde6b90) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Darkest/apps/22/"
+2018-01-07 19:36:49.514 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Darkest/actions/24/"
+2018-01-07 19:36:49.514 (0x7ffd5dde6b90) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Darkest/apps/24/"
+2018-01-07 19:36:49.514 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Darkest/actions/32/"
+2018-01-07 19:36:49.514 (0x7ffd5dde6b90) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Darkest/apps/32/"
+2018-01-07 19:36:49.514 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Darkest/actions/48/"
+2018-01-07 19:36:49.514 (0x7ffd5dde6b90) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Darkest/apps/48/"
+2018-01-07 19:36:49.514 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Darkest/actions/64/"
+2018-01-07 19:36:49.515 (0x7ffd5dde6b90) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Darkest/apps/64/"
+2018-01-07 19:36:49.515 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Darkest/actions/96/"
+2018-01-07 19:36:49.515 (0x7ffd5dde6b90) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Darkest/apps/96/"
+2018-01-07 19:36:49.515 (0x7ffd5dde6b90) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Darkest/apps/scalable/"
+2018-01-07 19:36:49.516 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/actions/16/"
+2018-01-07 19:36:49.516 (0x7ffd5dde6b90) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Dark/apps/16/"
+2018-01-07 19:36:49.516 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/categories/16/"
+2018-01-07 19:36:49.517 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/status/16/"
+2018-01-07 19:36:49.517 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/actions/22/"
+2018-01-07 19:36:49.517 (0x7ffd5dde6b90) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Dark/apps/22/"
+2018-01-07 19:36:49.517 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/categories/22/"
+2018-01-07 19:36:49.517 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/devices/22/"
+2018-01-07 19:36:49.517 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/places/22/"
+2018-01-07 19:36:49.517 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/status/22/"
+2018-01-07 19:36:49.517 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/actions/24/"
+2018-01-07 19:36:49.517 (0x7ffd5dde6b90) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Dark/apps/24/"
+2018-01-07 19:36:49.518 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/categories/24/"
+2018-01-07 19:36:49.518 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/devices/24/"
+2018-01-07 19:36:49.518 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/places/24/"
+2018-01-07 19:36:49.518 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/status/24/"
+2018-01-07 19:36:49.518 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/actions/32/"
+2018-01-07 19:36:49.518 (0x7ffd5dde6b90) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Dark/apps/32/"
+2018-01-07 19:36:49.518 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/categories/32/"
+2018-01-07 19:36:49.518 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/places/32/"
+2018-01-07 19:36:49.518 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/status/32/"
+2018-01-07 19:36:49.519 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/actions/48/"
+2018-01-07 19:36:49.519 (0x7ffd5dde6b90) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Dark/apps/48/"
+2018-01-07 19:36:49.519 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/categories/48/"
+2018-01-07 19:36:49.519 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/places/48/"
+2018-01-07 19:36:49.519 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/status/48/"
+2018-01-07 19:36:49.519 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/actions/64/"
+2018-01-07 19:36:49.519 (0x7ffd5dde6b90) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Dark/apps/64/"
+2018-01-07 19:36:49.519 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/categories/64/"
+2018-01-07 19:36:49.519 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/places/64/"
+2018-01-07 19:36:49.520 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/status/64/"
+2018-01-07 19:36:49.520 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/actions/96/"
+2018-01-07 19:36:49.520 (0x7ffd5dde6b90) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Dark/apps/96/"
+2018-01-07 19:36:49.520 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/categories/96/"
+2018-01-07 19:36:49.520 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/places/96/"
+2018-01-07 19:36:49.520 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza-Dark/status/96/"
+2018-01-07 19:36:49.520 (0x7ffd5dde6b90) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza-Dark/apps/scalable/"
+2018-01-07 19:36:49.522 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/emblems/8/"
+2018-01-07 19:36:49.522 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/actions/16/"
+2018-01-07 19:36:49.522 (0x7ffd5dde6b90) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza/apps/16/"
+2018-01-07 19:36:49.522 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/categories/16/"
+2018-01-07 19:36:49.522 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/devices/16/"
+2018-01-07 19:36:49.522 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/emblems/16/"
+2018-01-07 19:36:49.522 (0x7ffd5dde6b90) Warning: Invalid Context= "Mimetypes" line for icon theme:  "/usr/share/icons/Faenza/mimetypes/16/"
+2018-01-07 19:36:49.522 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/places/16/"
+2018-01-07 19:36:49.522 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/status/16/"
+2018-01-07 19:36:49.522 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/actions/22/"
+2018-01-07 19:36:49.522 (0x7ffd5dde6b90) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza/apps/22/"
+2018-01-07 19:36:49.523 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/categories/22/"
+2018-01-07 19:36:49.523 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/devices/22/"
+2018-01-07 19:36:49.523 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/emblems/22/"
+2018-01-07 19:36:49.523 (0x7ffd5dde6b90) Warning: Invalid Context= "Mimetypes" line for icon theme:  "/usr/share/icons/Faenza/mimetypes/22/"
+2018-01-07 19:36:49.523 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/places/22/"
+2018-01-07 19:36:49.523 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/status/22/"
+2018-01-07 19:36:49.523 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/actions/24/"
+2018-01-07 19:36:49.523 (0x7ffd5dde6b90) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza/apps/24/"
+2018-01-07 19:36:49.523 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/categories/24/"
+2018-01-07 19:36:49.523 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/devices/24/"
+2018-01-07 19:36:49.523 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/emblems/24/"
+2018-01-07 19:36:49.523 (0x7ffd5dde6b90) Warning: Invalid Context= "Mimetypes" line for icon theme:  "/usr/share/icons/Faenza/mimetypes/24/"
+2018-01-07 19:36:49.524 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/places/24/"
+2018-01-07 19:36:49.524 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/status/24/"
+2018-01-07 19:36:49.524 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/actions/32/"
+2018-01-07 19:36:49.524 (0x7ffd5dde6b90) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza/apps/32/"
+2018-01-07 19:36:49.524 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/categories/32/"
+2018-01-07 19:36:49.524 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/devices/32/"
+2018-01-07 19:36:49.524 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/emblems/32/"
+2018-01-07 19:36:49.524 (0x7ffd5dde6b90) Warning: Invalid Context= "Mimetypes" line for icon theme:  "/usr/share/icons/Faenza/mimetypes/32/"
+2018-01-07 19:36:49.524 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/places/32/"
+2018-01-07 19:36:49.524 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/status/32/"
+2018-01-07 19:36:49.524 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/actions/48/"
+2018-01-07 19:36:49.525 (0x7ffd5dde6b90) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza/apps/48/"
+2018-01-07 19:36:49.525 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/categories/48/"
+2018-01-07 19:36:49.525 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/devices/48/"
+2018-01-07 19:36:49.525 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/emblems/48/"
+2018-01-07 19:36:49.525 (0x7ffd5dde6b90) Warning: Invalid Context= "Mimetypes" line for icon theme:  "/usr/share/icons/Faenza/mimetypes/48/"
+2018-01-07 19:36:49.525 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/places/48/"
+2018-01-07 19:36:49.525 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/status/48/"
+2018-01-07 19:36:49.525 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/actions/64/"
+2018-01-07 19:36:49.525 (0x7ffd5dde6b90) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza/apps/64/"
+2018-01-07 19:36:49.525 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/categories/64/"
+2018-01-07 19:36:49.525 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/devices/64/"
+2018-01-07 19:36:49.526 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/emblems/64/"
+2018-01-07 19:36:49.526 (0x7ffd5dde6b90) Warning: Invalid Context= "Mimetypes" line for icon theme:  "/usr/share/icons/Faenza/mimetypes/64/"
+2018-01-07 19:36:49.526 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/places/64/"
+2018-01-07 19:36:49.526 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/status/64/"
+2018-01-07 19:36:49.526 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/actions/96/"
+2018-01-07 19:36:49.526 (0x7ffd5dde6b90) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza/apps/96/"
+2018-01-07 19:36:49.526 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/categories/96/"
+2018-01-07 19:36:49.526 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/devices/96/"
+2018-01-07 19:36:49.526 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/emblems/96/"
+2018-01-07 19:36:49.526 (0x7ffd5dde6b90) Warning: Invalid Context= "Mimetypes" line for icon theme:  "/usr/share/icons/Faenza/mimetypes/96/"
+2018-01-07 19:36:49.526 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/places/96/"
+2018-01-07 19:36:49.527 (0x7ffd5dde6b90) Warning: Invalid Type= "fixed" line for icon theme:  "/usr/share/icons/Faenza/status/96/"
+2018-01-07 19:36:49.527 (0x7ffd5dde6b90) Warning: Invalid Context= "Apps" line for icon theme:  "/usr/share/icons/Faenza/apps/scalable/"
+2018-01-07 19:36:49.527 (0x7ffd5dde6b90) Warning: Invalid Context= "Mimetypes" line for icon theme:  "/usr/share/icons/Faenza/mimetypes/scalable/"
+2018-01-07 19:36:49.527 (0x7ffd5dde6b90) Warning: Icon theme "gnome" not found.
+2018-01-07 19:36:51.038 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 55125, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 19:36:51.174 ((nil)) Warning: QFileSystemWatcher::removePaths: list is empty
+2018-01-07 19:36:51.175 ((nil)) Warning: QFileSystemWatcher::removePaths: list is empty
+2018-01-07 19:37:23.016 ((nil)) Warning: QFileSystemWatcher::removePaths: list is empty
+2018-01-07 19:37:23.016 ((nil)) Warning: QFileSystemWatcher::removePaths: list is empty
+2018-01-07 19:37:23.030 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 55891, resource id: 100663451, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 20:51:12.642 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 11752, resource id: 104857616, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 21:14:49.292 (0x7ffd34ca3880) Debug: execAction "/usr/share/applications/firefox-nightly.desktop"
+2018-01-07 21:17:43.129 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 17321, resource id: 67115098, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 21:17:43.132 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 17346, resource id: 67115098, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 21:17:43.134 (0x7ffd34ca3880) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 17417, resource id: 67115098, major code: 18 (ChangeProperty), minor code: 0
+2018-01-07 21:31:13.435 (0x7ffd34ca3880) Debug: execAction "/usr/share/applications/firefox-nightly.desktop"
+2018-01-07 21:31:23.227 (0x7ffd34ca3880) Debug: execAction "/usr/share/applications/firefox-nightly.desktop"
+2018-01-07 21:55:00.168 (0x7fff55ba16e0) Debug: BatteryChanged discharging: true chargeLevel: 100 actionTime: QTime(Invalid)
+2018-01-08 10:00:46.630 (0x7fff55ba16e0) Debug: BatteryChanged discharging: true chargeLevel: 85.3625 actionTime: QTime(Invalid)

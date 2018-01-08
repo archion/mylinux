@@ -49,3 +49,4 @@ bin/
 .gitconfig
 .config/qpdfview/
 .Xresources
+.xbindkeysrc
