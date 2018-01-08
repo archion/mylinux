@@ -52,3 +52,4 @@ bin/
 .xbindkeysrc
 .xbindkeysrc
 .config/nvim
+.config/nvim/init.vim
