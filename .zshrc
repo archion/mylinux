@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh configuration.
-ZSH=$HOME/.oh-my-zsh
+ZSH=/usr/share/oh-my-zsh/
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -56,7 +56,7 @@ bindkey '^[[6~' end-of-history
 bindkey '^U' backward-kill-line
 #add in /etc/profile
 #export PATH=$PATH:~/bin:~/.cabal/bin
-unalias gm
+#unalias gm
 alias ls='ls --time-style="+%Y-%m-%d %H:%M:%S"'
 alias ll='ls -lh'
 alias ll='exa -bglh --time-style long-iso'
@@ -68,6 +68,8 @@ alias fuck='$(thefuck $(fc -ln -1))'
 alias vim="nvim"
 alias vimdiff="vim -d"
 alias termux="adb forward tcp:8022 tcp:8022 && ssh 127.0.0.1 -p 8022"
+alias sudo='sudo '
 
 # added by travis gem
 [ -f /home/archion/.travis/travis.sh ] && source /home/archion/.travis/travis.sh
+fpath+=~/.zfunc

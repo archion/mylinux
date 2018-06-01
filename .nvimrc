@@ -1,40 +1,41 @@
-" Vundle
-filetype off
-if has("unix")
-	set rtp+=~/.vim/bundle/Vundle.vim/ 
-	call vundle#begin()
-else
-	set rtp+=$VIM/vimfiles/bundle/Vundle.vim/ 
-	call vundle#begin('$VIM/vimfiles/bundle/')
+if &compatible
+  set nocompatible
 endif
-Plugin 'gmarik/Vundle.vim'
-Plugin 'bling/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'romainl/flattened'
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'Align'
-Plugin 'vim-pandoc/vim-pandoc'
-Plugin 'vim-pandoc/vim-pandoc-syntax'
-Plugin 'scrooloose/nerdtree'
-Plugin 'mattn/emmet-vim'
-Plugin 'majutsushi/tagbar'
-Plugin 'LaTeX-Suite-aka-Vim-LaTeX'
-Plugin 'rking/ag.vim'
-Plugin 'racer-rust/vim-racer'
-"Plugin 'LanguageTool'
-Plugin 'rust-lang/rust.vim'
-Plugin 'xolox/vim-misc'
-Plugin 'lua.vim'
-Plugin 'JuliaLang/julia-vim'
-Plugin 'benekastah/neomake'
-Plugin 'jiangmiao/auto-pairs'
-Plugin 'carbonscott/vim-smartfold'
-Plugin 'renamer.vim'
-Plugin 'vim-syntastic/syntastic'
-call vundle#end()
+
+call plug#begin('~/.local/share/nvim/plugged')
+  Plug 'bling/vim-airline'
+  Plug 'vim-airline/vim-airline-themes'
+  Plug 'romainl/flattened'
+  Plug 'scrooloose/nerdcommenter'
+  Plug 'vim-scripts/Align'
+  Plug 'vim-pandoc/vim-pandoc'
+  Plug 'vim-pandoc/vim-pandoc-syntax'
+  Plug 'scrooloose/nerdtree'
+  Plug 'mattn/emmet-vim'
+  Plug 'majutsushi/tagbar'
+  "Plug 'vim-scripts/LaTeX-Suite-aka-Vim-LaTeX'
+  Plug 'rking/ag.vim'
+  Plug 'racer-rust/vim-racer'
+  Plug 'rust-lang/rust.vim'
+  Plug 'xolox/vim-misc'
+  Plug 'vim-scripts/lua.vim'
+  Plug 'JuliaLang/julia-vim'
+  Plug 'benekastah/neomake'
+  Plug 'jiangmiao/auto-pairs'
+  Plug 'carbonscott/vim-smartfold'
+  Plug 'vim-scripts/renamer.vim'
+  Plug 'vim-syntastic/syntastic'
+  Plug 'lervag/vimtex'
+call plug#end()
+
 filetype plugin indent on
+syntax enable
 
 set guicursor=n-v-c:block-Cursor/lCursor-blinkon0,i-ci:ver25-Cursor/lCursor,r-cr:hor20-Cursor/lCursor
+
+
+" support chinese charactor Align
+let g:Align_xstrlen= 3
 
 " airline
 if !exists('g:airline_symbols')	
@@ -110,27 +111,24 @@ set foldmethod=manual
 let $LANGUAGE = 'c'
 
 " latex
-let g:Tex_DefaultTargetFormat='pdf'
-let g:Tex_MultipleCompileFormats = 'dvi'
-let g:Tex_FormatDependency_pdf = 'dvi,ps,pdf'
-let g:Tex_CompileRule_dvi = "latex --interaction=nonstopmode $*; bibtex $*.aux; cd pic; asy *.asy; cd -; latex --interaction=nonstopmode $*"
-let g:Tex_CompileRule_ps = 'dvips -Ppdf -o $*.ps $*.dvi '
-"let g:Tex_CompileRule_pdf = 'ps2pdf -dAutoFilterColorImages=false -dColorImageFilter=/FlateEncode -dPDFsettings=/prepress $*.ps ; killall -SIGHUP llpp'
-let g:Tex_CompileRule_pdf = 'ps2pdf -dAutoFilterColorImages=false -dColorImageFilter=/FlateEncode -dPDFsettings=/prepress $*.ps'
-let g:Tex_ViewRule_pdf = 'setsid qpdfview --platformtheme qt5ct'
-let g:Tex_IgnoredWarnings =
-			\'Underfull'."\n".
-			\'Overfull'."\n".
-			\'specifier changed to'."\n".
-			\'You have requested'."\n".
-			\'Missing number, treated as zero.'."\n".
-			\'There were undefined references'."\n".
-			\'Latex Warning:'."\n".
-			\'Citation %.%# undefined'
-let tlist_tex_settings   = 'latex;s:sections;g:graphics;l:labels'
-let tlist_make_settings  = 'make;m:makros;t:targets'
+let g:vimtex_compiler_latexmk = {
+    \ 'options' : [
+    \   '-verbose',
+    \   '-pdf',
+    \   '-file-line-error',
+    \   '-synctex=1',
+    \   '-interaction=nonstopmode',
+    \ ],
+    \}
+let g:vimtex_view_general_viewer = 'qpdfview'
+let g:vimtex_view_general_options
+			\ = '--unique --instance latex @pdf\#src:@tex:@line:@col'
+let g:vimtex_view_general_options_latexmk = '--unique --instance latex'
+let g:vimtex_compiler_progname = 'nvr'
+
 
 let mapleader=","
+let maplocalleader=","
 let g:agprg = "ag --nogroup --nocolor --column"
 vnoremap < <gv
 vnoremap > >gv
@@ -222,16 +220,6 @@ au BufNewFile,BufRead *.plt,*.gnuplot,*.dat nmap <leader>p :e<cr> :w<cr> <C-w>j 
 au QuickFixCmdPost [^l]* nested cwindow
 au QuickFixCmdPost    l* nested lwindow
 "autocmd! BufWritePost * Neomake!
-if has("autocmd")
-    au InsertEnter *
-        \ if v:insertmode == 'i' |
-        \   silent execute "!dconf write /org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9/cursor-shape \"'ibeam'\"" |
-        \ elseif v:insertmode == 'r' |
-        \   silent execute "!dconf write /org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9/cursor-shape \"'underline'\"" |
-        \ endif
-    au InsertLeave * silent execute "!dconf write /org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9/cursor-shape \"'block'\""
-    au VimLeave * silent execute "!dconf write /org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9/cursor-shape \"'block'\""
-endif
 
 highlight clear SpellBad
 highlight SpellBad term=standout ctermfg=1 term=underline cterm=underline
@@ -241,4 +229,4 @@ highlight clear SpellRare
 highlight SpellRare term=underline cterm=underline
 highlight clear SpellLocal
 highlight SpellLocal term=underline cterm=underline
-autocmd FileType tex setlocal spell spelllang=en_us,cjk
+"autocmd FileType tex setlocal spell spelllang=en_us,cjk

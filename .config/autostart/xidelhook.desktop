@@ -1,0 +1,7 @@
+[Desktop Entry]
+Exec=xidlehook --time 8 --timer \\'xrandr --output \\"\\$(xrandr | grep primary | cut -d \\" \\" -f 1)\\" --brightness 1; i3lock -c 000000\\' --notify 10 --notifier  \\'xrandr --output \\"\\$(xrandr | grep primary | cut -d \\" \\" -f 1)\\" --brightness .1\\' --canceller \\'xrandr --output \\"\\$(xrandr | grep primary | cut -d \\" \\" -f 1)\\" --brightness 1\\'
+
+Name=xidelhook
+Type=Application
+Version=1.0
+X-LXQt-Need-Tray=true

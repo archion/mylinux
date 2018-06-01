@@ -17,24 +17,26 @@ do
 	file=${f##*/}
 	cd ${f/$file/.}
 	plt=${file%.*}
-	if ! [ -f ${plt}.plt ]; then
-		if ! [ -f ${plt%%_*}.plt ]; then
-			if grep -q "#data" "$file"; then
-				sed -n "0,/#data/p" "$file" > $plt
-			else
-				if [ -f ../${plt%%_*}.plt ]; then
-					plt=../${plt%%_*}.plt
+	while true ; do
+		if ! [ -f ${plt}.plt ]; then
+			if ! [[ $plt == *_* ]]; then
+				if grep -q "#data" "$file"; then
+					sed -n "0,/#data/p" "$file" > $plt
 				else
-					plt=${plt%%_*}.plt
-					cp ~/Projects/FortranProgram/data/gnuplot.plt $plt
+					if [ -f ../${plt}.plt ]; then
+						plt=../${plt}.plt
+					else
+						cp ~/Projects/FortranProgram/data/gnuplot.plt ${plt}.plt
+					fi
 				fi
+				break
 			fi
+			plt=${plt%_*}
 		else
-			plt=${file%%_*}.plt
+			break
 		fi
-	else
-		plt=${plt}.plt
-	fi
+	done
+	plt=${plt}.plt
 	sed -i "s/\"-\"/\"$file\"/g" $plt
 	sed -i "s/\"-\.\"/\"${file%.*}\.\"/g" $plt
 	if grep -q "#data" "$file"; then

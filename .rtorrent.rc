@@ -16,7 +16,7 @@ throttle.global_down.max_rate.set_kb = 0
 throttle.global_up.max_rate.set_kb = 0
 
 # Default directory to save the downloaded torrents.
-directory.default.set = ~/Downloads/torrents/Downloads
+directory.default.set = ~/Downloads/
 
 # Default session directory. Make sure you don't run multiple instance
 # of rtorrent using the same session directory. Perhaps using a

@@ -1,7 +1,7 @@
 [Desktop Entry]
-Name=Synapse
-Exec=synapse --startup
 Encoding=UTF-8
+Exec=synapse --startup
+Icon=synapse
+Name=Synapse
 Type=Application
 X-GNOME-Autostart-enabled=true
-Icon=synapse

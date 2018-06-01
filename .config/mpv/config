@@ -12,6 +12,7 @@ osd-border-color=0/0/0/0.5
 sub-text-font-size=35
 sub-text-border-color=0/0/0/0.5
 osd-bar-align-y=0.95
+osd-fractions=yes
 af=lavfi=[acompressor]
 sub-auto=fuzzy
 volume=100
