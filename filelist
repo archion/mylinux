@@ -49,3 +49,7 @@ bin/
 .gitconfig
 .config/qpdfview/
 .Xresources
+.xbindkeysrc
+.xbindkeysrc
+.config/nvim
+.config/nvim/init.vim
