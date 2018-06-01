@@ -53,3 +53,4 @@ bin/
 .xbindkeysrc
 .config/nvim
 .config/nvim/init.vim
+.local/share/nvim/plugged
