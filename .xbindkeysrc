@@ -60,6 +60,9 @@
 "pkill -9 dict ;dict 0"
    Super_L
 
+"i3lock -c 000000"
+   Control+Alt + l
+
 ##################################
 # End of xbindkeys configuration #
 ##################################
